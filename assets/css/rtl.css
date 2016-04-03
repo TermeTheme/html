@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'IRANSans';
+  src: url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
+  font-family: 'IRANSans';
+  src: url("../fonts/IRANSansWeb_Bold.woff") format("woff"), url("../fonts/IRANSansWeb_Bold.ttf") format("truetype");
+  font-weight: bold; }
+
+body {
+  font-family: 'IRANSans';
+  text-align: right;
+  direction: rtl; }
+
+header.header .today {
+  float: right; }
+  header.header .today i {
+    float: right; }
+
+.top_bar form {
+  float: left; }
+  .top_bar form input {
+    float: right; }
+  .top_bar form button {
+    float: right; }
+
+.top_bar .user_area {
+  float: left;
+  border-right: 1px solid #ebebeb;
+  border-right: 0.1rem solid #ebebeb; }
+
+.top_bar .shopping_cart {
+  float: left;
+  margin-left: 30px;
+  margin-left: 3rem; }
+  .top_bar .shopping_cart a i {
+    margin-left: 5px;
+    margin-left: 0.5rem; }
+
+header.style_1 .main_area .logo,
+header.style_3 .main_area .logo,
+header.style_4 .main_area .logo {
+  float: right; }
+
+header.style_1 .main_area .header_ads,
+header.style_3 .main_area .header_ads {
+  text-align: left; }
+
+header .main_menu {
+  float: right; }
+  header .main_menu ul {
+    float: right; }
+  header .main_menu ul > li {
+    float: right; }
+  header .main_menu ul > li:first-child {
+    margin-right: 0; }
+  header .main_menu ul > li > a:after {
+    margin-right: 10px;
+    margin-right: 1rem; }
+  header .main_menu ul > li ul {
+    right: 0; }
+  header .main_menu ul > li ul li a:after {
+    content: "\f100";
+    left: 20px;
+    left: 2rem;
+    right: auto;
+    right: auto; }
+  header .main_menu ul > li > ul li ul {
+    right: 295px;
+    right: 29.5rem; }
+
+header.header.style_3 .today {
+  float: right;
+  height: 40px;
+  height: 4rem;
+  line-height: 40px;
+  line-height: 4rem; }
+  header.header.style_3 .today i {
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin: 12px;
+    margin: 1.2rem;
+    float: right; }
+
+header.style_4 .top_bar .user_area {
+  border-right: none;
+  padding-left: 0; }
+
+header.style_4 .main_area form {
+  margin: 28px 5% 0 0;
+  float: left; }
+  header.style_4 .main_area form input {
+    float: right; }
+  header.style_4 .main_area form button {
+    float: right;
+    line-height: 46px;
+    line-height: 4.6rem; }
+
+header.style_4 .main_menu .shopping_cart {
+  float: left; }
+
+main.main {
+  float: right; }
+
+section.top .carousel-control.left {
+  left: 0;
+  right: auto; }
+section.top .selection {
+  float: right; }
+  section.top .selection h4 {
+    float: right; }
+  section.top .selection a.more.pull-right {
+    float: left !important; }
+  section.top .selection ul li {
+    float: right; }
+  section.top .selection ul li .thumb {
+    float: right;
+    margin-right: 0;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-left: 1rem; }
+
+a.more:after {
+  content: "\f060";
+  margin-left: 0;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-right: 1rem; }
+
+section.latest_news {
+  float: right; }
+  section.latest_news .body {
+    float: right; }
+    section.latest_news .body a {
+      font-size: 14px;
+      font-size: 1.4rem; }
+  section.latest_news .title {
+    margin-right: 0;
+    margin-right: 0;
+    margin-left: 15px;
+    margin-left: 1.5rem;
+    float: right; }
+  section.latest_news .title:after {
+    border-color: transparent #fac014 transparent transparent;
+    left: -7px;
+    left: -0.7rem;
+    right: auto;
+    right: auto;
+    border-width: 8px 7px 8px 0;
+    border-width: 0.8rem 0.7rem 0.8rem 0; }
+
+.home_content .box .title {
+  border-left: none;
+  border-right: solid #0b1425;
+  border-left-width: 0;
+  border-left-width: 0;
+  border-right-width: 2px;
+  border-right-width: 0.2rem;
+  padding-left: 0;
+  padding-left: 0;
+  padding-right: 15px;
+  padding-right: 1.5rem; }
+  .home_content .box .title a.more.pull-right {
+    float: left !important; }
+
+.small_post ul li .thumb {
+  float: right;
+  margin-left: 10px;
+  margin-left: 1rem;
+  margin-right: 0;
+  margin-right: 0; }

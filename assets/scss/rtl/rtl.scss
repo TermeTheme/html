@@ -1,0 +1,203 @@
+@import '../_variables.scss', '../_mixins.scss', '../rem';
+
+body {
+	font-family: 'IRANSans';
+	text-align: right;
+	direction:rtl;
+}
+header.header .today {
+	float: right;
+	i {
+		float: right
+	}
+}
+.top_bar form {
+	float: left;
+	input {
+		float: right;
+	}
+	button {
+		float: right;
+	}
+}
+.top_bar .user_area {
+	float: left;
+	@include rem((
+		border-right: 1px solid #ebebeb,
+	));
+}
+.top_bar .shopping_cart {
+	float: left;
+	@include rem((
+		margin-left: 30px,
+	));
+	a i {
+		@include rem(margin-left, 5px);
+	}
+
+}
+
+
+header.style_1 .main_area .logo,
+header.style_3 .main_area .logo,
+header.style_4 .main_area .logo {
+	float: right;
+}
+header.style_1 .main_area .header_ads,
+header.style_3 .main_area .header_ads {
+	text-align: left;
+}
+header .main_menu {
+	float: right;
+	ul {
+		float: right;
+	}
+	ul>li {
+		float: right;
+	}
+	ul>li:first-child {
+		margin-right: 0;
+	}
+	ul>li>a:after {
+	    @include rem((
+			margin-right: 10px,
+		));
+	}
+	ul>li ul {
+		right: 0;
+	}
+	
+	ul>li ul li a:after {
+		content: "\f100";
+		@include rem((
+			left: 20px,
+			right: auto,
+		));
+	}
+	ul>li>ul li ul {
+		@include rem((
+			right: 295px,
+		));
+	}
+}
+header.header.style_3 .today {
+	float: right;
+	@include rem((
+		height: 40px,
+		line-height: 40px,
+	));
+	i {
+		@include rem((
+			font-size: 16px,
+			margin: 12px,
+		));
+		float: right
+	}
+}
+header.style_4 .top_bar .user_area {
+	border-right: none;
+	padding-left: 0
+}
+header.style_4 .main_area form {
+	margin: 28px 5% 0 0 ;
+	float: left;
+	input {
+		float: right;
+	}
+	button {
+		float: right;
+		@include rem((
+			line-height: 46px,
+		));
+	}
+}
+header.style_4 .main_menu .shopping_cart {
+	float: left;
+}
+main.main {
+	float: right;
+}
+section.top {
+	.carousel-control.left {
+		left: 0;
+		right: auto;
+	}
+	.selection {
+		float: right;
+		h4 {
+			float: right;
+		}
+		a.more.pull-right {
+			float: left !important
+		}
+		
+		ul li {
+			float: right;
+		}
+		
+		ul li .thumb {
+			float: right;
+			@include rem((
+				margin-right: 0,
+				margin-left: 10px
+			));
+		}
+		
+	}
+}
+a.more:after {
+	content: "\f060";
+	@include rem((
+		margin-left: 0,
+		margin-right: 10px
+	));
+} 
+section.latest_news {
+	float: right;
+	.body {
+		float: right;
+		a {
+			@include rem(font-size, 14px);
+		}
+	}	
+	.title {
+		@include rem((
+			margin-right: 0,
+			margin-left: 15px
+		));
+		float: right;
+	}
+	.title:after {
+		border-color: transparent $primary_color transparent transparent ;
+		@include rem((
+			left: -7px,
+			right: auto,
+			border-width: 8px 7px 8px 0,
+		));
+	}
+}
+.home_content .box {
+	.title {
+		border-left: none;
+		border-right: solid $secondary_color;
+		@include rem((
+			border-left-width: 0,
+			border-right-width: 2px,
+			padding-left: 0,
+			padding-right: 15px
+		));
+		a.more.pull-right {
+			float: left !important;
+		}
+	}
+}
+
+.small_post {
+	ul li .thumb {
+		float: right;
+		@include rem((
+			margin-left: 10px,
+			margin-right: 0
+		));
+	}
+}

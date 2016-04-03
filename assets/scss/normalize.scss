@@ -1,0 +1,28 @@
+@import '_variables.scss', '_mixins.scss', 'rem';
+
+
+// Theme Normalize
+html {
+  @include rem-baseline;
+}
+
+body {
+	font-family: 'Droidsans';
+	color: $secondary_color;
+	@include rem(font-size, 12px);
+}
+a {
+	text-decoration: none;
+	transition: all 300ms
+}
+a:hover,
+a:focus {
+	text-decoration: none
+}
+input {
+	outline: none
+}
+button {
+	outline: none;
+	padding: 0;
+}
