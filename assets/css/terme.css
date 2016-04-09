@@ -1,3 +1,18 @@
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 @font-face {
   font-family: 'Droidsans';
   src: url("../fonts/DroidSans-Bold-webfont.eot");
@@ -35,6 +50,7 @@ input {
 button {
   outline: none;
   padding: 0; }
+
 
 header.header {
   float: right;
@@ -256,9 +272,7 @@ header .main_menu {
     -webkit-transform: translateY(-10px) translateX(-50%);
         -ms-transform: translateY(-10px) translateX(-50%);
             transform: translateY(-10px) translateX(-50%);
-    -webkit-transform: translateY(-10px) translateX(-50%);
-        -ms-transform: translateY(-10px) translateX(-50%);
-            transform: translateY(-10px) translateX(-50%);
+    transform: translateY(-10px) translateX(-50%);
     position: absolute;
     height: auto;
     left: 50%;
@@ -303,9 +317,7 @@ header .main_menu {
     -webkit-transform: translate(10px, 0);
         -ms-transform: translate(10px, 0);
             transform: translate(10px, 0);
-    -webkit-transform: translate(10px, 0);
-        -ms-transform: translate(10px, 0);
-            transform: translate(10px, 0);
+    transform: translate(10px, 0);
     top: -2px;
     top: -0.2rem;
     border-top: none; }
@@ -545,6 +557,7 @@ a.more:after {
   -webkit-transition: color 300ms;
   transition: color 300ms; }
 
+a.more:hover,
 a.more:hover:after {
   color: #fac014; }
 
@@ -736,6 +749,17 @@ section.latest_news {
     color: #fac014; }
   .small_post ul li .time {
     color: #979a9f; }
+  .small_post.half_width ul {
+    padding-top: 0; }
+  .small_post.half_width ul li {
+    width: 50%;
+    border-right: solid #e4e4e4;
+    border-right-width: 1px;
+    border-right-width: 0.1rem; }
+  .small_post.half_width ul li:nth-child(even) {
+    border-right: none; }
+  .small_post.half_width ul li:nth-last-child(2) {
+    border-bottom: none; }
 
 .shop-carousel {
   float: left;
@@ -882,18 +906,5 @@ section.latest_news {
   .shop-carousel .product .thumb .permalink:hover {
     background: #fac014; }
 
-@keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
+.test {
+  float: right; }

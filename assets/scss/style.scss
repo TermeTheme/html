@@ -526,6 +526,7 @@ a.more:after {
 	@include rem(margin-left, 10px);
 	transition: color 300ms;
 }
+a.more:hover,
 a.more:hover:after {
 	color: $primary_color;
 }
@@ -734,6 +735,20 @@ section.latest_news {
 	ul li .time {
 		color: #979a9f;
 	}
+	&.half_width ul {
+		padding-top: 0;
+	}
+	&.half_width ul li  {
+		width: 50%;
+		border-right: solid #e4e4e4;
+		@include rem(border-right-width, 1px);
+	}
+	&.half_width ul li:nth-child(even) {
+		border-right: none;
+	}
+	&.half_width ul li:nth-last-child(2) {
+		border-bottom: none;
+	}
 
 }
 .shop-carousel {
@@ -882,4 +897,5 @@ section.latest_news {
 }
 .test {
 	float: right;
+
 }

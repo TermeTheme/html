@@ -52,7 +52,7 @@
 								</li>
 								<li>
 									<div class="thumb"><img src="assets/img/top_new_03.jpg" height="75" width="100" alt=""></div>
-									<h3><a href="">The world is changed! i feel in the water, i feel in the earth</a></h3>
+									<h3><a href="">The world is changed! i feel in the water, i feel in ...</a></h3>
 									<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
 								</li>
 							</ul>
@@ -68,7 +68,7 @@
 						<div class="body">
 							<div class="title">Latest News</div>
 							<ul id="typed-strings">
-								<li><a href="">The world is changed! i feel in the water, i feel in the earth</a></li>
+								<li><a href="">The world is changed! i feel in the water, i feel in ...</a></li>
 								<li><a href="">2016 Mac Pro release date rumours & specs</a></li>
 								<li><a href="">Google Ranked As The World's Most Valuable Brands</a></li>
 							</ul>
@@ -94,7 +94,7 @@
 									<div class="col-xs-6">
 										<div class="big_post">
 											<div class="thumb"><img src="assets/img/post_01.jpg" height="250" width="420" alt=""></div>
-											<h2><a href="#">The world is changed! i feel in the water, i feel in the earth</a></h2>
+											<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
 											<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
 											<div class="excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna  aliquam erat volutpat.</div>
 										</div><!-- big_post -->
@@ -104,17 +104,17 @@
 											<ul>
 												<li>
 													<div class="thumb"><img src="assets/img/top_new_01.jpg" height="75" width="100" alt=""></div>
-													<h2><a href="#">The world is changed! i feel in the water, i feel in the earth</a></h2>
+													<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
 													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
 												</li>
 												<li>
 													<div class="thumb"><img src="assets/img/top_new_02.jpg" height="75" width="100" alt=""></div>
-													<h2><a href="#">The world is changed! i feel in the water, i feel in the earth</a></h2>
+													<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
 													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
 												</li>
 												<li>
 													<div class="thumb"><img src="assets/img/top_new_03.jpg" height="75" width="100" alt=""></div>
-													<h2><a href="#">The world is changed! i feel in the water, i feel in the earth</a></h2>
+													<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
 													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
 												</li>
 												<li>
@@ -176,8 +176,47 @@
 											</div><!-- info -->
 										</div><!-- product -->
 									</li>
-									
-								</div><!-- shop-carousel -->
+
+								</ul><!-- shop-carousel -->
+							</div><!-- body -->
+						</div><!-- box -->
+
+						<div class="box style_3">
+							<div class="title">
+								<a href="#" class="more pull-right">More</a>
+								<h4>Technology</h4>
+								<h6>Defeated Panthers to get back</h6>
+							</div><!-- title -->
+							<div class="body">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="small_post half_width">
+											<ul>
+												<li>
+													<div class="thumb"><img src="assets/img/top_new_01.jpg" height="75" width="100" alt=""></div>
+													<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
+													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
+												</li>
+												<li>
+													<div class="thumb"><img src="assets/img/top_new_02.jpg" height="75" width="100" alt=""></div>
+													<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
+													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
+												</li>
+												<li>
+													<div class="thumb"><img src="assets/img/top_new_03.jpg" height="75" width="100" alt=""></div>
+													<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
+													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
+												</li>
+												<li>
+													<div class="thumb"><img src="assets/img/top_new_04.jpg" height="75" width="100" alt=""></div>
+													<h2><a href="#">Why You Should Avoid Sass @extend</a></h2>
+													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</div><!-- row -->
 							</div><!-- body -->
 						</div><!-- box -->
 

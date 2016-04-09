@@ -66,7 +66,7 @@ header .main_menu {
 	ul>li ul {
 		right: 0;
 	}
-	
+
 	ul>li ul li a:after {
 		content: "\f100";
 		@include rem((
@@ -130,11 +130,11 @@ section.top {
 		a.more.pull-right {
 			float: left !important
 		}
-		
+
 		ul li {
 			float: right;
 		}
-		
+
 		ul li .thumb {
 			float: right;
 			@include rem((
@@ -142,7 +142,7 @@ section.top {
 				margin-left: 10px
 			));
 		}
-		
+
 	}
 }
 a.more:after {
@@ -151,7 +151,7 @@ a.more:after {
 		margin-left: 0,
 		margin-right: 10px
 	));
-} 
+}
 section.latest_news {
 	float: right;
 	.body {
@@ -159,7 +159,7 @@ section.latest_news {
 		a {
 			@include rem(font-size, 14px);
 		}
-	}	
+	}
 	.title {
 		@include rem((
 			margin-right: 0,
