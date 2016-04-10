@@ -646,6 +646,31 @@ section.latest_news {
     width: 100%;
     float: left;
     color: #979a9f; }
+  .big_post.horizontal {
+    border: none;
+    background: none; }
+  .big_post.horizontal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .big_post.horizontal ul li {
+    float: right;
+    width: 100%;
+    padding: 0;
+    border: solid #e3e3e5;
+    background: #fff;
+    border-width: 1px;
+    border-width: 0.1rem;
+    margin-bottom: 15px;
+    margin-bottom: 1.5rem; }
+  .big_post.horizontal ul li .thumb {
+    width: auto;
+    margin-right: 30px;
+    margin-right: 3rem; }
+  .big_post.horizontal ul li .thumb img {
+    height: auto; }
+  .big_post.horizontal ul li h2, .big_post.horizontal ul li .time, .big_post.horizontal ul li .excerpt {
+    float: none; }
 
 .small_post {
   float: left;

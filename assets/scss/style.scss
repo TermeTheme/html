@@ -680,6 +680,38 @@ section.latest_news {
 		float: left;
 		color: #979a9f;
 	}
+	&.horizontal {
+		border: none;
+		background: none;
+	}
+	&.horizontal ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	&.horizontal ul li {
+		float: right;
+		width: 100%;
+		padding: 0;
+		border: solid #e3e3e5;
+		background: #fff;
+		@include rem((
+			border-width: 1px,
+			margin-bottom: 15px,
+		));
+	}
+	&.horizontal ul li .thumb {
+		width: auto;
+		@include rem(margin-right, 30px);
+	}
+	&.horizontal ul li .thumb img {
+		height: auto;
+	}
+	&.horizontal ul li h2,
+	&.horizontal ul li .time,
+	&.horizontal ul li .excerpt {
+		float: none;
+	}
 }
 .small_post {
 	float: left;
