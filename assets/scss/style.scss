@@ -927,7 +927,34 @@ section.latest_news {
 		background: $primary_color;
 	}
 }
-.test {
+#sidebar {
 	float: right;
+	width: 100%;
+	@include rem(padding-top, 30px);
 
+	.social_widget {
+		float: right;
+		width: 100%;
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			border: solid #e4e4e4;
+			border-top: solid $secondary_color;
+			float: left;
+			width: 100%;
+			background: #fff;
+			@include rem((
+				border-width: 1px,
+				border-top-width: 2px,
+			));
+			li {
+				float: left;
+				width: 50%;
+				@include rem((
+					height: 70px,
+				));
+			}
+		}
+	}
 }

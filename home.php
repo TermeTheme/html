@@ -337,7 +337,21 @@
 
 					</div><!-- home_content -->
 				</div><!--col-xs-8-->
-				<div class="col-xs-4"></div><!--col-xs-4-->
+				<div class="col-xs-4">
+					<aside id="sidebar">
+
+						<section class="social_widget">
+							<ul>
+								<li>
+									<span class="icon"><i class="fa fa-facebook"></i></span>
+									<span class="name">Facebook</span>
+									<span class="number">53.321</span>
+								</li>
+							</ul>
+						</section><!-- social_widget -->
+
+					</aside><!-- sidebar -->
+				</div><!--col-xs-4-->
 			</div><!-- row -->
 		</div><!-- container -->
 	</main>

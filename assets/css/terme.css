@@ -931,5 +931,29 @@ section.latest_news {
   .shop-carousel .product .thumb .permalink:hover {
     background: #fac014; }
 
-.test {
-  float: right; }
+#sidebar {
+  float: right;
+  width: 100%;
+  padding-top: 30px;
+  padding-top: 3rem; }
+  #sidebar .social_widget {
+    float: right;
+    width: 100%; }
+    #sidebar .social_widget ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border: solid #e4e4e4;
+      border-top: solid #0b1425;
+      float: left;
+      width: 100%;
+      background: #fff;
+      border-width: 1px;
+      border-width: 0.1rem;
+      border-top-width: 2px;
+      border-top-width: 0.2rem; }
+      #sidebar .social_widget ul li {
+        float: left;
+        width: 50%;
+        height: 70px;
+        height: 7rem; }
