@@ -21,5 +21,5 @@
     "gulp-minify-css": "^1.2.3",
     "gulp-ruby-sass": "^2.0.6",
     "merge-stream": "^1.0.0"
-  }
+  },
 }

@@ -1,23 +1,16 @@
 @import '_variables.scss', '_mixins.scss', 'rem';
-
 header.header {
 	float: right;
 	width: 100%;
 	.top_bar {
 		float: right;
 		width: 100%;
-		@include rem((
-			height: 40px,
-			line-height: 35px,
-			border-top: 4px solid,
-			border-bottom: 1px solid,
-		));
-
+		@include rem(( height: 40px, line-height: 35px, border-top: 4px solid, border-bottom: 1px solid, ));
 	}
 	&.style_1 .top_bar {
 		background: #fff;
 		border-top-color: $primary_color;
-		border-bottom-color: #ebebeb
+		border-bottom-color: #ebebeb;
 	}
 	&.style_3 .top_bar,
 	&.style_4 .top_bar {
@@ -28,62 +21,38 @@ header.header {
 	&.style_1 .main_area,
 	&.style_3 .main_area,
 	&.style_4 .main_area {
-		@include rem((
-			height: 100px,
-			line-height: 100px,
-		));
+		@include rem(( height: 100px, line-height: 100px, ));
 		float: right;
-		width: 100%
+		width: 100%;
 	}
 }
 header.header .today {
 	float: left;
 	i {
-		@include rem((
-			font-size: 16px,
-			margin: 7px
-		));
-		float: left
+		@include rem(( font-size: 16px, margin: 7px ));
+		float: left;
 	}
 }
 header.header.style_3 .today {
 	float: left;
-	@include rem((
-		height: 40px,
-		line-height: 40px,
-	));
+	@include rem(( height: 40px, line-height: 40px, ));
 	i {
-		@include rem((
-			font-size: 16px,
-			margin: 12px,
-		));
-		float: left
+		@include rem(( font-size: 16px, margin: 12px, ));
+		float: left;
 	}
 }
 .top_bar form {
 	float: right;
-	@include rem((
-		border-right: 1px solid #ebebeb,
-		border-left: 1px solid #ebebeb,
-		padding: 0 15px,
-		height: 35px,
-	));
+	@include rem(( border-right: 1px solid #ebebeb, border-left: 1px solid #ebebeb, padding: 0 15px, height: 35px, ));
 	input {
 		float: left;
 		border: none;
-		@include rem((
-			height: 35px,
-			width: 215px
-		));
+		@include rem(( height: 35px, width: 215px ));
 	}
 	button {
 		float: left;
 		border: none;
-		@include rem((
-			height: 35px,
-			font-size: 16px,
-			margin-right: 10px
-		));
+		@include rem(( height: 35px, font-size: 16px, margin-right: 10px ));
 		color: #bbc5c7;
 		background: none;
 	}
@@ -91,9 +60,7 @@ header.header.style_3 .today {
 header.style_3 .top_bar form {
 	border: none;
 	background: #ffcc35;
-	@include rem((
-		height: 40px,
-	));
+	@include rem(( height: 40px, ));
 	input {
 		background: none;
 		color: $secondary_color;
@@ -104,34 +71,22 @@ header.style_3 .top_bar form {
 	input::-webkit-input-placeholder {
 		color: $secondary_color;
 	}
-
 	input:-moz-placeholder {
 		color: $secondary_color;
 	}
-
 	input::-moz-placeholder {
 		color: $secondary_color;
 	}
-
 	input:-ms-input-placeholder {
 		color: $secondary_color;
 	}
 }
-
 .top_bar .user_area {
 	float: right;
-	@include rem((
-		border-left: 1px solid #ebebeb,
-		padding: 0 30px,
-		height: 35px,
-	));
+	@include rem(( border-left: 1px solid #ebebeb, padding: 0 30px, height: 35px, ));
 	* {
 		color: #bbc5c7;
-		@include rem((
-			line-height: 35px,
-			margin: 0 10px,
-
-		));
+		@include rem(( line-height: 35px, margin: 0 10px, ));
 	}
 	a:hover {
 		color: $secondary_color;
@@ -139,18 +94,9 @@ header.style_3 .top_bar form {
 }
 .top_bar .shopping_cart {
 	float: right;
-	@include rem((
-		margin-right: 30px,
-		height: 35px,
-	));
+	@include rem(( margin-right: 30px, height: 35px, ));
 	a {
-		@include rem((
-			height: 25px,
-			line-height: 25px,
-			padding: 0 15px,
-			border-radius: 3px,
-			font-size: 13px
-		));
+		@include rem(( height: 25px, line-height: 25px, padding: 0 15px, border-radius: 3px, font-size: 13px ));
 		background: $secondary_color;
 		color: #fff;
 		display: inline-block;
@@ -160,7 +106,6 @@ header.style_3 .top_bar form {
 		}
 	}
 }
-
 header.style_1 .main_area .logo,
 header.style_3 .main_area .logo,
 header.style_4 .main_area .logo {
@@ -168,7 +113,7 @@ header.style_4 .main_area .logo {
 	@include rem(height, 85px);
 	overflow: hidden;
 	img {
-		max-height: 100%
+		max-height: 100%;
 	}
 	&.center {
 		float: none;
@@ -181,15 +126,13 @@ header.style_3 .main_area .header_ads {
 	text-align: right;
 	img {
 		max-width: 100%;
-		height: auto
+		height: auto;
 	}
 }
 header .main_menu {
 	float: left;
 	width: 100%;
-	@include rem((
-		height: 70px,
-	));
+	@include rem(( height: 70px, ));
 	ul {
 		float: left;
 		width: 100%;
@@ -197,47 +140,34 @@ header .main_menu {
 		padding: 0;
 		list-style: none;
 		z-index: 999;
-		margin-bottom: 0
+		margin-bottom: 0;
 	}
-	ul>li {
+	ul > li {
 		float: left;
-		@include rem((
-			height: 70px,
-			line-height: 70px,
-		));
+		@include rem(( height: 70px, line-height: 70px, ));
 		position: relative;
 	}
-	ul>li:first-child {
+	ul > li:first-child {
 		margin-left: 0;
 	}
-	ul>li>a {
+	ul > li > a {
 		display: block;
-		@include rem((
-			font-size: 16px,
-		));
+		@include rem(( font-size: 16px, ));
 	}
-	ul>li>a:after {
+	ul > li > a:after {
 		display: inline-block;
-	    font: normal normal normal 14px/1 FontAwesome;
-	    text-rendering: auto;
-	    -webkit-font-smoothing: antialiased;
-	    -moz-osx-font-smoothing: grayscale;
-	    content: "\f078";
-	    @include rem((
-			font-size: 14px,
-			margin-left: 10px,
-		));
+		font: normal normal normal 14px/1 FontAwesome;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		content: "\f078";
+		@include rem(( font-size: 14px, margin-left: 10px, ));
 	}
-	ul>li>a:only-child:after {
+	ul > li > a:only-child:after {
 		content: '';
 	}
-	ul>li ul {
-		@include rem((
-			width: 295px,
-			top: 70px,
-			border-top-width: 3px,
-			transform: translateY(-10px) translateX(-50%),
-		));
+	ul > li ul {
+		@include rem(( width: 295px, top: 70px, border-top-width: 3px, transform: translateY(-10px) translateX(-50%), ));
 		position: absolute;
 		height: auto;
 		left: 50%;
@@ -245,67 +175,52 @@ header .main_menu {
 		pointer-events: none;
 		opacity: 0;
 	}
-	ul>li:hover>ul {
+	ul > li:hover > ul {
 		pointer-events: all;
 		opacity: 1;
 		transform: translateY(0) translateX(-50%);
 	}
-	ul>li ul li {
+	ul > li ul li {
 		width: 100%;
 		padding: 0;
 		margin: 0;
-		@include rem((
-			border-width: 1px,
-			height: 45px,
-		));
+		@include rem(( border-width: 1px, height: 45px, ));
 	}
-	ul>li ul li a {
-		@include rem((
-			line-height: 45px,
-			padding: 0 30px,
-			font-size: 14px,
-		));
+	ul > li ul li a {
+		@include rem(( line-height: 45px, padding: 0 30px, font-size: 14px, ));
 	}
-	ul>li ul li a:after {
+	ul > li ul li a:after {
 		content: "\f101";
 		position: absolute;
 		margin: 0;
 		top: 50%;
-		@include rem((
-			right: 20px,
-		));
-		transform: translateY(-50%)
+		@include rem(( right: 20px, ));
+		transform: translateY(-50%);
 	}
-	ul>li>ul li ul {
-		@include rem((
-			left: 293px,
-			transform: translate(10px, 0),
-			top: -2px,
-		));
+	ul > li > ul li ul {
+		@include rem(( left: 293px, transform: translate(10px, 0), top: -2px, ));
 		border-top: none;
 	}
-	ul>li>ul li:hover>ul {
+	ul > li > ul li:hover > ul {
 		transform: translate(0, 0);
 	}
 }
 header.style_1 .main_menu {
 	background: $secondary_color;
-	ul>li {
-		@include rem((
-			margin: 0 35px,
-		));
+	ul > li {
+		@include rem(( margin: 0 35px, ));
 	}
-	ul>li>a {
+	ul > li > a {
 		color: #fff;
 	}
-	ul>li:hover>a {
+	ul > li:hover > a {
 		color: $primary_color;
 	}
-	ul>li ul {
+	ul > li ul {
 		border-top: solid $primary_color;
 		background: $secondary_color;
 	}
-	ul>li ul li {
+	ul > li ul li {
 		border-bottom: solid #212a3b;
 		border-left: solid #212a3b;
 		margin: 0;
@@ -316,134 +231,97 @@ header.style_3 .main_menu,
 header.style_4 .main_menu {
 	border-top: solid #f1f1f1;
 	border-bottom: solid #f1f1f1;
-	@include rem((
-		border-width: 1px,
-	));
+	@include rem(( border-width: 1px, ));
 	ul {
 		width: auto;
 	}
-	ul>li {
-		@include rem((
-			margin: 0 20px,
-		));
+	ul > li {
+		@include rem(( margin: 0 20px, ));
 	}
-	ul>li:first-child {
+	ul > li:first-child {
 		margin-right: 0;
 	}
-	ul>li>a {
+	ul > li > a {
 		color: $secondary_color;
-		@include rem((
-			padding: 0 15px,
-		));
+		@include rem(( padding: 0 15px, ));
 	}
-	ul>li>a:hover {
+	ul > li > a:hover {
 		background: #f4f4f4;
 	}
-	ul>li ul {
+	ul > li ul {
 		border-top: solid $secondary_color;
 		background: #f9f9f9;
 		@include rem(width, 295px);
 	}
-	ul>li ul li {
+	ul > li ul li {
 		border-bottom: solid #e9e9e9;
 		border-left: solid #e9e9e9;
-		@include rem((
-			border-width: 1px,
-		));
-		margin: 0
+		@include rem(( border-width: 1px, ));
+		margin: 0;
 	}
-	ul>li ul li:hover>a {
+	ul > li ul li:hover > a {
 		background: none;
 		color: $primary_color;
 	}
 }
 header.style_4 .top_bar .user_area {
 	border-left: none;
-	padding-right: 0
+	padding-right: 0;
 }
 header.style_4 .top_bar .user_area * {
-	color:  $secondary_color
+	color: $secondary_color;
 }
 header.style_4 .main_area form {
 	width: 90%;
 	float: right;
 	border: solid #eaeaea;
-	@include rem((
-		border-width: 1px,
-		height: 44px,
-		margin: 28px 0 0 5%,
-	));
+	@include rem(( border-width: 1px, height: 44px, margin: 28px 0 0 5%, ));
 	input {
 		float: left;
-		@include rem((
-			width: calc( 100% - 48px),
-			height: 42px,
-			padding: 0 10px,
-			line-height: 42px
-		));
+		@include rem(( width: calc( 100% - 48px), height: 42px, padding: 0 10px, line-height: 42px ));
 		border: none;
-
 	}
 	button {
 		float: left;
-		@include rem((
-			width: 48px,
-			height: 42px,
-			line-height: 42px,
-			font-size: 15px
-		));
+		@include rem(( width: 48px, height: 42px, line-height: 42px, font-size: 15px ));
 		background: none;
 		border: none;
 		color: #bbc5c7;
-		text-align: center
+		text-align: center;
 	}
 }
 header.style_4 .main_menu .shopping_cart {
 	float: right;
-	@include rem((
-		height: 34px,
-		margin-top: 18px,
-		padding: 0 15px,
-		border-radius: 3px,
-		line-height: 34px,
-		font-size: 13px
-	));
+	@include rem(( height: 34px, margin-top: 18px, padding: 0 15px, border-radius: 3px, line-height: 34px, font-size: 13px ));
 	background: $primary_color;
 	a {
-		color: $secondary_color
+		color: $secondary_color;
 	}
 }
 main.main {
 	background: #f7f8fa;
 	float: left;
-	width: 100%
+	width: 100%;
 }
 section.top {
 	float: right;
 	width: 100%;
-	@include rem((
-		margin-top: 30px,
-	));
+	@include rem(( margin-top: 30px, ));
 	.carousel {
 		overflow: hidden;
 		@include rem(height, 400px);
 	}
-	.carousel-inner>.item img {
-		width: 100%
+	.carousel-inner > .item img {
+		width: 100%;
 	}
 	.carousel-control.left,
 	.carousel-control.right {
 		background: none;
-		@include rem((
-			width: 40px,
-			height: 40px,
-			font-size: 40px,
-			line-height: 40px
-		));
+		@include rem(( width: 40px, height: 40px, font-size: 40px, line-height: 40px ));
 		top: 50%;
 		transform: translateY(-50%);
 		opacity: 1;
-		color: #fff
+		color: #fff;
 	}
 	.selection {
 		float: left;
@@ -463,39 +341,26 @@ section.top {
 			padding: 0;
 			border: solid #e4e4e4;
 			background: #fff;
-			@include rem((
-				border-width: 1px,
-				padding-top: 15px
-			));
-			margin-bottom: 0
+			@include rem(( border-width: 1px, padding-top: 15px ));
+			margin-bottom: 0;
 		}
 		ul li {
 			float: left;
 			width: 100%;
 			border-bottom: solid #e4e4e4;
-			@include rem((
-				padding: 20px 15px,
-				border-bottom-width: 1px,
-			));
+			@include rem(( padding: 20px 15px, border-bottom-width: 1px, ));
 		}
 		ul li:last-child {
-			border-bottom: none
+			border-bottom: none;
 		}
 		ul li .thumb {
 			float: left;
-			@include rem((
-				width: 100px,
-				height: 75px,
-				margin-right: 10px
-			));
+			@include rem(( width: 100px, height: 75px, margin-right: 10px ));
 		}
 		ul li h3 {
 			margin: 0;
 			line-height: 1.35;
-			@include rem((
-				font-size: 18px,
-				margin-bottom: 10px,
-			));
+			@include rem(( font-size: 18px, margin-bottom: 10px, ));
 		}
 		ul li h3 a {
 			color: $secondary_color;
@@ -508,12 +373,9 @@ section.top {
 		}
 	}
 }
-
 a.more {
 	color: #b9b9b9;
-	@include rem((
-		font-size: 13px,
-	));
+	@include rem(( font-size: 13px, ));
 }
 a.more:after {
 	display: inline-block;
@@ -538,13 +400,10 @@ section.latest_news {
 		float: left;
 		line-height: 50px;
 		width: 100%;
-		@include rem((
-			height: 50px,
-			line-height: 50px,
-		));
+		@include rem(( height: 50px, line-height: 50px, ));
 		background: $secondary_color;
 		ul {
-			display: none
+			display: none;
 		}
 		a {
 			color: #fff;
@@ -552,18 +411,12 @@ section.latest_news {
 		}
 	}
 	.title {
-		@include rem((
-			height: 50px,
-			padding: 0 20px,
-			line-height: 50px,
-			font-size: 15px,
-			margin-right: 15px
-		));
+		@include rem(( height: 50px, padding: 0 20px, line-height: 50px, font-size: 15px, margin-right: 15px ));
 		background: $primary_color;
-		color:  $secondary_color;
+		color: $secondary_color;
 		position: relative;
 		float: left;
-		font-weight: bold
+		font-weight: bold;
 	}
 	.title:after {
 		width: 0;
@@ -574,20 +427,16 @@ section.latest_news {
 		top: 50%;
 		transform: translateY(-50%);
 		content: '';
-		@include rem((
-			right: -7px,
-			border-width: 8px 0 8px 7px,
-		));
+		@include rem(( right: -7px, border-width: 8px 0 8px 7px, ));
 	}
-
-	.typed-cursor{
-	    opacity: 1;
-	    color: #fff;
-	    font-size: 18px;
-	    -webkit-animation: blink 0.7s infinite;
-	    -moz-animation: blink 0.7s infinite;
-	    animation: blink 0.7s infinite;
-	    @include rem(padding, 0 5px);
+	.typed-cursor {
+		opacity: 1;
+		color: #fff;
+		font-size: 18px;
+		-webkit-animation: blink 0.7s infinite;
+		-moz-animation: blink 0.7s infinite;
+		animation: blink 0.7s infinite;
+		@include rem(padding, 0 5px);
 	}
 }
 .home_content {
@@ -602,23 +451,14 @@ section.latest_news {
 		float: left;
 		width: 100%;
 		border-left: solid $secondary_color;
-		@include rem((
-			border-left-width: 2px,
-			padding-left: 15px,
-			margin-top: 30px
-		));
+		@include rem(( border-left-width: 2px, padding-left: 15px, margin-top: 30px ));
 		h4 {
 			margin: 0;
-			@include rem((
-				font-size: 28px,
-			));
-			font-weight: bold
+			@include rem(( font-size: 28px, ));
+			font-weight: bold;
 		}
 		h6 {
-			@include rem((
-				margin: 10px 0 0,
-				font-size: 14px
-			));
+			@include rem(( margin: 10px 0 0, font-size: 14px ));
 			color: #979a9f;
 		}
 		a.more {
@@ -627,7 +467,7 @@ section.latest_news {
 	}
 	.body {
 		float: left;
-		width: 100%
+		width: 100%;
 	}
 }
 .big_post {
@@ -635,10 +475,7 @@ section.latest_news {
 	width: 100%;
 	border: solid #e3e3e5;
 	background: #fff;
-	@include rem((
-		margin-top: 30px,
-		border-width: 1px
-	));
+	@include rem(( margin-top: 30px, border-width: 1px ));
 	.thumb {
 		float: left;
 		width: 100%;
@@ -648,10 +485,7 @@ section.latest_news {
 		}
 	}
 	h2 {
-		@include rem((
-			font-size: 20px,
-			padding: 0 15px,
-		));
+		@include rem(( font-size: 20px, padding: 0 15px, ));
 		width: 100%;
 		float: left;
 		line-height: 1.3;
@@ -663,19 +497,13 @@ section.latest_news {
 		}
 	}
 	.time {
-		@include rem((
-			font-size: 14px,
-			padding: 0 15px,
-		));
+		@include rem(( font-size: 14px, padding: 0 15px, ));
 		width: 100%;
 		float: left;
 		color: #979a9f;
 	}
 	.excerpt {
-		@include rem((
-			font-size: 15px,
-			padding: 10px 15px,
-		));
+		@include rem(( font-size: 15px, padding: 10px 15px, ));
 		width: 100%;
 		float: left;
 		color: #979a9f;
@@ -695,10 +523,7 @@ section.latest_news {
 		padding: 0;
 		border: solid #e3e3e5;
 		background: #fff;
-		@include rem((
-			border-width: 1px,
-			margin-bottom: 15px,
-		));
+		@include rem(( border-width: 1px, margin-bottom: 15px, ));
 	}
 	&.horizontal ul li .thumb {
 		width: auto;
@@ -707,9 +532,9 @@ section.latest_news {
 	&.horizontal ul li .thumb img {
 		height: auto;
 	}
-	&.horizontal ul li h2,
+	&.horizontal ul li .excerpt,
 	&.horizontal ul li .time,
-	&.horizontal ul li .excerpt {
+	&.horizontal ul li h2 {
 		float: none;
 	}
 }
@@ -724,39 +549,26 @@ section.latest_news {
 		padding: 0;
 		border: solid #e4e4e4;
 		background: #fff;
-		@include rem((
-			border-width: 1px,
-			padding-top: 10px
-		));
-		margin-bottom: 0
+		@include rem(( border-width: 1px, padding-top: 10px ));
+		margin-bottom: 0;
 	}
 	ul li {
 		float: left;
 		width: 100%;
 		border-bottom: solid #e4e4e4;
-		@include rem((
-			padding: 20px 15px,
-			border-bottom-width: 1px,
-		));
+		@include rem(( padding: 20px 15px, border-bottom-width: 1px, ));
 	}
 	ul li:last-child {
-		border-bottom: none
+		border-bottom: none;
 	}
 	ul li .thumb {
 		float: left;
-		@include rem((
-			width: 100px,
-			height: 75px,
-			margin-right: 10px
-		));
+		@include rem(( width: 100px, height: 75px, margin-right: 10px ));
 	}
 	ul li h2 {
 		margin: 0;
 		line-height: 1.35;
-		@include rem((
-			font-size: 18px,
-			margin-bottom: 10px,
-		));
+		@include rem(( font-size: 18px, margin-bottom: 10px, ));
 	}
 	ul li h2 a {
 		color: $secondary_color;
@@ -770,7 +582,7 @@ section.latest_news {
 	&.half_width ul {
 		padding-top: 0;
 	}
-	&.half_width ul li  {
+	&.half_width ul li {
 		width: 50%;
 		border-right: solid #e4e4e4;
 		@include rem(border-right-width, 1px);
@@ -781,7 +593,6 @@ section.latest_news {
 	&.half_width ul li:nth-last-child(2) {
 		border-bottom: none;
 	}
-
 }
 .shop-carousel {
 	float: left;
@@ -790,15 +601,13 @@ section.latest_news {
 	padding: 0;
 	@include rem(margin, 30px 10% 0);
 	.owl-nav {
-		@include rem((
-			font-size: 42px,
-		));
+		@include rem(( font-size: 42px, ));
 	}
-	.owl-nav .owl-prev,
-	.owl-nav .owl-next {
+	.owl-nav .owl-next,
+	.owl-nav .owl-prev {
 		position: absolute;
 		top: 50%;
-		color: #b5b5b7
+		color: #b5b5b7;
 	}
 	.owl-nav .owl-next {
 		transform: translate(-100%, -50%);
@@ -808,18 +617,15 @@ section.latest_news {
 		transform: translate(100%, -50%);
 		right: -10%;
 	}
-	.owl-nav .owl-prev:hover,
-	.owl-nav .owl-next:hover {
-		color: $secondary_color
+	.owl-nav .owl-next:hover,
+	.owl-nav .owl-prev:hover {
+		color: $secondary_color;
 	}
 	.product {
 		width: 100%;
 		border: #e6e6e6 solid;
 		background: #fff;
-		@include rem((
-			height: 300px,
-			border-width: 1px
-		));
+		@include rem(( height: 300px, border-width: 1px ));
 		position: relative;
 	}
 	.product .thumb {
@@ -829,7 +635,7 @@ section.latest_news {
 		width: 100%;
 		height: 60%;
 		background: #ecf0f1;
-		overflow: hidden
+		overflow: hidden;
 	}
 	.product .thumb:before {
 		position: absolute;
@@ -841,10 +647,10 @@ section.latest_news {
 		z-index: 2;
 		content: '';
 		opacity: 0;
-		transition: opacity 300ms
+		transition: opacity 300ms;
 	}
 	& li:hover .product .thumb:before {
-		opacity: 1
+		opacity: 1;
 	}
 	.product .info {
 		position: absolute;
@@ -855,40 +661,28 @@ section.latest_news {
 		background: #fff;
 		text-align: center;
 		transition: background 300ms;
-		@include rem((
-			padding: 0 10px,
-		));
+		@include rem(( padding: 0 10px, ));
 		h3 {
-			@include rem((
-				font-size: 20px,
-			));
+			@include rem(( font-size: 20px, ));
 			a {
 				color: $secondary_color;
 			}
 		}
 		.price {
-			@include rem((
-				font-size: 16px,
-			));
-			color: #979a9f
+			@include rem(( font-size: 16px, ));
+			color: #979a9f;
 		}
 	}
 	& li:hover .product .info {
 		background: $secondary_color;
-		a,
-		.price {
+		.price,
+		a {
 			color: #fff;
 		}
 	}
 	.product .thumb .add_to_cart {
 		position: absolute;
-		@include rem((
-			padding: 0 15px,
-			height: 40px,
-			line-height: 40px,
-			border-radius: 3px,
-			top: 40px
-		));
+		@include rem(( padding: 0 15px, height: 40px, line-height: 40px, border-radius: 3px, top: 40px ));
 		color: $secondary_color;
 		background: #fff;
 		z-index: 999;
@@ -899,17 +693,11 @@ section.latest_news {
 		font-size: 14px;
 	}
 	& li:hover .product .thumb .add_to_cart {
-		transform: translate(-50%, 0)
+		transform: translate(-50%, 0);
 	}
 	.product .thumb .permalink {
 		position: absolute;
-		@include rem((
-			padding: 0 15px,
-			height: 40px,
-			line-height: 40px,
-			border-radius: 3px,
-			bottom: 40px
-		));
+		@include rem(( padding: 0 15px, height: 40px, line-height: 40px, border-radius: 3px, bottom: 40px ));
 		color: $secondary_color;
 		background: #fff;
 		z-index: 999;
@@ -920,10 +708,10 @@ section.latest_news {
 		font-size: 14px;
 	}
 	& li:hover .product .thumb .permalink {
-		transform: translate(-50%, 0)
+		transform: translate(-50%, 0);
 	}
-	.product .thumb .add_to_cart:hover ,
-	.product .thumb .permalink:hover  {
+	.product .thumb .add_to_cart:hover,
+	.product .thumb .permalink:hover {
 		background: $primary_color;
 	}
 }
@@ -931,7 +719,6 @@ section.latest_news {
 	float: right;
 	width: 100%;
 	@include rem(padding-top, 30px);
-
 	.social_widget {
 		float: right;
 		width: 100%;
@@ -944,17 +731,391 @@ section.latest_news {
 			float: left;
 			width: 100%;
 			background: #fff;
-			@include rem((
-				border-width: 1px,
-				border-top-width: 2px,
-			));
+			@include rem(( border-width: 1px, border-top-width: 2px, ));
+			li.facebook {
+				border: 1px solid #e4e4e4;
+				&:hover {
+					background-color: #3b5998;
+					color: #fff;
+				}
+			}
+			li.twitter {
+				border: 1px solid #e4e4e4;
+				&:hover {
+					background-color: #2daddc;
+					color: #fff;
+				}
+			}
+			li.rss {
+				border: 1px solid #e4e4e4;
+				&:hover {
+					background-color: #fe9a00;
+					color: #fff;
+				}
+			}
+			li.google {
+				border: 1px solid #e4e4e4;
+				&:hover {
+					background-color: #d14836;
+					color: #fff;
+				}
+			}
 			li {
 				float: left;
 				width: 50%;
-				@include rem((
-					height: 70px,
-				));
+				position: relative;
+				@include rem(( height: 70px, ));
+				span.icon {
+					font-size: 3rem;
+					padding: 10px;
+					line-height: 70px;
+				}
+				span.number {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 0.5;
+					overflow: hidden;
+					text-align: center;
+					line-height: 72px;
+				}
 			}
+		}
+	}
+	.category {
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+		h4 {
+			float: left;
+			margin-top: 0;
+			@include rem(margin-bottom, 15px);
+		}
+		ul {
+			float: right;
+			width: 100%;
+			padding: 0;
+			border: solid #e4e4e4;
+			background: #fff;
+			list-style: none;
+			@include rem(( border-width: 1px, padding-top: 0 ));
+			margin-bottom: 0;
+		}
+		ul li {
+			float: left;
+			width: 100%;
+			@include rem(( padding: 10px 15px, ));
+			h3 {
+				float: left;
+				margin: 0;
+				font-size: 18px;
+			}
+			h3 a {
+				color: $secondary_color;
+			}
+			span {
+				float: right;
+				font-size: 16px;
+			}
+		}
+		ul li:hover h3 a {
+			color: $primary_color;
+		}
+		ul li:before {
+			content: "\f101";
+			font: normal normal normal 14px/1 FontAwesome;
+			float: left;
+			margin-right: 10px;
+		}
+	}
+	.news {
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+		ul.newsTab {
+			border: none;
+			margin: 0;
+		}
+		ul.newsTab li {
+			margin-right: 2px;
+			background: #f7f8fa;
+			font-weight: 500;
+			border: solid #e4e4e4;
+			@include rem(( border-width: 1px, height: 50px,font-size: 18px,));
+		}
+		ul.newsTab li.active {
+			background: #e4e4e4;
+			border: solid #e4e4e4;
+			@include rem(( border-width: 1px 1px 0 1px, ));
+		}
+		ul.newsTab li a {
+			border: 0;
+			margin-right: 0;
+			color: #737373;
+			@include rem(( height: 50px, line-height: 30px,));
+			display: block;
+			width: 100%;
+		}
+		.tab-content {
+			float: right;
+			width: 100%;
+			padding: 0;
+			border: solid #e4e4e4;
+			background: #fff;
+			list-style: none;
+			@include rem(( border-width: 0 1px 1px 1px, padding-top: 0 ));
+			margin-bottom: 0;
+			ul {
+				float: right;
+				width: 100%;
+				padding: 0;
+			}
+			ul li {
+				float: left;
+				width: 100%;
+				border-bottom: solid #e4e4e4;
+				@include rem(( padding: 20px 15px, border-bottom-width: 1px, ));
+			}
+			ul li:last-child {
+				border-bottom: none;
+			}
+			ul li .thumb {
+				float: left;
+				@include rem(( width: 100px, height: 75px, margin-right: 10px ));
+			}
+			ul li h3 {
+				margin: 0;
+				line-height: 1.35;
+				@include rem(( font-size: 18px, margin-bottom: 10px, ));
+			}
+			ul li h3 a {
+				color: $secondary_color;
+			}
+			ul li h3 a:hover {
+				color: $primary_color;
+			}
+			ul li .time {
+				color: #979a9f;
+			}
+		}
+	}
+	.ads {
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+		a {
+			display: block;
+			float: left;
+			@include rem(( margin: 10px 0, ));
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+	.last_articles {
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+		h4 {
+			float: left;
+			margin-top: 0;
+			@include rem(margin-bottom, 15px);
+		}
+		a.more {
+			@include rem(line-height, 20px);
+		}
+		ul {
+			float: right;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			border: solid #e4e4e4;
+			background: #fff;
+			@include rem(( border-width: 1px, padding-top: 15px ));
+			margin-bottom: 0;
+		}
+		ul li {
+			float: left;
+			width: 100%;
+			border-bottom: solid #e4e4e4;
+			@include rem(( padding: 20px 15px, border-bottom-width: 1px, ));
+		}
+		ul li:last-child {
+			border-bottom: none;
+		}
+		ul li h3 {
+			margin: 0;
+			line-height: 1.35;
+			@include rem(( font-size: 18px, margin-bottom: 10px, ));
+		}
+		ul li h3 a {
+			color: $secondary_color;
+		}
+		ul li h3 a:hover {
+			color: $primary_color;
+		}
+		ul li .time {
+			color: #979a9f;
+		}
+	}
+	.video {
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+		h4 {
+			float: left;
+			margin-top: 0;
+			@include rem(margin-bottom, 15px);
+		}
+		a.more {
+			@include rem(line-height, 20px);
+		}
+		ul {
+			float: right;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			border: solid #e4e4e4;
+			background: #fff;
+			@include rem(( border-width: 1px, ));
+			margin-bottom: 0;
+		}
+		ul li {
+			float: left;
+			width: 100%;
+			@include rem(( padding: 15px 15px 0 15px, ));
+		}
+		ul li:last-child {
+			@include rem(( padding-bottom: 15px, ));
+
+		}
+
+		.view {
+			width: 100%;
+			height: 200px;
+			float: left;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			box-shadow: 1px 1px 2px #e6e6e6;
+			cursor: default;
+		}
+		.view .mask {
+			width: 100%;
+			height: 200px;
+			position: absolute;
+			overflow: hidden;
+			top: 0;
+			left: 0;
+		}
+		.view .img {
+			display: block;
+			position: relative;
+		}
+		.view h2 {
+			text-transform: uppercase;
+			color: #fff;
+			text-align: center;
+			position: relative;
+			font-size: 17px;
+			position: absolute;
+			top: 50%;
+			left: 20px;
+		}
+		.view .info {
+			font-size: 17px;
+			position: relative;
+			color: #fff;
+			text-align: center;
+			position: absolute;
+			left: 20px;
+			bottom: 20px;
+			span {
+				margin-right: 40px;
+			}
+		}
+		.view a.info {
+			display: inline-block;
+			text-decoration: none;
+			padding: 7px 14px;
+			background: #000;
+			color: #fff;
+			text-transform: uppercase;
+			box-shadow: 0 0 1px #000;
+		}
+		.view a.info:hover {
+			box-shadow: 0 0 5px #000;
+		}
+		.view_overlay img {
+			transition: all 0.2s linear;
+		}
+		.view_overlay .mask {
+			opacity: 0;
+			background-color: rgba(0,0,0, 0.5);
+			transition: all 0.4s ease-in-out;
+		}
+		.view_overlay h2 {
+			transform: translateY(100px);
+			opacity: 0;
+			transition: all 0.2s ease-in-out;
+		}
+		.view_overlay info {
+			transform: translateY(100px);
+			opacity: 0;
+			transition: all 0.2s linear;
+		}
+		.view_overlay a.info {
+			opacity: 0;
+			transition: all 0.2s ease-in-out;
+		}
+		.view_overlay:hover .mask {
+			opacity: 1;
+		}
+		.view_overlay:hover a.info,
+		.view_overlay:hover h2,
+		.view_overlay:hover info {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+		.view_overlay:hover .info {
+			transition-delay: 0.1s;
+		}
+		.view_overlay:hover a.info {
+			transition-delay: 0.2s;
+		}
+	}
+	.tags {
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+		h4 {
+			float: left;
+			margin-top: 0;
+			@include rem(margin-bottom, 15px);
+		}
+		.tags_content {
+			float: right;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			border: solid #e4e4e4;
+			background: #fff;
+			@include rem(( border-width: 1px, padding: 15px ));
+			margin-bottom: 0;
+		}
+		.tags_content a {
+			float: left;
+			color: $secondary_color;
+			border: solid #e4e4e4;
+			@include rem((border-width: 1px, padding: 5px 10px,margin: 5px,font-size: 15px,));
+		}
+		.tags_content a:hover {
+			background-color: $secondary_color;
+			color: #fff;
+			border: solid #e4e4e4;
+			@include rem((border-width: 1px, padding: 5px 10px,));
 		}
 	}
 }
