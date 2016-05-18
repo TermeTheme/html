@@ -32,8 +32,6 @@
                       <h3><a href="">The world is changed! i feel in the water, i feel in ...</a></h3>
                     </li>
                   </ul>
-
-
                 </div><!-- box_2 -->
               </div><!-- col-xs-3 -->
               <div class="col-xs-3">

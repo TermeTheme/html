@@ -1,8 +1,19 @@
-<footer class="footer style_3">
-  <div class="top_bar">
+<footer class="footer style_4">
+  <div class="main_area">
       <div class="container">
           <div class="row">
-              <div class="col-xs-6">
+              <div class="col-xs-4 col-xs-offset-4">
+                <div class="box_1">
+                  <img src="" width="150" height="100" alt="" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat.
+                  </p>
+                </div><!-- box_1 -->
+              </div><!-- col-xs-3 -->
+
+
+
+              <div class="col-xs-12">
                 <div class="social_menu">
                   <ul>
                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -15,16 +26,10 @@
                     <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
                   </ul>
                 </div><!-- social_menu -->
-              </div><!-- col-xs-6 -->
-                <div class="col-xs-6">
-                  <div class="email_contact">
-                    <p>info@yourdomain.com - sale@yourdomain.com</p>
-
-                  </div>
-              </div><!-- col-xs-6 -->
+              </div><!-- col-xs-12 -->
           </div><!-- row -->
       </div>	<!-- contanier -->
-  </div><!-- top_bar -->
+  </div><!-- main_area -->
   <div class="bottom_bar">
     <div class="container">
       <div class="row">
