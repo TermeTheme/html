@@ -439,6 +439,7 @@ section.latest_news {
 		@include rem(padding, 0 5px);
 	}
 }
+.article_content,
 .home_content {
 	float: left;
 	width: 100%;
@@ -827,7 +828,8 @@ section.latest_news {
 			content: "\f101";
 			font: normal normal normal 14px/1 FontAwesome;
 			float: left;
-			margin-right: 10px;
+			@include rem(( margin-right: 10px, line-height: 20px, ));
+
 		}
 	}
 	.news {
@@ -1123,8 +1125,7 @@ footer.footer {
 	&.style_1 .main_area,
 	&.style_2 .main_area,
 	&.style_4 .main_area,
-	&.style_5 .main_area
-	 {
+	&.style_5 .main_area {
 		padding: 40px 0;
 		background-color: #222533;
 		color: #a3a3a3;
@@ -1151,8 +1152,6 @@ footer.footer {
 			float: left;
 			font-weight: bold;
 			@include rem(( margin-top: 30px ,font-size: 1.5rem, ));
-
-
 		}
 		.newsletter input {
 			width: 80%;
@@ -1173,7 +1172,7 @@ footer.footer {
 	&.style_2 .bottom_bar,
 	&.style_3 .bottom_bar,
 	&.style_4 .bottom_bar,
-	&.style_5 .bottom_bar, {
+	&.style_5 .bottom_bar {
 		padding: 30px 0;
 		background-color: $secondary_color;
 		color: #a3a3a3;
@@ -1182,8 +1181,7 @@ footer.footer {
 	&.style_1 .main_area .box_1,
 	&.style_1 .main_area .box_2,
 	&.style_5 .main_area .box_1,
-	&.style_5 .main_area .box_2
-	 {
+	&.style_5 .main_area .box_2 {
 		width: 100%;
 		float: left;
 	}
@@ -1197,7 +1195,6 @@ footer.footer {
 		margin: 0 auto;
 		display: block;
 	}
-
 	&.style_1 .main_area .box_1 ul {
 		width: 100%;
 		float: left;
@@ -1244,8 +1241,8 @@ footer.footer {
 		@include rem((font-size: 1.6rem,));
 	}
 	&.style_2 .main_area,
-	&.style_4 .main_area,
-	&.style_3 .top_bar {
+	&.style_3 .top_bar,
+	&.style_4 .main_area {
 		.social_menu {
 			text-align: center;
 			ul {
@@ -1324,13 +1321,12 @@ footer.footer {
 		.social_menu {
 			float: right;
 			@include rem(( margin-top: -10px, ));
-
 			ul {
 				li {
 					margin-left: 0;
 					a {
 						color: #fff;
-							@include socialmenu;
+						@include socialmenu;
 						&:hover {
 							background-color: $primary_color;
 						}
@@ -1460,6 +1456,226 @@ footer.footer {
 		p {
 			text-align: center;
 			float: none;
+		}
+	}
+}
+.article_content {
+	@include rem(( padding-top: 30px, ));
+	.article_info {
+		.breadcrumbs {
+			color: #c0c0c0;
+			a {
+				color: #c0c0c0;
+				@include rem(( padding:0 10px, ));
+			}
+			span:first-child a {
+				@include rem(( padding-left:0px ));
+			}
+		}
+		h1.article_title {
+			@include rem((margin: 5px 0, padding:10px 0,font-size: 25px, ));
+		}
+		.article_meta {
+			color: #c0c0c0;
+			span {
+				@include rem(( margin-right: 40px, ));
+			}
+		}
+	}
+	.terme_post {
+		float: left;
+		width: 100%;
+		border: solid #e3e3e5;
+		background: #fff;
+		color: #555555;
+		@include rem(( margin-top: 30px, border-width: 1px ));
+		.thumb img {
+			width: 100%;
+			max-width: 100%;
+			height: auto !important;
+			padding: 0;
+		}
+		h2 {
+			color: $primary_color;
+			@include rem(( padding:10px 15px,font-size: 20px, ));
+		}
+		p {
+			text-align: justify;
+			@include rem(( padding:10px 15px,font-size: 15px, ));
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 95%;
+			height: auto;
+			@include rem(( padding:10px ));
+		}
+		blockquote {
+			background-color: #f6f6f6;
+			border: none;
+			position: relative;
+			@include rem(( padding:50px,font-size: 15px,margin: 10px 20px,));
+			&:before {
+				content: "\f10d";
+				font: normal normal normal 25px/1 FontAwesome;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin: 15px;
+				color: #555555;
+			}
+			&:after {
+				content: "\f10e";
+				font: normal normal normal 25px/1 FontAwesome;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				margin: 15px;
+				color: #555555;
+
+			}
+		}
+		ul {
+			list-style: none;
+			li {
+				float: left;
+				width: 100%;
+				@include rem(( padding:5px 15px,font-size: 15px, ));
+				&:before {
+					content: "\f00c";
+					font: normal normal normal 16px/1 FontAwesome;
+					float: left;
+					@include rem(( margin-right: 10px, line-height: 20px, ));
+				}
+			}
+		}
+		.article_tags {
+			width: 100%;
+			float: left;
+			@include rem(( padding:10px 15px, ));
+			h3 {
+				@include rem(( font-size: 18px, ));
+				color: #979a9f;
+			}
+			a {
+				float: left;
+				color: $secondary_color;
+				border: solid #e4e4e4;
+				@include rem(( padding: 5px 10px,margin: 5px, font-size: 15px, border-width: 1px ));
+				&:hover {
+					background-color: $secondary_color;
+					color: #fff;
+					border: solid $secondary_color;
+					@include rem(( padding: 5px 10px, border-width: 1px ));
+				}
+			}
+		}
+		.article_social {
+			text-align: center;
+			ul {
+				list-style: none;
+				display: inline-block;
+				li {
+					float: left;
+					width: auto;
+					@include rem(( padding: 20px 40px,font-size: 20px, ));
+					&:before {
+						content: "";
+					}
+					a {
+						color: #979a9f;
+						&:hover {
+							color: #2daddc;
+						}
+					}
+				}
+			}
+		}
+	}
+	.article_author {
+		float: left;
+		width: 100%;
+		border: solid #e3e3e5;
+		background: #fff;
+		@include rem(( margin-top: 20px, border-width: 1px ));
+		img {
+			float: left;
+			border-radius: 50%;
+			border: solid #e3e3e5;
+			@include rem(( margin: 20px, border-width: 2px ));
+		}
+		.name {
+			float: left;
+			display: inline-block;
+			width: 25%;
+			@include rem(( padding-top:30px,font-size: 15px, ));
+			span {
+				clear: both;
+			}
+		}
+		.desc {
+			display: inline-block;
+			float: left;
+			color: #979a9f;
+			text-align: justify;
+			width: 50%;
+			@include rem(( padding:10px 15px,font-size: 15px, ));
+		}
+	}
+	.article_related {
+		float: left;
+		width: 100%;
+		@include rem(margin-top, 30px);
+		ul {
+			float: right;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			border: solid #e4e4e4;
+			background: #fff;
+			@include rem(( border-width: 1px, padding-top: 10px ));
+			margin-bottom: 0;
+		}
+		ul li {
+			float: left;
+			width: 100%;
+			border-bottom: solid #e4e4e4;
+			@include rem(( padding: 20px 15px, border-bottom-width: 1px, ));
+		}
+		ul li:last-child {
+			border-bottom: none;
+		}
+		ul li .thumb {
+			float: left;
+			@include rem(( width: 100px, height: 75px, margin-right: 10px ));
+		}
+		ul li h2 {
+			margin: 0;
+			line-height: 1.35;
+			@include rem(( font-size: 18px, margin-bottom: 10px, ));
+		}
+		ul li h2 a {
+			color: $secondary_color;
+		}
+		ul li h2 a:hover {
+			color: $primary_color;
+		}
+		ul li .time {
+			color: #979a9f;
+		}
+		&.half_width ul {
+			padding-top: 0;
+		}
+		&.half_width ul li {
+			width: 50%;
+			border-right: solid #e4e4e4;
+			@include rem(border-right-width, 1px);
+		}
+		&.half_width ul li:nth-child(even) {
+			border-right: none;
+		}
+		&.half_width ul li:nth-last-child(2) {
+			border-bottom: none;
 		}
 	}
 }
