@@ -1122,7 +1122,8 @@ footer.footer {
 	float: left;
 	&.style_1 .main_area,
 	&.style_2 .main_area,
-	&.style_4 .main_area
+	&.style_4 .main_area,
+	&.style_5 .main_area
 	 {
 		padding: 40px 0;
 		background-color: #222533;
@@ -1132,17 +1133,57 @@ footer.footer {
 		background-color: $primary_color;
 		color: $secondary_color;
 	}
+	&.style_5 .top_bar {
+		background-color: $secondary_color;
+		color: #a3a3a3;
+		.newsletter {
+			float: left;
+			width: 100%;
+		}
+		.newsletter form {
+			float: right;
+			border: none;
+			padding: 0;
+			height: auto;
+			width: 50%;
+		}
+		.newsletter span {
+			float: left;
+			font-weight: bold;
+			@include rem(( margin-top: 30px ,font-size: 1.5rem, ));
+
+
+		}
+		.newsletter input {
+			width: 80%;
+			border-bottom: solid #242934;
+			float: left;
+			background-color: $secondary_color;
+			@include rem(( padding: 15px,margin: 20px 0 , border-width: 1px, ));
+		}
+		.newsletter button {
+			width: 20%;
+			background-color: #242934;
+			border-radius: 0;
+			color: #fff;
+			@include rem(( padding: 15px,margin: 20px 0 ,font-size: 1.2rem, ));
+		}
+	}
 	&.style_1 .bottom_bar,
 	&.style_2 .bottom_bar,
 	&.style_3 .bottom_bar,
-	&.style_4 .bottom_bar {
+	&.style_4 .bottom_bar,
+	&.style_5 .bottom_bar, {
 		padding: 30px 0;
 		background-color: $secondary_color;
 		color: #a3a3a3;
 		@include rem(( font-size: 1.4rem, ));
 	}
 	&.style_1 .main_area .box_1,
-	&.style_1 .main_area .box_2 {
+	&.style_1 .main_area .box_2,
+	&.style_5 .main_area .box_1,
+	&.style_5 .main_area .box_2
+	 {
 		width: 100%;
 		float: left;
 	}
@@ -1184,7 +1225,10 @@ footer.footer {
 	&.style_2 .main_area .box_1 h2,
 	&.style_2 .main_area .box_2 h2,
 	&.style_2 .main_area .box_3 h2,
-	&.style_2 .main_area .box_4 h2 {
+	&.style_2 .main_area .box_4 h2,
+	&.style_5 .main_area .box_1 h2,
+	&.style_5 .main_area .box_2 h2,
+	&.style_5 .main_area .box_3 h2 {
 		margin: 0;
 		color: #fff;
 		@include rem((font-size: 2rem,));
@@ -1276,7 +1320,34 @@ footer.footer {
 			}
 		}
 	}
-	&.style_1 .main_area .box_2 {
+	&.style_5 .bottom_bar {
+		.social_menu {
+			float: right;
+			@include rem(( margin-top: -10px, ));
+
+			ul {
+				li {
+					margin-left: 0;
+					a {
+						color: #fff;
+							@include socialmenu;
+						&:hover {
+							background-color: $primary_color;
+						}
+					}
+				}
+			}
+		}
+		.email_contact {
+			text-align: center;
+			p {
+				@include rem(( margin-top: 30px, ));
+			}
+		}
+	}
+	&.style_1 .main_area .box_2,
+	&.style_5 .main_area .box_1,
+	&.style_5 .main_area .box_2 {
 		ul {
 			float: right;
 			width: 100%;
@@ -1306,7 +1377,8 @@ footer.footer {
 			color: #a3a3a3;
 		}
 	}
-	&.style_1 .main_area .box_3 {
+	&.style_1 .main_area .box_3,
+	&.style_5 .main_area .box_3 {
 		.newsletter {
 			float: left;
 			width: 100%;
@@ -1349,7 +1421,8 @@ footer.footer {
 	&.style_1 .bottom_bar,
 	&.style_2 .bottom_bar,
 	&.style_3 .bottom_bar,
-	&.style_4 .bottom_bar {
+	&.style_4 .bottom_bar,
+	&.style_5 .bottom_bar {
 		.menu_area {
 			text-align: center;
 		}
