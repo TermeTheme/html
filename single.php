@@ -118,6 +118,76 @@
 							</ul>
 
 						</div>
+						<div class="article_comment">
+							<h4>Comments</h4>
+							<ol>
+								<li>
+									<article class="">
+										<div class="comment_author">
+											<img src="assets/img/single1-img.jpg" width="90" height="90" alt="" />
+										</div>
+										<div class="comment_metadata">
+											<b class="name"><a href="#">Stefano Azzurro</a></b>
+											<time>Friday, 27 April 2016</time>
+											<div class="reply">
+												<a href="#">Reply</a>
+											</div>
+
+										</div>
+										<div class="comment_content">
+												<p>
+													Tustin police say officers first encountered a little terrier mix named Bubba when they were called to the Tustin motel room of his owner, Joshua West, back in March.
+												</p>
+										</div>
+									</article>
+									<ul class="children">
+										<li>
+											<article class="">
+												<div class="comment_author">
+													<img src="assets/img/single1-img.jpg" width="90" height="90" alt="" />
+												</div>
+												<div class="comment_metadata">
+													<b class="name"><a href="#">Stefano Azzurro</a></b>
+													<time>Friday, 27 April 2016</time>
+													<div class="reply">
+														<a href="#">Reply</a>
+													</div>
+
+												</div>
+												<div class="comment_content">
+														<p>
+															Tustin police say officers first encountered a little terrier mix named Bubba when they were called to the Tustin motel room of his owner, Joshua West, back in March.
+														</p>
+												</div>
+											</article>
+										</li>
+										<li class="byadmin">
+											<article class="">
+												<div class="comment_author">
+													<img src="assets/img/single1-img.jpg" width="90" height="90" alt="" />
+												</div>
+												<div class="comment_metadata">
+													<b class="name"><a href="#">Stefano Azzurro</a></b>
+													<time>Friday, 27 April 2016</time>
+													<div class="reply">
+														<a href="#">Reply</a>
+													</div>
+
+												</div>
+												<div class="comment_content">
+														<p>
+															Tustin police say officers first encountered a little terrier mix named Bubba when they were called to the Tustin motel room of his owner, Joshua West, back in March.
+														</p>
+												</div>
+											</article>
+										</li>
+
+									</ul>
+								</li>
+							</ol>
+
+
+						</div><!-- article_comment -->
 
 					</div><!-- article_content -->
 				</div><!--col-xs-8-->
