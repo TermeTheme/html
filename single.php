@@ -185,6 +185,16 @@
 									</ul>
 								</li>
 							</ol>
+							<div class="comment_form">
+								<h4>Your Comment</h4>
+
+								<form class="" action="index.html" method="post">
+									<input type="text" name="name" value="" placeholder="Name">
+									<input type="email" name="name" value="" placeholder="Email">
+
+
+								</form>
+							</div>
 
 
 						</div><!-- article_comment -->
