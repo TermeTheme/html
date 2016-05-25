@@ -55,7 +55,7 @@
 								<li>It is the first title :) Be Happy!</li>
 								<li>It is the first title :) Be Happy!</li>
 							</ul>
-							
+
 							<div class="article_tags">
 								<h3>Tags:</h3>
 								<a href="#">Sports</a>
