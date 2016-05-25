@@ -68,10 +68,65 @@
 						</div>
 
             </div>
+						<div class="product_intro">
+							<div class="product_tab">
 
+
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Wordpress Template</a></li>
+								<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Wordpress Tutorial</a></li>
+								<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Wordpress Plugin</a></li>
+								<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Worpress Trick</a></li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+							  <div role="tabpanel" class="tab-pane fade in active" id="home">
+									<p>
+										Nationally, some of the biggest declines have been in the prescribing of hydrocodone, according to IMS and Symphony Health. These drugs, which include brands like Vicodin and Lortab, remain the most broadly prescribed opioids, often given after routine dental work or other minor procedures. Prescriptions for OxyContin declined, but those for generic oxycodone went up, IMS data showed. The data measures numbers of prescriptions, not pills, but is a rough proxy for Americans’ use of opioids.
+
+									</p>
+									</div>
+							  <div role="tabpanel" class="tab-pane fade" id="profile">
+									<p>
+										The ever-noisier public debate is changing minds in other medical practices, too. Dr. Mitchell Stark, an oral surgeon in Rockville, Md., said he cut his opioid prescribing this year after reading an article about teenagers getting addicted after having their wisdom teeth removed. Now he tells even patients recovering from multiple extractions to try prescription-strength ibuprofen first.
+
+									</p>
+								</div>
+							  <div role="tabpanel" class="tab-pane fade" id="messages">
+									<p>
+									Sometimes now I will see a patient with a resident who says, ‘I don’t want to give them opioids,’” she said. “But of course they need opioids — they have lung cancer and worsening pain.
+
+									</p>
+								</div>
+							  <div role="tabpanel" class="tab-pane fade" id="settings">
+									<p>
+										Nationally, some of the biggest declines have been in the prescribing of hydrocodone, according to IMS and Symphony Health. These drugs, which include brands like Vicodin and Lortab, remain the most broadly prescribed opioids, often given after routine dental work or other minor procedures. Prescriptions for OxyContin declined, but those for generic oxycodone went up, IMS data showed. The data measures numbers of prescriptions, not pills, but is a rough proxy for Americans’ use of opioids.
+
+									</p>
+
+							  </div>
+							</div>
+
+							</div>
+						</div>
+						<div class="product_more">
+							<h2>Story of this Section</h2>
+
+							<ul>
+								<li>It is the first title :) Be Happy!</li>
+								<li>It is the first title :) Be Happy!</li>
+								<li>It is the first title :) Be Happy!</li>
+								<li>It is the first title :) Be Happy!</li>
+								<li>It is the first title :) Be Happy!</li>
+								<li>It is the first title :) Be Happy!</li>
+							</ul>
+						</div>
 
 
 					</div><!-- product_page -->
+					<?php include 'comments.php' ?>
+					
 					</div><!-- col-xs-12 -->
 
 				</div>

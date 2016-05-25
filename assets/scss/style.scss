@@ -341,7 +341,7 @@ section.top {
 			padding: 0;
 			border: solid #e4e4e4;
 			background: #fff;
-			@include rem(( border-width: 1px, padding-top: 15px ));
+			@include rem(( border-width: 1px, ));
 			margin-bottom: 0;
 		}
 		ul li {
@@ -360,6 +360,7 @@ section.top {
 		ul li h3 {
 			margin: 0;
 			line-height: 1.35;
+			text-align: justify;
 			@include rem(( font-size: 18px, margin-bottom: 10px, ));
 		}
 		ul li h3 a {
@@ -443,7 +444,7 @@ section.latest_news {
 .home_content {
 	float: left;
 	width: 100%;
-	margin-bottom: 500px;
+	margin-bottom: 20px;
 }
 .home_content .box {
 	float: right;
@@ -485,8 +486,16 @@ section.latest_news {
 			width: 100%;
 		}
 	}
+	h4 {
+		@include rem(( font-size: 15px, padding: 0 15px, ));
+		width: 100%;
+		float: left;
+		line-height: 1.3;
+		color: #979a9f;
+
+	}
 	h2 {
-		@include rem(( font-size: 20px, padding: 0 15px, ));
+		@include rem(( font-size: 20px, padding: 0 15px, margin: 0 0 10px 0, ));
 		width: 100%;
 		float: left;
 		line-height: 1.3;
@@ -508,6 +517,7 @@ section.latest_news {
 		width: 100%;
 		float: left;
 		color: #979a9f;
+		text-align: justify;
 	}
 	&.horizontal {
 		border: none;
@@ -537,7 +547,13 @@ section.latest_news {
 	&.horizontal ul li .time,
 	&.horizontal ul li h2 {
 		float: none;
+
+
 	}
+	&.horizontal ul li h2 {
+		@include rem(( margin-top: 20px, ));
+	}
+
 }
 .small_post {
 	float: left;
@@ -550,7 +566,7 @@ section.latest_news {
 		padding: 0;
 		border: solid #e4e4e4;
 		background: #fff;
-		@include rem(( border-width: 1px, padding-top: 10px ));
+		@include rem(( border-width: 1px,));
 		margin-bottom: 0;
 	}
 	ul li {
@@ -569,6 +585,7 @@ section.latest_news {
 	ul li h2 {
 		margin: 0;
 		line-height: 1.35;
+		text-align: justify;
 		@include rem(( font-size: 18px, margin-bottom: 10px, ));
 	}
 	ul li h2 a {
@@ -896,12 +913,16 @@ section.latest_news {
 			background: #f7f8fa;
 			font-weight: 500;
 			border: solid #e4e4e4;
+			border-radius: 0;
 			@include rem(( border-width: 1px 1px 0 1px, height: 50px,font-size: 18px,));
 		}
 		ul.newsTab li.active {
 			background: #e4e4e4;
 			border: solid #e4e4e4;
 			@include rem(( border-width: 1px 1px 0 1px, ));
+			a {
+				color: $secondary_color;
+			}
 		}
 		ul.newsTab li a {
 			border: 0;
@@ -910,6 +931,9 @@ section.latest_news {
 			@include rem(( height: 50px, line-height: 30px,));
 			display: block;
 			width: 100%;
+			border-radius: 0;
+
+
 		}
 		.tab-content {
 			float: right;
@@ -986,7 +1010,7 @@ section.latest_news {
 			padding: 0;
 			border: solid #e4e4e4;
 			background: #fff;
-			@include rem(( border-width: 1px, padding-top: 15px ));
+			@include rem(( border-width: 1px, ));
 			margin-bottom: 0;
 		}
 		ul li {
@@ -1552,6 +1576,7 @@ footer.footer {
 		}
 		p {
 			text-align: justify;
+			line-height: 1.5;
 			@include rem(( padding:10px 15px,font-size: 15px, ));
 		}
 		img {
@@ -1728,19 +1753,32 @@ footer.footer {
 			border-bottom: none;
 		}
 	}
-	.article_comment {
-		float: left;
-		width: 100%;
-		@include rem(margin-top, 30px);
-		ol {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			li {
+}
+.article_comment {
+	float: left;
+	width: 100%;
+	padding: 0;
+	border: solid #e4e4e4;
+	background: #fff;
+	list-style: none;
+	@include rem(( border-width: 1px, padding-top: 0,margin-top: 30px ));
+	margin-bottom: 0;
+	h4 {
+		margin: 0;
+		@include rem(( padding: 20px 15px 0 15px, ));
+	}
+	ol {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			float: left;
+			width: 100%;
+			background: #fff;
+			@include rem(( padding: 20px 0, ));
+			article {
 				float: left;
-				width: 100%;
-				background: #fff;
-				@include rem(( padding: 20px 0, ));
+				@include rem(( padding: 20px, ));
 				.comment_author {
 					img {
 						border-radius: 50%;
@@ -1781,91 +1819,93 @@ footer.footer {
 					width: calc(100% - 150px);
 					@include rem(( font-size: 15px,margin-top: 10px, ));
 				}
-			}
-		}
-		ul.children {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			li {
-				position: relative;
-				float: left;
-				width: 100%;
-				background: #fff7e0;
-				@include rem(( padding: 20px 0, ));
-				&:before {
-					content: "\f112";
-					font: normal normal normal 20px/1 FontAwesome;
-					position: absolute;
-					top: 70px;
-					left: 70px;
-				}
-				article {
-					float: left;
-					width: 85%;
-					margin-left: 15%;
-				}
-				.comment_author {
-					float: left;
-					img {
-						border-radius: 50%;
-						float: left;
-						border: solid #e3e3e5;
-						@include rem(( margin: 20px, border-width: 2px ));
-					}
-				}
-				.comment_metadata {
-					position: relative;
-					float: left;
-					width: calc(100% - 150px);
-					@include rem(( margin-top: 20px, ));
-					b.name {
-						display: block;
-						@include rem(( font-size: 15px, ));
-						a {
-							color: #979a9f;
-						}
-					}
-					time {
-						color: #979a9f;
-					}
-					.reply {
-						position: absolute;
-						top: 0;
-						right: 0;
-						a {
-							color: $primary_color;
-							@include rem(( font-size: 15px, ));
-						}
-					}
-				}
-				.comment_content {
-					text-align: justify;
-					color: $secondary_color;
-					float: left;
-					width: calc(100% - 150px);
-					@include rem(( font-size: 15px,margin-top: 10px, ));
-				}
-			}
-			li.byadmin {
-				background: #fff;
 			}
 		}
 	}
-	.comment_form {
-		width: 100%;
-		float: left;
+	ul.children {
+		list-style: none;
 		padding: 0;
-		border-top: none;
-		border: solid #e4e4e4;
-		background: #fff;
-		@include rem(( border-width: 0 1px 1px 1px, padding: 15px,));
-		form input {
-			width: 50%;
-			border: solid #e4e4e4;
-			background: #fafafa;
-			@include rem(( border-width: 1px,height: 45px, padding: 10px,));
+		margin: 0;
+		float: left;
+		li {
+			position: relative;
+			float: left;
+			width: 100%;
+			background: #fff7e0;
+			@include rem(( padding: 0, ));
+			&:before {
+				content: "\f112";
+				font: normal normal normal 20px/1 FontAwesome;
+				position: absolute;
+				top: 70px;
+				left: 70px;
+				transform: rotate(-180deg);
+			}
+			article {
+				float: left;
+				width: 90%;
+				margin-left: 10%;
+			}
+			.comment_author {
+				float: left;
+				img {
+					border-radius: 50%;
+					float: left;
+					border: solid #e3e3e5;
+					@include rem(( margin: 20px, border-width: 2px ));
+				}
+			}
+			.comment_metadata {
+				position: relative;
+				float: left;
+				width: calc(100% - 150px);
+				@include rem(( margin-top: 20px, ));
+				b.name {
+					display: block;
+					@include rem(( font-size: 15px, ));
+					a {
+						color: #979a9f;
+					}
+				}
+				time {
+					color: #979a9f;
+				}
+				.reply {
+					position: absolute;
+					top: 0;
+					right: 0;
+					a {
+						color: $primary_color;
+						@include rem(( font-size: 15px, ));
+					}
+				}
+			}
+			.comment_content {
+				text-align: justify;
+				color: $secondary_color;
+				float: left;
+				width: calc(100% - 150px);
+				@include rem(( font-size: 15px,margin-top: 10px, ));
+			}
 		}
+		li.byadmin {
+			background: #fff;
+		}
+	}
+}
+.comment_form {
+	width: 100%;
+	float: left;
+	padding: 0;
+	border-top: none;
+	border: solid #e4e4e4;
+	background: #fff;
+	@include rem(( border-width: 0 1px 1px 1px, padding: 15px,));
+	form input {
+		width: 50%;
+		border: solid #e4e4e4;
+		background: #fafafa;
+		@include rem(( border-width: 1px,height: 45px, padding: 10px,));
 	}
 }
 .category_content {
@@ -2130,10 +2170,11 @@ footer.footer {
 	.product_image {
 		float: left;
 		width: 40%;
-	img {
-		float: left;
-		@include rem((margin: 0 20px 20px 0, ));
-	}}
+		img {
+			float: left;
+			@include rem((margin: 0 20px 20px 0, ));
+		}
+	}
 	.product_detail {
 		float: right;
 		width: 55%;
@@ -2225,7 +2266,62 @@ footer.footer {
 					a {
 						color: $secondary_color;
 					}
-
+				}
+			}
+		}
+	}
+	.product_intro {
+		float: left;
+		width: 100%;
+		.product_tab {
+			width: 90%;
+			margin: 0 auto;
+			ul {
+				border-bottom: 0;
+				li {
+					border-bottom: solid #fff;
+					@include rem(( border-bottom-width: 2px,));
+					a {
+						background: #f6f6f6;
+						color: $secondary_color;
+						font-weight: 500;
+						border: none;
+						@include rem(( padding: 10px 30px,font-size: 15px,));
+					}
+				}
+				li.active {
+					border-bottom: solid #f6f6f6;
+					@include rem(( border-bottom-width: 2px,));
+				}
+			}
+			.tab-content {
+				background: #f6f6f6;
+				@include rem(( padding: 20px,margin: 0 auto 20px auto,));
+				p {
+					text-align: justify;
+					@include rem((font-size: 15px, ));
+				}
+			}
+		}
+	}
+	.product_more {
+		float: left;
+		width: 100%;
+		h2 {
+			color: $primary_color;
+			@include rem(( padding:10px 15px,font-size: 20px, ));
+		}
+		ul {
+			list-style: none;
+			li {
+				float: left;
+				width: 100%;
+				@include rem(( padding:5px 15px,font-size: 15px, ));
+				&:before {
+					content: "\f00c";
+					font: normal normal normal 16px/1 FontAwesome;
+					float: left;
+					@include rem(( margin-right: 10px, line-height: 20px, ));
 				}
 			}
 		}
