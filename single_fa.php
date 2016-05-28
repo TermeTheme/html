@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="assets/css/owl.carousel.css">
 	<link rel="stylesheet" href="assets/css/terme.css">
 	<link rel="stylesheet" href="assets/css/rtl.css">
-	
+
 </head>
 <body>
 	<?php include 'templates/header/1.php'; ?>
@@ -131,7 +131,7 @@
 			</div><!-- row -->
 		</div><!-- container -->
 	</main>
-<?php include 'templates/footer/5.php'; ?>
+<?php include 'templates/footer/1.php'; ?>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/typed.js"></script>
