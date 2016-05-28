@@ -115,7 +115,7 @@
   </section><!-- ads -->
   <section class="last_articles">
     <h4>Top Articles</h4>
-    <a href="#" class="more pull-right">More</a>
+    <a href="#" class="more">More</a>
     <ul>
       <li>
         <h3><a href="">Google Ranked As The World's Most Valuable Brands</a></h3>
@@ -137,7 +137,7 @@
   </section><!-- last_articles -->
   <section class="video">
     <h4>Video</h4>
-    <a href="#" class="more pull-right">More</a>
+    <a href="#" class="more">More</a>
     <ul>
       <li>
         <div class="view view_overlay">

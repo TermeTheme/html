@@ -95,7 +95,7 @@
 										<div class="big_post">
 											<div class="thumb"><img src="assets/img/post_01.jpg" height="250" width="420" alt=""></div>
 											<h4>Hamyarwp said that:</h4>
-											
+
 											<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
 											<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
 											<div class="excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna  aliquam erat volutpat.</div>

@@ -14,7 +14,7 @@
 	<main class="main">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-8">
+				<div class="col-md-8 col-sm-12 col-xs-12">
 					<div class="article_content">
 						<div class="article_info ">
 							<div class="breadcrumbs">
@@ -122,7 +122,7 @@
 
 					</div><!-- article_content -->
 				</div><!--col-xs-8-->
-				<div class="col-xs-4">
+				<div class="col-md-4 hidden-sm hidden-xs">
 					<?php include 'templates/sidebar/sidebar.php'; ?>
 
 				</div><!--col-xs-4-->

@@ -110,7 +110,7 @@ header.style_1 .main_area .logo,
 header.style_3 .main_area .logo,
 header.style_4 .main_area .logo {
 	float: left;
-	@include rem(height, 85px);
+	@include rem(height, 95px);
 	overflow: hidden;
 	img {
 		max-height: 100%;
@@ -1435,6 +1435,7 @@ footer.footer {
 			float: right;
 			width: 100%;
 			padding: 0;
+			list-style: none;
 		}
 		ul li {
 			float: left;
@@ -1697,7 +1698,8 @@ footer.footer {
 			width: 25%;
 			@include rem(( padding-top:30px,font-size: 15px, ));
 			span {
-				clear: both;
+				display: block;
+				    color: #979a9f;
 			}
 		}
 		.desc {
@@ -1706,7 +1708,7 @@ footer.footer {
 			color: #979a9f;
 			text-align: justify;
 			width: 50%;
-			@include rem(( padding:10px 15px,font-size: 15px, ));
+			@include rem(( padding: 20px 15px,font-size: 15px, ));
 		}
 	}
 	.article_related {

@@ -146,8 +146,8 @@ header.style_1 .main_area .logo,
 header.style_3 .main_area .logo,
 header.style_4 .main_area .logo {
   float: left;
-  height: 85px;
-  height: 8.5rem;
+  height: 95px;
+  height: 9.5rem;
   overflow: hidden; }
   header.style_1 .main_area .logo img,
   header.style_3 .main_area .logo img,
@@ -1575,7 +1575,8 @@ footer.footer {
   footer.footer.style_1 .main_area .box_2 ul, footer.footer.style_5 .main_area .box_1 ul, footer.footer.style_5 .main_area .box_2 ul {
     float: right;
     width: 100%;
-    padding: 0; }
+    padding: 0;
+    list-style: none; }
   footer.footer.style_1 .main_area .box_2 ul li, footer.footer.style_5 .main_area .box_1 ul li, footer.footer.style_5 .main_area .box_2 ul li {
     float: left;
     width: 100%;
@@ -1860,15 +1861,16 @@ footer.footer {
       font-size: 15px;
       font-size: 1.5rem; }
       .article_content .article_author .name span {
-        clear: both; }
+        display: block;
+        color: #979a9f; }
     .article_content .article_author .desc {
       display: inline-block;
       float: left;
       color: #979a9f;
       text-align: justify;
       width: 50%;
-      padding: 10px 15px;
-      padding: 1rem 1.5rem;
+      padding: 20px 15px;
+      padding: 2rem 1.5rem;
       font-size: 15px;
       font-size: 1.5rem; }
   .article_content .article_related {
