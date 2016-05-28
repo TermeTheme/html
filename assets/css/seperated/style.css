@@ -1072,7 +1072,8 @@ section.latest_news {
     margin-top: 20px; }
     #sidebar .news ul.newsTab {
       border: none;
-      margin: 0; }
+      margin: 0;
+      padding: 0; }
     #sidebar .news ul.newsTab li {
       margin-right: 2px;
       background: #f7f8fa;
@@ -1707,6 +1708,7 @@ footer.footer {
   .article_content .article_info .article_meta {
     color: #c0c0c0; }
     .article_content .article_info .article_meta span {
+      float: left;
       margin-right: 40px;
       margin-right: 4rem; }
   .article_content .terme_post {

@@ -903,6 +903,7 @@ section.latest_news {
 		ul.newsTab {
 			border: none;
 			margin: 0;
+			padding: 0;
 		}
 		ul.newsTab li {
 			margin-right: 2px;
@@ -1566,6 +1567,7 @@ footer.footer {
 		.article_meta {
 			color: #c0c0c0;
 			span {
+				float: left;
 				@include rem(( margin-right: 40px, ));
 			}
 		}

@@ -249,6 +249,8 @@ section.latest_news {
   float: right; }
   #sidebar .tags h4 {
     float: right; }
+  #sidebar .tags .tags_content a {
+    float: right; }
 
 footer.footer.style_1 .main_area .box_1 ul {
   float: right; }
@@ -315,3 +317,58 @@ footer.footer.style_5 .bottom_bar .social_menu {
   float: left; }
   footer.footer.style_5 .bottom_bar .social_menu ul li {
     margin-right: 0; }
+
+.article_content .article_info .article_meta span {
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+  margin-left: 40px;
+  margin-left: 4rem; }
+.article_content .terme_post ul li {
+  float: right; }
+  .article_content .terme_post ul li:before {
+    float: right;
+    margin-right: auto;
+    margin-right: auto;
+    margin-left: 10px;
+    margin-left: 1rem; }
+.article_content .article_author img {
+  float: right; }
+.article_content .article_author .name {
+  float: right; }
+.article_content .article_author .desc {
+  float: right; }
+.article_content .article_related ul li {
+  float: right; }
+.article_content .article_related ul li .thumb {
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+  margin-left: 10px;
+  margin-left: 1rem; }
+
+.article_comment ol li {
+  float: right; }
+  .article_comment ol li article {
+    float: right; }
+    .article_comment ol li article .comment_author img {
+      float: right; }
+    .article_comment ol li article .comment_metadata .reply {
+      right: auto;
+      left: 0; }
+.article_comment ul.children li {
+  float: right; }
+  .article_comment ul.children li:before {
+    right: 70px;
+    left: auto; }
+  .article_comment ul.children li article {
+    float: right;
+    margin-left: auto;
+    margin-right: 10%; }
+  .article_comment ul.children li .comment_author {
+    float: right; }
+    .article_comment ul.children li .comment_author img {
+      float: right; }
+  .article_comment ul.children li .comment_metadata .reply {
+    right: auto;
+    left: 0; }

@@ -250,6 +250,9 @@ section.latest_news {
 		h4 {
 			float: right;
 		}
+		.tags_content a {
+			float: right;
+		}
 	}
 }
 footer.footer {
@@ -350,16 +353,102 @@ footer.footer {
 		.newsletter button {
 			float: left;
 		}
-
-
 	}
 	&.style_5 .bottom_bar {
 		.social_menu {
 			float: left;
 			ul {
-				 li {
-					 margin-right: 0;
-				 }
+				li {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+.article_content {
+	.article_info {
+		.article_meta {
+			span {
+				float: right;
+				@include rem(( margin-right: 0, margin-left: 40px,));
+			}
+		}
+	}
+	.terme_post {
+		ul {
+			li {
+				float: right;
+				&:before {
+					float: right;
+					@include rem(( margin-right: auto,margin-left: 10px, ));
+				}
+			}
+		}
+	}
+	.article_author {
+		img {
+			float: right;
+		}
+		.name {
+			float: right;
+		}
+		.desc {
+			float: right;
+		}
+	}
+	.article_related {
+		ul li {
+			float: right;
+		}
+		ul li .thumb {
+			float: right;
+			@include rem((margin-right: 0, margin-left: 10px, ));
+		}
+	}
+}
+.article_comment {
+	ol {
+		li {
+			float: right;
+			article {
+				float: right;
+				.comment_author {
+					img {
+						float: right;
+					}
+				}
+				.comment_metadata {
+					.reply {
+						right: auto;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+	ul.children {
+		li {
+			float: right;
+			&:before {
+				right: 70px;
+				left: auto;
+			}
+			article {
+				float: right;
+				margin-left: auto;
+				margin-right: 10%;
+			}
+			.comment_author {
+				float: right;
+				img {
+					float: right;
+				}
+			}
+			.comment_metadata {
+				.reply {
+					right: auto;
+					left: 0;
+				}
 			}
 		}
 	}

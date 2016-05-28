@@ -88,9 +88,9 @@
 
 						<div class="box">
 							<div class="title">
-								<a href="#" class="more">More</a>
-								<h4>Sport</h4>
-								<h6>Defeated Panthers to get back</h6>
+								<a href="#" class="more">بیشتر بخوانید</a>
+								<h4>خبرهای سیاسی</h4>
+								<h6>بنیانگذار همیار وردپرس ، با 6 سال سابقه طراحی وب</h6>
 							</div><!-- title -->
 							<div class="body">
 								<div class="row">
@@ -109,23 +109,23 @@
 											<ul>
 												<li>
 													<div class="thumb"><img src="assets/img/top_new_01.jpg" height="75" width="100" alt=""></div>
-													<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
-													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
+													<h2><a href="#">چرا دوره طراحی وب بدون کدنویسیشکیل شد ؟</a></h2>
+													<div class="time"><i class="fa fa-clock-o"></i> چهارشنبه 18 شهریور 1394 - 10:44</div>
 												</li>
 												<li>
 													<div class="thumb"><img src="assets/img/top_new_02.jpg" height="75" width="100" alt=""></div>
-													<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
-													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
+													<h2><a href="#">چرا دوره طراحی وب بدون کدنویسیشکیل شد ؟</a></h2>
+													<div class="time"><i class="fa fa-clock-o"></i> چهارشنبه 18 شهریور 1394 - 10:44</div>
 												</li>
 												<li>
 													<div class="thumb"><img src="assets/img/top_new_03.jpg" height="75" width="100" alt=""></div>
-													<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
-													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
+													<h2><a href="#">چرا دوره طراحی وب بدون کدنویسیشکیل شد ؟</a></h2>
+													<div class="time"><i class="fa fa-clock-o"></i> چهارشنبه 18 شهریور 1394 - 10:44</div>
 												</li>
 												<li>
 													<div class="thumb"><img src="assets/img/top_new_04.jpg" height="75" width="100" alt=""></div>
-													<h2><a href="#">Why You Should Avoid Sass @extend</a></h2>
-													<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
+													<h2><a href="#">چرا دوره طراحی وب بدون کدنویسیشکیل شد ؟</a></h2>
+													<div class="time"><i class="fa fa-clock-o"></i> چهارشنبه 18 شهریور 1394 - 10:44</div>
 												</li>
 											</ul>
 										</div>
