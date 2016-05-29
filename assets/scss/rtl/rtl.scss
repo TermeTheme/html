@@ -487,7 +487,6 @@ footer.footer {
 					float: right;
 					a {
 						@include rem((margin-left: 2px, margin-right: 0, ));
-
 					}
 				}
 			}
@@ -499,7 +498,6 @@ footer.footer {
 				&:before {
 					float: right;
 					@include rem(( margin-right: 0, margin-left: 10px, ));
-
 				}
 			}
 		}
@@ -516,23 +514,40 @@ footer.footer {
 			button.dropdown-toggle {
 				float: right;
 				@include rem(( border-radius: 4px 0 0 4px ,));
-
-	}
-
-}
+			}
+		}
 	}
 	#post_grid {
 		&:before {
 			float: right;
 			@include rem((border-radius: 0 4px 4px 0,));
-
 		}
-}
-#post_sort {
-	&:before {
-		float: right;
-		@include rem((margin-right: 0,margin-left: 10px,));
-
+	}
+	#post_sort {
+		&:before {
+			float: right;
+			@include rem((margin-right: 0,margin-left: 10px,));
+		}
 	}
 }
+.category_content {
+	ul {
+		li article {
+			figure.thumbnail {
+				float: right;
+				margin-right: 0;
+				margin-left: 20px;
+			}
+			section {
+				h2 {
+					@include rem((padding-right: 0, padding-left: 20px, ));
+
+				}
+				.excerpt {
+					@include rem(( padding-right: 0, padding-left: 20px, ));
+
+				}
+			}
+		}
+	}
 }
