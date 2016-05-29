@@ -37,11 +37,6 @@ header.header .today {
     margin-left: 5px;
     margin-left: 0.5rem; }
 
-header.style_1 .main_area .logo,
-header.style_3 .main_area .logo,
-header.style_4 .main_area .logo {
-  float: right; }
-
 header.style_1 .main_area .header_ads,
 header.style_3 .main_area .header_ads {
   text-align: left; }
@@ -372,3 +367,33 @@ footer.footer.style_5 .bottom_bar .social_menu {
   .article_comment ul.children li .comment_metadata .reply {
     right: auto;
     left: 0; }
+
+.product_page .product_image {
+  float: right;
+  margin: 0 0 20px 20px;
+  margin: 0 0 2rem 2rem; }
+  .product_page .product_image img {
+    float: right; }
+.product_page .product_detail {
+  float: left; }
+  .product_page .product_detail .product_price .product_stars {
+    float: left; }
+  .product_page .product_detail .product_tags a {
+    float: right; }
+  .product_page .product_detail .product_social {
+    float: right; }
+    .product_page .product_detail .product_social ul {
+      float: right; }
+.product_page .product_intro .product_tab ul li {
+  float: right; }
+  .product_page .product_intro .product_tab ul li a {
+    margin-left: 2px;
+    margin-left: 0.2rem;
+    margin-right: 0;
+    margin-right: 0; }
+.product_page .product_more ul li:before {
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+  margin-left: 10px;
+  margin-left: 1rem; }

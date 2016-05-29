@@ -33,7 +33,7 @@ header.header .today {
 header.style_1 .main_area .logo,
 header.style_3 .main_area .logo,
 header.style_4 .main_area .logo {
-	float: right;
+	// float: right;
 }
 header.style_1 .main_area .header_ads,
 header.style_3 .main_area .header_ads {
@@ -448,6 +448,58 @@ footer.footer {
 				.reply {
 					right: auto;
 					left: 0;
+				}
+			}
+		}
+	}
+}
+.product_page {
+	.product_image {
+		float: right;
+		@include rem((margin: 0 0 20px 20px, ));
+		img {
+			float: right;
+		}
+	}
+	.product_detail {
+		float: left;
+		.product_price {
+			.product_stars {
+				float: left;
+			}
+		}
+		.product_tags {
+			a {
+				float: right;
+			}
+		}
+		.product_social {
+			float: right;
+			ul {
+				float: right;
+			}
+		}
+	}
+	.product_intro {
+		.product_tab {
+			ul {
+				li {
+					float: right;
+					a {
+						@include rem((margin-left: 2px, margin-right: 0, ));
+
+					}
+				}
+			}
+		}
+	}
+	.product_more {
+		ul {
+			li {
+				&:before {
+					float: right;
+					@include rem(( margin-right: 0, margin-left: 10px, ));
+
 				}
 			}
 		}
