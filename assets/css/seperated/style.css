@@ -2209,12 +2209,17 @@ footer.footer {
   padding: 3rem 1.5rem; }
   .shop_filters .filter_item {
     float: left;
-    width: 25%; }
+    width: 25%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 20px;
+    padding-right: 2rem; }
     .shop_filters .filter_item .dropdown {
       height: 40px;
       border: none;
-      -webkit-border-radius: none;
-              border-radius: none;
+      -webkit-border-radius: 0;
+              border-radius: 0;
       color: #d4d4d4;
       display: block; }
       .shop_filters .filter_item .dropdown button {
@@ -2227,10 +2232,12 @@ footer.footer {
                 border-radius: 0;
         border-radius: 0; }
       .shop_filters .filter_item .dropdown button.dropdown-content {
-        width: 65%; }
+        width: 65%;
+        float: left; }
       .shop_filters .filter_item .dropdown button.dropdown-toggle {
         width: 40px;
         border: #e6e6e6 solid;
+        float: left;
         border-width: 1px;
         border-width: 0.1rem;
         -webkit-border-radius: 0 4px 4px 0;

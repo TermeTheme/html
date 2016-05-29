@@ -388,3 +388,26 @@ footer.footer.style_5 .bottom_bar .social_menu {
   margin-right: 0;
   margin-left: 10px;
   margin-left: 1rem; }
+
+.shop_filters .filter_item {
+  float: right;
+  padding-left: 20px;
+  padding-left: 2rem;
+  padding-right: 0;
+  padding-right: 0; }
+  .shop_filters .filter_item .dropdown button.dropdown-content {
+    float: right; }
+  .shop_filters .filter_item .dropdown button.dropdown-toggle {
+    float: right;
+    border-radius: 4px 0 0 4px;
+    border-radius: 0.4rem 0 0 0.4rem; }
+.shop_filters #post_grid:before {
+  float: right;
+  border-radius: 0 4px 4px 0;
+  border-radius: 0 0.4rem 0.4rem 0; }
+.shop_filters #post_sort:before {
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+  margin-left: 10px;
+  margin-left: 1rem; }

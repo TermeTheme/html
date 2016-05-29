@@ -2027,10 +2027,12 @@ footer.footer {
 	.filter_item {
 		float: left;
 		width: 25%;
+		box-sizing: border-box;
+		@include rem((padding-right: 20px ,));
 		.dropdown {
 			height: 40px;
 			border: none;
-			border-radius: none;
+			border-radius: 0;
 			color: #d4d4d4;
 			display: block;
 			button {
@@ -2041,10 +2043,12 @@ footer.footer {
 			}
 			button.dropdown-content {
 				width: 65%;
+				float: left;
 			}
 			button.dropdown-toggle {
 				width: 40px;
 				border: #e6e6e6 solid;
+				float: left;
 				@include rem((border-width: 1px, border-radius: 0 4px 4px 0 ,));
 			}
 		}
@@ -2186,9 +2190,7 @@ footer.footer {
 		float: left;
 		width: 43%;
 		box-sizing: border-box;
-
 		@include rem((margin: 0 20px 20px 0, ));
-
 		img {
 			width: 100%;
 			float: left;
@@ -2199,7 +2201,6 @@ footer.footer {
 		width: 55%;
 		box-sizing: border-box;
 		@include rem(( padding: 20px, ));
-
 		h1.product_name {
 			margin: 0;
 			@include rem((font-size: 25px, padding: 20px 0, ));

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.css">
 	<link rel="stylesheet" href="assets/css/terme.css">
+	<link rel="stylesheet" href="assets/css/rtl.css">
 </head>
 <body>
 	<?php include 'templates/header/1.php'; ?>

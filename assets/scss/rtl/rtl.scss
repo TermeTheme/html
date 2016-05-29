@@ -505,3 +505,34 @@ footer.footer {
 		}
 	}
 }
+.shop_filters {
+	.filter_item {
+		float: right;
+		@include rem((padding-left: 20px , padding-right: 0 ,));
+		.dropdown {
+			button.dropdown-content {
+				float: right;
+			}
+			button.dropdown-toggle {
+				float: right;
+				@include rem(( border-radius: 4px 0 0 4px ,));
+
+	}
+
+}
+	}
+	#post_grid {
+		&:before {
+			float: right;
+			@include rem((border-radius: 0 4px 4px 0,));
+
+		}
+}
+#post_sort {
+	&:before {
+		float: right;
+		@include rem((margin-right: 0,margin-left: 10px,));
+
+	}
+}
+}
