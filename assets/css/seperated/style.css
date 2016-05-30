@@ -2628,6 +2628,11 @@ footer.footer {
           line-height: 2rem; }
 
 @media (max-width: 768px) {
+  .product_page .product_image {
+    width: 100%; }
+  .product_page .product_detail {
+    width: 100%; }
+
   footer.footer.style_1 .main_area .box_1 {
     text-align: center; }
     footer.footer.style_1 .main_area .box_1 img {
