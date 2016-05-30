@@ -33,7 +33,7 @@ header.header .today {
 header.style_1 .main_area .logo,
 header.style_3 .main_area .logo,
 header.style_4 .main_area .logo {
-	float: right;
+	// float: right;
 }
 header.style_1 .main_area .header_ads,
 header.style_3 .main_area .header_ads {
@@ -448,6 +448,104 @@ footer.footer {
 				.reply {
 					right: auto;
 					left: 0;
+				}
+			}
+		}
+	}
+}
+.product_page {
+	.product_image {
+		float: right;
+		@include rem((margin: 0 0 20px 20px, ));
+		img {
+			float: right;
+		}
+	}
+	.product_detail {
+		float: left;
+		.product_price {
+			.product_stars {
+				float: left;
+			}
+		}
+		.product_tags {
+			a {
+				float: right;
+			}
+		}
+		.product_social {
+			float: right;
+			ul {
+				float: right;
+			}
+		}
+	}
+	.product_intro {
+		.product_tab {
+			ul {
+				li {
+					float: right;
+					a {
+						@include rem((margin-left: 2px, margin-right: 0, ));
+					}
+				}
+			}
+		}
+	}
+	.product_more {
+		ul {
+			li {
+				&:before {
+					float: right;
+					@include rem(( margin-right: 0, margin-left: 10px, ));
+				}
+			}
+		}
+	}
+}
+.shop_filters {
+	.filter_item {
+		float: right;
+		@include rem((padding-left: 20px , padding-right: 0 ,));
+		.dropdown {
+			button.dropdown-content {
+				float: right;
+			}
+			button.dropdown-toggle {
+				float: right;
+				@include rem(( border-radius: 4px 0 0 4px ,));
+			}
+		}
+	}
+	#post_grid {
+		&:before {
+			float: right;
+			@include rem((border-radius: 0 4px 4px 0,));
+		}
+	}
+	#post_sort {
+		&:before {
+			float: right;
+			@include rem((margin-right: 0,margin-left: 10px,));
+		}
+	}
+}
+.category_content {
+	ul {
+		li article {
+			figure.thumbnail {
+				float: right;
+				margin-right: 0;
+				margin-left: 20px;
+			}
+			section {
+				h2 {
+					@include rem((padding-right: 0, padding-left: 20px, ));
+
+				}
+				.excerpt {
+					@include rem(( padding-right: 0, padding-left: 20px, ));
+
 				}
 			}
 		}

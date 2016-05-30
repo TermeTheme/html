@@ -1398,7 +1398,6 @@ footer.footer {
 			}
 		}
 		.email_contact {
-
 			text-align: center;
 			p {
 				@include rem(( margin-top: 30px, font-size: 15px,));
@@ -1701,7 +1700,7 @@ footer.footer {
 			@include rem(( padding-top:30px,font-size: 15px, ));
 			span {
 				display: block;
-				    color: #979a9f;
+				color: #979a9f;
 			}
 		}
 		.desc {
@@ -2028,10 +2027,12 @@ footer.footer {
 	.filter_item {
 		float: left;
 		width: 25%;
+		box-sizing: border-box;
+		@include rem((padding-right: 20px ,));
 		.dropdown {
 			height: 40px;
 			border: none;
-			border-radius: none;
+			border-radius: 0;
 			color: #d4d4d4;
 			display: block;
 			button {
@@ -2042,10 +2043,12 @@ footer.footer {
 			}
 			button.dropdown-content {
 				width: 65%;
+				float: left;
 			}
 			button.dropdown-toggle {
 				width: 40px;
 				border: #e6e6e6 solid;
+				float: left;
 				@include rem((border-width: 1px, border-radius: 0 4px 4px 0 ,));
 			}
 		}
@@ -2185,21 +2188,24 @@ footer.footer {
 	margin-bottom: 0;
 	.product_image {
 		float: left;
-		width: 40%;
+		width: 43%;
+		box-sizing: border-box;
+		@include rem((margin: 0 20px 20px 0, ));
 		img {
+			width: 100%;
 			float: left;
-			@include rem((margin: 0 20px 20px 0, ));
 		}
 	}
 	.product_detail {
 		float: right;
 		width: 55%;
+		box-sizing: border-box;
+		@include rem(( padding: 20px, ));
 		h1.product_name {
 			margin: 0;
 			@include rem((font-size: 25px, padding: 20px 0, ));
 		}
 		.product_price {
-			@include rem((padding-right: 20px, ));
 			h3 {
 				color: $primary_color;
 				margin: 0;
@@ -2214,7 +2220,7 @@ footer.footer {
 		}
 		p.product_short_desc {
 			text-align: justify;
-			@include rem((font-size: 15px, padding: 20px 20px 20px 0, ));
+			@include rem((font-size: 15px,margin-top: 20px, ));
 		}
 		.product_buy {
 			border: solid #e4e4e4;
@@ -2237,7 +2243,7 @@ footer.footer {
 		}
 		.product_meta {
 			color: #979a9f;
-			@include rem(( padding: 20px 20px 20px 0, ));
+			@include rem(( margin: 20px 0, ));
 			span {
 				@include rem((font-size: 15px, ));
 			}
@@ -2294,7 +2300,9 @@ footer.footer {
 			margin: 0 auto;
 			ul {
 				border-bottom: 0;
+				padding: 0;
 				li {
+					float: left;
 					border-bottom: solid #fff;
 					@include rem(( border-bottom-width: 2px,));
 					a {
@@ -2302,7 +2310,7 @@ footer.footer {
 						color: $secondary_color;
 						font-weight: 500;
 						border: none;
-						@include rem(( padding: 10px 30px,font-size: 15px,));
+						@include rem(( margin-right: 2px, padding: 10px 30px,font-size: 15px,));
 					}
 				}
 				li.active {
@@ -2329,6 +2337,8 @@ footer.footer {
 		}
 		ul {
 			list-style: none;
+			float: left;
+			width: 100%;
 			li {
 				float: left;
 				width: 100%;

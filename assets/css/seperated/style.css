@@ -2209,12 +2209,17 @@ footer.footer {
   padding: 3rem 1.5rem; }
   .shop_filters .filter_item {
     float: left;
-    width: 25%; }
+    width: 25%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 20px;
+    padding-right: 2rem; }
     .shop_filters .filter_item .dropdown {
       height: 40px;
       border: none;
-      -webkit-border-radius: none;
-              border-radius: none;
+      -webkit-border-radius: 0;
+              border-radius: 0;
       color: #d4d4d4;
       display: block; }
       .shop_filters .filter_item .dropdown button {
@@ -2227,10 +2232,12 @@ footer.footer {
                 border-radius: 0;
         border-radius: 0; }
       .shop_filters .filter_item .dropdown button.dropdown-content {
-        width: 65%; }
+        width: 65%;
+        float: left; }
       .shop_filters .filter_item .dropdown button.dropdown-toggle {
         width: 40px;
         border: #e6e6e6 solid;
+        float: left;
         border-width: 1px;
         border-width: 0.1rem;
         -webkit-border-radius: 0 4px 4px 0;
@@ -2409,44 +2416,50 @@ footer.footer {
   margin-bottom: 0; }
   .product_page .product_image {
     float: left;
-    width: 40%; }
+    width: 43%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 20px 20px 0;
+    margin: 0 2rem 2rem 0; }
     .product_page .product_image img {
-      float: left;
-      margin: 0 20px 20px 0;
-      margin: 0 2rem 2rem 0; }
+      width: 100%;
+      float: left; }
   .product_page .product_detail {
     float: right;
-    width: 55%; }
+    width: 55%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px;
+    padding: 2rem; }
     .product_page .product_detail h1.product_name {
       margin: 0;
       font-size: 25px;
       font-size: 2.5rem;
       padding: 20px 0;
       padding: 2rem 0; }
-    .product_page .product_detail .product_price {
-      padding-right: 20px;
-      padding-right: 2rem; }
-      .product_page .product_detail .product_price h3 {
-        color: #fac014;
-        margin: 0;
-        display: inline-block;
-        font-size: 25px;
-        font-size: 2.5rem;
-        padding: 0;
-        padding: 0;
-        margin-right: 5px;
-        margin-right: 0.5rem; }
-      .product_page .product_detail .product_price .product_stars {
-        float: right;
-        color: #fac014;
-        font-size: 20px;
-        font-size: 2rem; }
+    .product_page .product_detail .product_price h3 {
+      color: #fac014;
+      margin: 0;
+      display: inline-block;
+      font-size: 25px;
+      font-size: 2.5rem;
+      padding: 0;
+      padding: 0;
+      margin-right: 5px;
+      margin-right: 0.5rem; }
+    .product_page .product_detail .product_price .product_stars {
+      float: right;
+      color: #fac014;
+      font-size: 20px;
+      font-size: 2rem; }
     .product_page .product_detail p.product_short_desc {
       text-align: justify;
       font-size: 15px;
       font-size: 1.5rem;
-      padding: 20px 20px 20px 0;
-      padding: 2rem 2rem 2rem 0; }
+      margin-top: 20px;
+      margin-top: 2rem; }
     .product_page .product_detail .product_buy {
       border: solid #e4e4e4;
       border-width: 1px 0 1px 0;
@@ -2477,8 +2490,8 @@ footer.footer {
           display: block; }
     .product_page .product_detail .product_meta {
       color: #979a9f;
-      padding: 20px 20px 20px 0;
-      padding: 2rem 2rem 2rem 0; }
+      margin: 20px 0;
+      margin: 2rem 0; }
       .product_page .product_detail .product_meta span {
         font-size: 15px;
         font-size: 1.5rem; }
@@ -2537,8 +2550,10 @@ footer.footer {
       width: 90%;
       margin: 0 auto; }
       .product_page .product_intro .product_tab ul {
-        border-bottom: 0; }
+        border-bottom: 0;
+        padding: 0; }
         .product_page .product_intro .product_tab ul li {
+          float: left;
           border-bottom: solid #fff;
           border-bottom-width: 2px;
           border-bottom-width: 0.2rem; }
@@ -2547,6 +2562,8 @@ footer.footer {
             color: #0b1425;
             font-weight: 500;
             border: none;
+            margin-right: 2px;
+            margin-right: 0.2rem;
             padding: 10px 30px;
             padding: 1rem 3rem;
             font-size: 15px;
@@ -2575,7 +2592,9 @@ footer.footer {
       font-size: 20px;
       font-size: 2rem; }
     .product_page .product_more ul {
-      list-style: none; }
+      list-style: none;
+      float: left;
+      width: 100%; }
       .product_page .product_more ul li {
         float: left;
         width: 100%;
