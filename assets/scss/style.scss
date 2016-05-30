@@ -2355,6 +2355,27 @@ footer.footer {
 }
 @media (max-width: 768px) {
 	footer.footer {
+		&.style_1 .main_area {
+			.box_1 {
+				text-align: center;
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+				ul {
+					display: inline-block;
+					float: none;
+					width: auto;
+				}
+			}
+		}
+		&.style_3 .top_bar {
+			.social_menu {
+				&:after {
+					display: none;
+				}
+			}
+		}
 		&.style_5 .top_bar {
 			.newsletter {
 				span {
@@ -2365,6 +2386,7 @@ footer.footer {
 				}
 			}
 		}
+		&.style_1 .bottom_bar,
 		&.style_5 .bottom_bar {
 			.social_menu {
 				text-align: center;

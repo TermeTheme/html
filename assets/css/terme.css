@@ -13,19 +13,6 @@
   100% {
     opacity: 1; } }
 
-@font-face {
-  font-family: 'Droidsans';
-  src: url("../fonts/DroidSans-Bold-webfont.eot");
-  src: url("../fonts/DroidSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSans-Bold-webfont.woff") format("woff"), url("../fonts/DroidSans-Bold-webfont.ttf") format("truetype"), url("../fonts/DroidSans-Bold-webfont.svg#droid_sansbold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'Droidsans';
-  src: url("../fonts/DroidSans-webfont.eot");
-  src: url("../fonts/DroidSans-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSans-webfont.woff") format("woff"), url("../fonts/DroidSans-webfont.ttf") format("truetype"), url("../fonts/DroidSans-webfont.svg#droid_sansregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 html {
   font-size: 62.5%; }
 
@@ -2666,14 +2653,38 @@ footer.footer {
           line-height: 2rem; }
 
 @media (max-width: 768px) {
+  footer.footer.style_1 .main_area .box_1 {
+    text-align: center; }
+    footer.footer.style_1 .main_area .box_1 img {
+      display: block;
+      margin: 0 auto; }
+    footer.footer.style_1 .main_area .box_1 ul {
+      display: inline-block;
+      float: none;
+      width: auto; }
+  footer.footer.style_3 .top_bar .social_menu:after {
+    display: none; }
   footer.footer.style_5 .top_bar .newsletter span {
     display: none; }
   footer.footer.style_5 .top_bar .newsletter form {
     width: 100%; }
-  footer.footer.style_5 .bottom_bar .social_menu {
+  footer.footer.style_1 .bottom_bar .social_menu, footer.footer.style_5 .bottom_bar .social_menu {
     text-align: center;
     float: none; }
-  footer.footer.style_5 .bottom_bar ul {
+  footer.footer.style_1 .bottom_bar ul, footer.footer.style_5 .bottom_bar ul {
     display: inline-block;
     float: none;
     width: auto; } }
+
+@font-face {
+  font-family: 'Droidsans';
+  src: url("../fonts/DroidSans-Bold-webfont.eot");
+  src: url("../fonts/DroidSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSans-Bold-webfont.woff") format("woff"), url("../fonts/DroidSans-Bold-webfont.ttf") format("truetype"), url("../fonts/DroidSans-Bold-webfont.svg#droid_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Droidsans';
+  src: url("../fonts/DroidSans-webfont.eot");
+  src: url("../fonts/DroidSans-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSans-webfont.woff") format("woff"), url("../fonts/DroidSans-webfont.ttf") format("truetype"), url("../fonts/DroidSans-webfont.svg#droid_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }

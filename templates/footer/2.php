@@ -2,7 +2,7 @@
   <div class="main_area">
       <div class="container">
           <div class="row">
-              <div class="col-xs-3">
+              <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="box_1">
                   <h2>Useful Links</h2>
                   <ul>
@@ -18,7 +18,7 @@
                   </ul>
                 </div><!-- box_1 -->
               </div><!-- col-xs-3 -->
-              <div class="col-xs-3">
+              <div class="col-md-3 col-sm-6 hidden-xs">
                 <div class="box_2">
                   <h2>Useful Links</h2>
                   <ul>
@@ -34,7 +34,7 @@
                   </ul>
                 </div><!-- box_2 -->
               </div><!-- col-xs-3 -->
-              <div class="col-xs-3">
+              <div class="col-md-3 hidden-sm hidden-xs">
                 <div class="box_3">
                   <h2>Useful Links</h2>
                   <ul>
@@ -50,7 +50,7 @@
                   </ul>
                 </div><!-- box_3 -->
               </div><!-- col-xs-3 -->
-              <div class="col-xs-3">
+              <div class="col-md-3 hidden-sm hidden-xs">
                 <div class="box_3">
                   <h2>Useful Links</h2>
                   <ul>

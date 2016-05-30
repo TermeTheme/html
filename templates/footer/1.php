@@ -2,7 +2,7 @@
   <div class="main_area">
       <div class="container">
           <div class="row">
-              <div class="col-xs-4">
+              <div class="col-md-4 col-xs-12">
                 <div class="box_1">
                   <img src="" width="150" height="100" alt="" />
                   <p>
@@ -20,7 +20,7 @@
                   </ul>
                 </div><!-- box_1 -->
               </div><!-- col-xs-4 -->
-              <div class="col-xs-4">
+              <div class="col-md-4 col-sm-6 hidden-xs">
                 <div class="box_2">
                   <h2>Top News</h2>
                   <ul>
@@ -44,7 +44,7 @@
 
                 </div><!-- box_2 -->
               </div><!-- col-xs-4 -->
-              <div class="col-xs-4">
+              <div class="col-md-4 col-sm-6">
                 <div class="box_3">
                   <div class="newsletter">
                       <h2>Terme Newsletter</h2>

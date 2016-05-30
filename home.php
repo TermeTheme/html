@@ -80,7 +80,7 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-md-8 col-sm-12">
 					<div class="home_content">
 						<div class="box">
 							<div class="title">

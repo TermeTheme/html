@@ -2,7 +2,7 @@
   <div class="top_bar">
       <div class="container">
           <div class="row">
-              <div class="col-xs-6">
+              <div class="col-sm-6 col-xs-12">
                 <div class="social_menu">
                   <ul>
                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -16,7 +16,7 @@
                   </ul>
                 </div><!-- social_menu -->
               </div><!-- col-xs-6 -->
-                <div class="col-xs-6">
+                <div class="col-sm-6 hidden-xs">
                   <div class="email_contact">
                     <p>info@yourdomain.com - sale@yourdomain.com</p>
 
