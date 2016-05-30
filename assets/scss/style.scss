@@ -996,6 +996,7 @@ section.latest_news {
 			@include rem(margin-bottom, 15px);
 		}
 		a.more {
+			float: right;
 			@include rem(line-height, 20px);
 		}
 		ul {
@@ -1042,6 +1043,8 @@ section.latest_news {
 			@include rem(margin-bottom, 15px);
 		}
 		a.more {
+			float: right;
+			
 			@include rem(line-height, 20px);
 		}
 		ul {

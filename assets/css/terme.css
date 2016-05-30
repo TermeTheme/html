@@ -38,6 +38,19 @@ button {
   outline: none;
   padding: 0; }
 
+@font-face {
+  font-family: 'Droidsans';
+  src: url("../fonts/DroidSans-Bold-webfont.eot");
+  src: url("../fonts/DroidSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSans-Bold-webfont.woff") format("woff"), url("../fonts/DroidSans-Bold-webfont.ttf") format("truetype"), url("../fonts/DroidSans-Bold-webfont.svg#droid_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Droidsans';
+  src: url("../fonts/DroidSans-webfont.eot");
+  src: url("../fonts/DroidSans-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSans-webfont.woff") format("woff"), url("../fonts/DroidSans-webfont.ttf") format("truetype"), url("../fonts/DroidSans-webfont.svg#droid_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 
 header.header {
   float: right;
@@ -1215,6 +1228,7 @@ section.latest_news {
       margin-bottom: 15px;
       margin-bottom: 1.5rem; }
     #sidebar .last_articles a.more {
+      float: right;
       line-height: 20px;
       line-height: 2rem; }
     #sidebar .last_articles ul {
@@ -1260,6 +1274,7 @@ section.latest_news {
       margin-bottom: 15px;
       margin-bottom: 1.5rem; }
     #sidebar .video a.more {
+      float: right;
       line-height: 20px;
       line-height: 2rem; }
     #sidebar .video ul {
@@ -2675,16 +2690,3 @@ footer.footer {
     display: inline-block;
     float: none;
     width: auto; } }
-
-@font-face {
-  font-family: 'Droidsans';
-  src: url("../fonts/DroidSans-Bold-webfont.eot");
-  src: url("../fonts/DroidSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSans-Bold-webfont.woff") format("woff"), url("../fonts/DroidSans-Bold-webfont.ttf") format("truetype"), url("../fonts/DroidSans-Bold-webfont.svg#droid_sansbold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'Droidsans';
-  src: url("../fonts/DroidSans-webfont.eot");
-  src: url("../fonts/DroidSans-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSans-webfont.woff") format("woff"), url("../fonts/DroidSans-webfont.ttf") format("truetype"), url("../fonts/DroidSans-webfont.svg#droid_sansregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }

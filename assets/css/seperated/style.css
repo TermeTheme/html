@@ -1174,6 +1174,7 @@ section.latest_news {
       margin-bottom: 15px;
       margin-bottom: 1.5rem; }
     #sidebar .last_articles a.more {
+      float: right;
       line-height: 20px;
       line-height: 2rem; }
     #sidebar .last_articles ul {
@@ -1219,6 +1220,7 @@ section.latest_news {
       margin-bottom: 15px;
       margin-bottom: 1.5rem; }
     #sidebar .video a.more {
+      float: right;
       line-height: 20px;
       line-height: 2rem; }
     #sidebar .video ul {
