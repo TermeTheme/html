@@ -258,7 +258,15 @@
 								</article>
 							</li>
 						</ul>
-						<div class="page_navigation">
+						<div class="wp-pagenavi">
+									<a class="previouspostslink" rel="prev" href="http://hamyarwp.com/category/plugins/"><span>Previous</span> <i class="fa fa-angle-left" aria-hidden="true"></i></a>
+									<a class="page smaller" href="http://hamyarwp.com/category/plugins/">1</a><span class="current">2</span>
+									<a class="page larger" href="http://hamyarwp.com/category/plugins/page/3/">3</a><a class="page larger" href="http://hamyarwp.com/category/plugins/page/4/">4</a>
+									<a class="page larger" href="http://hamyarwp.com/category/plugins/page/5/">5</a><span class="extend">...</span>
+									<a class="larger page" href="http://hamyarwp.com/category/plugins/page/20/">20</a>
+									<a class="nextpostslink" rel="next" href="http://hamyarwp.com/category/plugins/page/3/"><span>Next</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+						</div>
+						<!-- <div class="page_navigation">
 							<a href="#" class="prev_post">
 								<span>Previous Page</span>
 								<i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -272,7 +280,7 @@
 								<span>Next Page</span>
 								<i class="fa fa-angle-right" aria-hidden="true"></i>
 							</a>
-						</div>
+						</div> -->
 
 					</div><!-- category_content -->
 				</div><!--col-xs-8-->

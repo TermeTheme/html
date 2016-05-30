@@ -1044,7 +1044,6 @@ section.latest_news {
 		}
 		a.more {
 			float: right;
-			
 			@include rem(line-height, 20px);
 		}
 		ul {
@@ -1976,52 +1975,111 @@ footer.footer {
 			}
 		}
 	}
-	.page_navigation {
-		float: left;
+	.wp-pagenavi {
+		float: right;
 		width: 100%;
-		a.next_post,
-		a.prev_post {
-			color: #979a9f;
-			line-height: 3.5;
-			@include rem((font-size: 15px, ));
-			span {
-				@include rem(( margin-left: 10px, ));
-			}
-			i {
-				@include rem((font-size: 55px, ));
-			}
-			&:hover {
-				color: $secondary_color;
-			}
-		}
-		a.prev_post {
-			float: left;
-			i {
-				float: left;
-			}
-		}
-		a.next_post {
-			float: right;
-			i {
-				float: right;
-			}
-		}
-		a.page_number {
-			display: inline-block;
-			width: 40px;
-			height: 40px;
-			border-radius: 50%;
-			text-align: center;
-			color: $secondary_color;
-			@include rem((line-height: 40px, margin: 0 20px,font-size: 15px, ));
+		margin: 5.3125rem 0;
+		text-align: center;
+		direction: ltr;
+		@include rem(( border-width: 1px,font-size: 15px,padding-right: 20px, ));
+		a {
 			&:hover {
 				background: #fff;
 			}
 		}
-		a.page_number.active {
+		a,
+		span.current {
+			border-radius: 50%;
+			text-align: center;
+			display: inline-block;
+			margin: 0 1.875rem;
+			color: $secondary_color;
+			@include rem(( font-size: 20px,line-height: 45px,width: 45px,height: 45px,	));
+
+		}
+		span.current {
 			background: $primary_color;
+			color: #fff;
+		}
+		a.nextpostslink,
+		a.previouspostslink {
+			float: right;
+			margin: 0;
+			width: auto;
+			height: auto;
+			border-radius: 0;
+			background: none;
+			color: #c8c8c8;
+		}
+		a.previouspostslink {
+			float: left;
+		}
+		a.nextpostslink i,
+		a.previouspostslink i {
+			float: right;
+			margin-left: 0.625rem;
+			-webkit-transition: none;
+			-o-transition: none;
+			transition: none;
+			@include rem(( font-size: 60px,));
+
+		}
+		a.previouspostslink i {
+			float: left;
+			margin-left: 0;
+			margin-right: 0.625rem;
+		}
+		a.nextpostslink:hover,
+		a.previouspostslink:hover {
+			color: $secondary_color;
 		}
 	}
+	// .page_navigation {
+	// 	float: left;
+	// 	width: 100%;
+	// 	a.next_post,
+	// 	a.prev_post {
+	// 		color: #979a9f;
+	// 		line-height: 3.5;
+	// 		@include rem((font-size: 15px, ));
+	// 		span {
+	// 			@include rem(( margin-left: 10px, ));
+	// 		}
+	// 		i {
+	// 			@include rem((font-size: 55px, ));
+	// 		}
+	// 		&:hover {
+	// 			color: $secondary_color;
+	// 		}
+	// 	}
+	// 	a.prev_post {
+	// 		float: left;
+	// 		i {
+	// 			float: left;
+	// 		}
+	// 	}
+	// 	a.next_post {
+	// 		float: right;
+	// 		i {
+	// 			float: right;
+	// 		}
+	// 	}
+	// 	a.page_number {
+	// 		display: inline-block;
+	// 		width: 40px;
+	// 		height: 40px;
+	// 		border-radius: 50%;
+	// 		text-align: center;
+	// 		color: $secondary_color;
+	// 		@include rem((line-height: 40px, margin: 0 20px,font-size: 15px, ));
+	// 		&:hover {
+	// 			background: #fff;
+	// 		}
+	// 	}
+	// 	a.page_number.active {
+	// 		background: $primary_color;
+	// 	}
+	// }
 }
 .shop_filters {
 	width: 100%;
