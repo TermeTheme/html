@@ -2353,3 +2353,28 @@ footer.footer {
 		}
 	}
 }
+@media (max-width: 768px) {
+	footer.footer {
+		&.style_5 .top_bar {
+			.newsletter {
+				span {
+					display: none;
+				}
+				form {
+					width: 100%;
+				}
+			}
+		}
+		&.style_5 .bottom_bar {
+			.social_menu {
+				text-align: center;
+				float: none;
+			}
+			ul {
+				display: inline-block;
+				float: none;
+				width: auto;
+			}
+		}
+	}
+}

@@ -2610,3 +2610,16 @@ footer.footer {
           margin-right: 1rem;
           line-height: 20px;
           line-height: 2rem; }
+
+@media (max-width: 768px) {
+  footer.footer.style_5 .top_bar .newsletter span {
+    display: none; }
+  footer.footer.style_5 .top_bar .newsletter form {
+    width: 100%; }
+  footer.footer.style_5 .bottom_bar .social_menu {
+    text-align: center;
+    float: none; }
+  footer.footer.style_5 .bottom_bar ul {
+    display: inline-block;
+    float: none;
+    width: auto; } }

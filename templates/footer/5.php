@@ -18,7 +18,7 @@
   <div class="main_area">
       <div class="container">
           <div class="row">
-              <div class="col-xs-4">
+              <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="box_1">
                   <h2>Popular News</h2>
                   <ul>
@@ -32,11 +32,10 @@
                       <h3><a href="">2016 Mac Pro release date rumours & specs</a></h3>
                       <div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
                     </li>
-
                   </ul>
                 </div><!-- box_1 -->
               </div><!-- col-xs-4 -->
-              <div class="col-xs-4">
+              <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="box_2">
                   <h2>Top News</h2>
                   <ul>
@@ -50,13 +49,10 @@
                       <h3><a href="">2016 Mac Pro release date rumours & specs</a></h3>
                       <div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
                     </li>
-
                   </ul>
-
-
                 </div><!-- box_2 -->
               </div><!-- col-xs-4 -->
-              <div class="col-xs-4">
+              <div class="col-md-4 hidden-sm hidden-xs">
                 <div class="box_3">
                   <div class="popular_tags">
                       <h2>Popular Tags</h2>

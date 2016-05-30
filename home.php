@@ -15,7 +15,7 @@
 		<section class="top">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-8">
+					<div class="col-md-8 col-xs-12">
 						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 						    <div class="carousel-inner" role="listbox">
 						        <div class="item active">
@@ -34,7 +34,7 @@
 						    </a>
 						</div><!-- carousel slide -->
 					</div><!-- col-xs-8 -->
-					<div class="col-xs-4">
+					<div class="col-md-4 hidden-sm hidden-xs">
 						<div class="selection">
 							<h4>Top News</h4>
 							<a href="#" class="more pull-right">More</a>
@@ -80,9 +80,8 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-8">
+				<div class="col-sm-12">
 					<div class="home_content">
-
 						<div class="box">
 							<div class="title">
 								<a href="#" class="more pull-right">More</a>
@@ -91,7 +90,7 @@
 							</div><!-- title -->
 							<div class="body">
 								<div class="row">
-									<div class="col-xs-6">
+									<div class="col-sm-6 col-xs-12">
 										<div class="big_post">
 											<div class="thumb"><img src="assets/img/post_01.jpg" height="250" width="420" alt=""></div>
 											<h4>Hamyarwp said that:</h4>
@@ -101,7 +100,7 @@
 											<div class="excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna  aliquam erat volutpat.</div>
 										</div><!-- big_post -->
 									</div><!-- col-xs-6 -->
-									<div class="col-xs-6">
+									<div class="col-sm-6 col-xs-12">
 										<div class="small_post">
 											<ul>
 												<li>
@@ -300,45 +299,45 @@
 							</div><!-- title -->
 							<div class="body">
 								<div class="row">
-									<div class="col-xs-6">
+									<div class="col-sm-6 col-xs-12">
 										<div class="big_post">
 											<div class="thumb"><img src="assets/img/post_01.jpg" height="250" width="420" alt=""></div>
 											<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
 											<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
 											<div class="excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna  aliquam erat volutpat.</div>
 										</div><!-- big_post -->
-									</div><!-- col-xs-6 -->
-									<div class="col-xs-6">
+									</div><!-- col-sm-6 col-xs-12 -->
+									<div class="col-sm-6 col-xs-12">
 										<div class="big_post">
 											<div class="thumb"><img src="assets/img/post_01.jpg" height="250" width="420" alt=""></div>
 											<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
 											<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
 											<div class="excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna  aliquam erat volutpat.</div>
 										</div><!-- big_post -->
-									</div><!-- col-xs-6 -->
-									<div class="col-xs-6">
+									</div><!-- col-sm-6 col-xs-12 -->
+									<div class="col-sm-6 col-xs-12">
 										<div class="big_post">
 											<div class="thumb"><img src="assets/img/post_01.jpg" height="250" width="420" alt=""></div>
 											<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
 											<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
 											<div class="excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna  aliquam erat volutpat.</div>
 										</div><!-- big_post -->
-									</div><!-- col-xs-6 -->
-									<div class="col-xs-6">
+									</div><!-- col-sm-6 col-xs-12 -->
+									<div class="col-sm-6 col-xs-12">
 										<div class="big_post">
 											<div class="thumb"><img src="assets/img/post_01.jpg" height="250" width="420" alt=""></div>
 											<h2><a href="#">The world is changed! i feel in the water, i feel in ...</a></h2>
 											<div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016</div>
 											<div class="excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna  aliquam erat volutpat.</div>
 										</div><!-- big_post -->
-									</div><!-- col-xs-6 -->
+									</div><!-- col-sm-6 col-xs-12 -->
 								</div><!-- row -->
 							</div><!-- body -->
 						</div><!-- box -->
 
 					</div><!-- home_content -->
 				</div><!--col-xs-8-->
-				<div class="col-xs-4">
+				<div class="col-md-4 hidden-sm hidden-xs">
 					<?php include 'templates/sidebar/sidebar.php'; ?>
 
 				</div><!--col-xs-4-->

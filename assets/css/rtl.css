@@ -1,12 +1,3 @@
-@font-face {
-  font-family: 'IRANSans';
-  src: url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.ttf") format("truetype");
-  font-weight: normal; }
-@font-face {
-  font-family: 'IRANSans';
-  src: url("../fonts/IRANSansWeb_Bold.woff") format("woff"), url("../fonts/IRANSansWeb_Bold.ttf") format("truetype");
-  font-weight: bold; }
-
 body {
   font-family: 'IRANSans';
   text-align: right;
@@ -435,3 +426,12 @@ footer.footer.style_5 .bottom_bar .social_menu {
   padding-right: 0;
   padding-left: 20px;
   padding-left: 2rem; }
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
+  font-family: 'IRANSans';
+  src: url("../fonts/IRANSansWeb_Bold.woff") format("woff"), url("../fonts/IRANSansWeb_Bold.ttf") format("truetype");
+  font-weight: bold; }
