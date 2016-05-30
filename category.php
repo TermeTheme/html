@@ -14,7 +14,7 @@
 	<main class="main">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-8">
+				<div class="col-md-8 col-sm-12">
 					<div class="category_content">
 						<ul>
 							<li>
@@ -276,14 +276,14 @@
 
 					</div><!-- category_content -->
 				</div><!--col-xs-8-->
-				<div class="col-xs-4">
+				<div class="col-md-4 hidden-sm hidden-xs">
 					<?php include 'templates/sidebar/sidebar.php'; ?>
 
 				</div><!--col-xs-4-->
 			</div><!-- row -->
 		</div><!-- container -->
 	</main>
-<?php include 'templates/footer/1.php'; ?>
+<?php include 'templates/footer/5.php'; ?>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/typed.js"></script>
