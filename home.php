@@ -344,7 +344,7 @@
 			</div><!-- row -->
 		</div><!-- container -->
 	</main>
-<?php include 'templates/footer/5.php'; ?>
+<?php include 'templates/footer/4.php'; ?>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/typed.js"></script>

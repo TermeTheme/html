@@ -75,7 +75,7 @@
         <input type="email" name="name" value="" placeholder="Email">
       </div>
       <div class="comment-form-comment">
-        <textarea name="name" rows="8" cols="40"></textarea>
+        <textarea name="name" rows="8" cols="40" placeholder="Comment"></textarea>
       </div>
       <div class="form-submit">
         <input type="submit" name="submit" value="Send Comment">
