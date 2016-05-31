@@ -67,12 +67,19 @@
   </ol>
   <div class="comment_form">
     <h4>Your Comment</h4>
-
     <form class="" action="index.html" method="post">
-      <input type="text" name="name" value="" placeholder="Name">
-      <input type="email" name="name" value="" placeholder="Email">
-
-
+      <div class="comment-form-author">
+        <input type="text" name="name" value="" placeholder="Name">
+      </div>
+      <div class="comment-form-email">
+        <input type="email" name="name" value="" placeholder="Email">
+      </div>
+      <div class="comment-form-comment">
+        <textarea name="name" rows="8" cols="40"></textarea>
+      </div>
+      <div class="form-submit">
+        <input type="submit" name="submit" value="Send Comment">
+      </div>
     </form>
   </div>
 

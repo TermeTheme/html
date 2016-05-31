@@ -309,7 +309,6 @@ section.top {
 	@include rem(( margin-top: 30px, ));
 	.carousel {
 		overflow: hidden;
-		@include rem(height, 400px);
 	}
 	.carousel-inner > .item img {
 		width: 100%;
@@ -1483,25 +1482,28 @@ footer.footer {
 			color: #fff;
 			@include rem(( padding: 15px,margin: 20px 0 ,font-size: 1.2rem, ));
 		}
-		.tags_items {
+		.popular_tags {
 			float: left;
-			width: 100%;
-			list-style: none;
-			padding: 0;
-			@include rem(( padding: 15px 0, ));
-			margin-bottom: 0;
-		}
-		.tags_items a {
-			float: left;
-			color: #a3a3a3;
-			border: solid #a3a3a3;
-			@include rem((border-width: 1px, padding: 5px 10px,margin: 5px,font-size: 15px,));
-		}
-		.tags_items a:hover {
-			background-color: $primary_color;
-			color: $secondary_color;
-			border: solid $primary_color;
-			@include rem((border-width: 1px, padding: 5px 10px,));
+			.tags_items {
+				float: left;
+				width: 100%;
+				list-style: none;
+				padding: 0;
+				@include rem(( padding: 15px 0, ));
+				margin-bottom: 0;
+			}
+			.tags_items a {
+				float: left;
+				color: #a3a3a3;
+				border: solid #a3a3a3;
+				@include rem((border-width: 1px, padding: 5px 10px,margin: 5px,font-size: 15px,));
+			}
+			.tags_items a:hover {
+				background-color: $primary_color;
+				color: $secondary_color;
+				border: solid $primary_color;
+				@include rem((border-width: 1px, padding: 5px 10px,));
+			}
 		}
 	}
 	&.style_1 .bottom_bar,
@@ -1918,553 +1920,605 @@ footer.footer {
 	border: solid #e4e4e4;
 	background: #fff;
 	@include rem(( border-width: 0 1px 1px 1px, padding: 15px,));
-	form input {
-		width: 50%;
-		border: solid #e4e4e4;
-		background: #fafafa;
-		@include rem(( border-width: 1px,height: 45px, padding: 10px,));
-	}
-}
-.category_content {
-	@include rem(( padding-top: 30px, ));
-	ul {
-		list-style: none;
-		float: left;
-		padding: 0;
-		li {
-			width: 100%;
+	form {
+		.comment-form-author,
+		.comment-form-email {
 			float: left;
-			background: #fff;
-			padding: 0;
-			border: solid #e4e4e4;
-			@include rem(( border-width: 1px,margin-bottom: 20px, ));
+			width: 50%;
+			box-sizing: border-box;
+			@include rem(( padding: 10px,));
 		}
-		li article {
+		.comment-form-comment {
 			float: left;
 			width: 100%;
-			figure {
-				margin: 0;
-			}
-			figure.thumbnail {
-				float: left;
-				margin-right: 20px;
-				border: none;
-				padding: 0;
-			}
-			section {
-				h2 {
-					line-height: 1.3;
-					text-align: justify;
-					@include rem((font-size: 20px,padding-right: 20px, ));
-					a {
-						&:hover {
-							color: $primary_color;
-						}
-					}
-				}
-				.post_time {
-					color: #979a9f;
-					@include rem((font-size: 14px,padding: 0 0 20px 0, ));
-				}
-				.excerpt {
-					width: 100%;
-					text-align: justify;
-					color: #979a9f;
-					@include rem(( border-width: 1px,font-size: 15px,padding-right: 20px, ));
-				}
-			}
-		}
-	}
-	.wp-pagenavi {
-		float: right;
-		width: 100%;
-		margin: 5.3125rem 0;
-		text-align: center;
-		direction: ltr;
-		@include rem(( border-width: 1px,font-size: 15px,padding-right: 20px, ));
-		a {
-			&:hover {
-				background: #fff;
-			}
-		}
-		a,
-		span.current {
-			border-radius: 50%;
-			text-align: center;
-			display: inline-block;
-			margin: 0 1.875rem;
-			color: $secondary_color;
-			@include rem(( font-size: 20px,line-height: 45px,width: 45px,height: 45px,	));
+			box-sizing: border-box;
+			@include rem(( padding: 10px,));
 
 		}
-		span.current {
-			background: $primary_color;
-			color: #fff;
-		}
-		a.nextpostslink,
-		a.previouspostslink {
+		.form-submit {
 			float: right;
-			margin: 0;
-			width: auto;
-			height: auto;
-			border-radius: 0;
-			background: none;
-			color: #c8c8c8;
-		}
-		a.previouspostslink {
-			float: left;
-		}
-		a.nextpostslink i,
-		a.previouspostslink i {
-			float: right;
-			margin-left: 0.625rem;
-			-webkit-transition: none;
-			-o-transition: none;
-			transition: none;
-			@include rem(( font-size: 60px,));
-
-		}
-		a.previouspostslink i {
-			float: left;
-			margin-left: 0;
-			margin-right: 0.625rem;
-		}
-		a.nextpostslink:hover,
-		a.previouspostslink:hover {
-			color: $secondary_color;
-		}
-	}
-	// .page_navigation {
-	// 	float: left;
-	// 	width: 100%;
-	// 	a.next_post,
-	// 	a.prev_post {
-	// 		color: #979a9f;
-	// 		line-height: 3.5;
-	// 		@include rem((font-size: 15px, ));
-	// 		span {
-	// 			@include rem(( margin-left: 10px, ));
-	// 		}
-	// 		i {
-	// 			@include rem((font-size: 55px, ));
-	// 		}
-	// 		&:hover {
-	// 			color: $secondary_color;
-	// 		}
-	// 	}
-	// 	a.prev_post {
-	// 		float: left;
-	// 		i {
-	// 			float: left;
-	// 		}
-	// 	}
-	// 	a.next_post {
-	// 		float: right;
-	// 		i {
-	// 			float: right;
-	// 		}
-	// 	}
-	// 	a.page_number {
-	// 		display: inline-block;
-	// 		width: 40px;
-	// 		height: 40px;
-	// 		border-radius: 50%;
-	// 		text-align: center;
-	// 		color: $secondary_color;
-	// 		@include rem((line-height: 40px, margin: 0 20px,font-size: 15px, ));
-	// 		&:hover {
-	// 			background: #fff;
-	// 		}
-	// 	}
-	// 	a.page_number.active {
-	// 		background: $primary_color;
-	// 	}
-	// }
-}
-.shop_filters {
-	width: 100%;
-	float: left;
-	@include rem((padding:30px 15px,));
-	.filter_item {
-		float: left;
-		width: 25%;
-		box-sizing: border-box;
-		@include rem((padding-right: 20px ,));
-		.dropdown {
-			height: 40px;
-			border: none;
-			border-radius: 0;
-			color: #d4d4d4;
-			display: block;
-			button {
-				height: 40px;
-				background: #fff;
-				border: #e6e6e6 solid;
-				@include rem((border-width: 1px, border-radius: 0 ,));
-			}
-			button.dropdown-content {
-				width: 65%;
-				float: left;
-			}
-			button.dropdown-toggle {
-				width: 40px;
-				border: #e6e6e6 solid;
-				float: left;
-				@include rem((border-width: 1px, border-radius: 0 4px 4px 0 ,));
-			}
-		}
-	}
-	#post_grid {
-		&:before {
-			content: "\f009";
-			float: left;
-			font: normal normal normal 20px/1 FontAwesome;
-			width: 40px;
-			height: 40px;
-			background: #d4d4d4;
-			color: #fff;
-			line-height: 40px;
-			text-align: center;
-			@include rem((border-radius: 4px 0 0 4px,));
-		}
-	}
-	#post_sort {
-		&:before {
-			content: "\f062";
-			float: left;
-			font: normal normal normal 20px/1 FontAwesome;
-			width: 40px;
-			height: 40px;
-			background: #d4d4d4;
-			color: #fff;
-			line-height: 40px;
-			text-align: center;
-			@include rem((border-radius: 4px,margin-right: 5px,));
-		}
-	}
-}
-.shop_product {
-	width: 100%;
-	border: #e6e6e6 solid;
-	background: #fff;
-	@include rem(( height: 475px, border-width: 1px,margin-bottom: 20px, ));
-	position: relative;
-}
-.shop_product .thumb {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 75%;
-	background: #ecf0f1;
-	overflow: hidden;
-}
-.shop_product .thumb:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,.7);
-	z-index: 2;
-	content: '';
-	opacity: 0;
-	transition: opacity 300ms;
-}
-.shop_product:hover .thumb:before {
-	opacity: 1;
-}
-.shop_product .info {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 25%;
-	background: #fff;
-	text-align: center;
-	transition: background 300ms;
-	@include rem(( padding: 0 10px, ));
-	h3 {
-		@include rem(( font-size: 20px, ));
-		a {
-			color: $secondary_color;
-		}
-	}
-	.price {
-		@include rem(( font-size: 16px, ));
-		color: #979a9f;
-	}
-}
-.shop_product:hover .info {
-	background: $secondary_color;
-	.price,
-	a {
-		color: #fff;
-	}
-}
-.shop_product .thumb .add_to_cart {
-	position: absolute;
-	@include rem(( padding: 0 15px, height: 40px, line-height: 40px, border-radius: 3px, ));
-	color: $secondary_color;
-	top: 50%;
-	background: #fff;
-	z-index: 999;
-	left: 0;
-	transform: translate(-100%, -50%);
-	min-width: 30%;
-	text-align: center;
-	font-size: 14px;
-}
-.shop_product:hover .thumb .add_to_cart {
-	transform: translate(50%, -50%);
-}
-.shop_product .thumb .permalink {
-	position: absolute;
-	@include rem(( padding: 0 15px, height: 40px, line-height: 40px, border-radius: 3px, ));
-	color: $secondary_color;
-	background: #fff;
-	z-index: 999;
-	top: 50%;
-	right: 0;
-	transform: translate(100%, -50%);
-	min-width: 30%;
-	text-align: center;
-	font-size: 14px;
-}
-.shop_product:hover .thumb .permalink {
-	transform: translate(-50%, -50%);
-}
-.shop_product .thumb .add_to_cart:hover,
-.shop_product .thumb .permalink:hover {
-	background: $primary_color;
-}
-.product_page {
-	float: left;
-	width: 100%;
-	padding: 0;
-	border: solid #e4e4e4;
-	background: #fff;
-	list-style: none;
-	@include rem(( border-width: 1px, padding-top: 0 ));
-	margin-bottom: 0;
-	.product_image {
-		float: left;
-		width: 43%;
-		box-sizing: border-box;
-		@include rem((margin: 0 20px 20px 0, ));
-		img {
-			width: 100%;
-			float: left;
-		}
-	}
-	.product_detail {
-		float: right;
-		width: 55%;
-		box-sizing: border-box;
-		@include rem(( padding: 20px, ));
-		h1.product_name {
-			margin: 0;
-			@include rem((font-size: 25px, padding: 20px 0, ));
-		}
-		.product_price {
-			h3 {
-				color: $primary_color;
-				margin: 0;
-				display: inline-block;
-				@include rem((font-size: 25px, padding: 0,margin-right: 5px, ));
-			}
-			.product_stars {
-				float: right;
-				color: $primary_color;
-				@include rem((font-size: 20px,));
-			}
-		}
-		p.product_short_desc {
-			text-align: justify;
-			@include rem((font-size: 15px,margin-top: 20px, ));
-		}
-		.product_buy {
-			border: solid #e4e4e4;
-			@include rem((border-width: 1px 0 1px 0,padding: 20px 0,));
-			button {
-				border: solid $secondary_color;
-				background: #fff;
-				@include rem((margin-right: 10px,border-radius: 4px,padding: 10px 20px, border-width: 1px,));
-				&:hover {
-					background: $primary_color;
-					border: solid $primary_color;
-					@include rem((border-width: 1px,));
-					color: #fff;
-				}
-				a {
-					color: $secondary_color;
-					display: block;
-				}
-			}
-		}
-		.product_meta {
-			color: #979a9f;
-			@include rem(( margin: 20px 0, ));
-			span {
-				@include rem((font-size: 15px, ));
-			}
-		}
-		.product_tags {
-			float: left;
-			width: 100%;
-			span {
-				@include rem((font-size: 15px, ));
-				color: #979a9f;
-				float: left;
-				display: block;
-				width: 100%;
-			}
-			a {
-				float: left;
+			@include rem(( padding: 10px,));
+			input {
+				font-weight: bold;
+				background: $primary_color;
 				color: $secondary_color;
-				border: solid #e4e4e4;
-				@include rem((border-width: 1px, padding: 5px 10px,margin: 5px,font-size: 15px,));
-				&:hover {
-					background-color: $secondary_color;
-					color: #fff;
-					border: solid #e4e4e4;
-					@include rem((border-width: 1px, padding: 5px 10px,));
-				}
+				@include rem(( padding: 5px 30px,border-radius: 4px,));
+
 			}
+
 		}
-		.product_social {
-			float: left;
+
+		input {
 			width: 100%;
-			ul {
-				list-style: none;
-				float: left;
-				margin: 0;
-				padding: 0;
-				li {
-					float: left;
-					@include rem((margin: 20px, font-size: 15px,));
-					&:first-child {
-						margin-left: 0;
-					}
-					a {
-						color: $secondary_color;
-					}
-				}
-			}
+			border: solid #e4e4e4;
+			background: #fafafa;
+			@include rem(( border-width: 1px,height: 45px, padding: 10px,));
+		}
+		textarea {
+			width: 100%;
+			border: solid #e4e4e4;
+			background: #fafafa;
+			@include rem(( border-width: 1px,height: 45px, padding: 10px,));
+
 		}
 	}
-	.product_intro {
-		float: left;
-		width: 100%;
-		.product_tab {
-			width: 90%;
-			margin: 0 auto;
-			ul {
-				border-bottom: 0;
-				padding: 0;
-				li {
-					float: left;
-					border-bottom: solid #fff;
-					@include rem(( border-bottom-width: 2px,));
-					a {
-						background: #f6f6f6;
-						color: $secondary_color;
-						font-weight: 500;
-						border: none;
-						@include rem(( margin-right: 2px, padding: 10px 30px,font-size: 15px,));
-					}
-				}
-				li.active {
-					border-bottom: solid #f6f6f6;
-					@include rem(( border-bottom-width: 2px,));
-				}
-			}
-			.tab-content {
-				background: #f6f6f6;
-				@include rem(( padding: 20px,margin: 0 auto 20px auto,));
-				p {
-					text-align: justify;
-					@include rem((font-size: 15px, ));
-				}
-			}
-		}
-	}
-	.product_more {
-		float: left;
-		width: 100%;
-		h2 {
-			color: $primary_color;
-			@include rem(( padding:10px 15px,font-size: 20px, ));
-		}
+	.category_content {
+		@include rem(( padding-top: 30px, ));
 		ul {
 			list-style: none;
 			float: left;
-			width: 100%;
+			padding: 0;
 			li {
+				width: 100%;
+				float: left;
+				background: #fff;
+				padding: 0;
+				border: solid #e4e4e4;
+				@include rem(( border-width: 1px,margin-bottom: 20px, ));
+			}
+			li article {
 				float: left;
 				width: 100%;
-				@include rem(( padding:5px 15px,font-size: 15px, ));
-				&:before {
-					content: "\f00c";
-					font: normal normal normal 16px/1 FontAwesome;
+				figure {
+					margin: 0;
+				}
+				figure.thumbnail {
 					float: left;
-					@include rem(( margin-right: 10px, line-height: 20px, ));
+					margin-right: 20px;
+					border: none;
+					padding: 0;
+				}
+				section {
+					h2 {
+						line-height: 1.3;
+						text-align: justify;
+						@include rem((font-size: 20px,padding-right: 20px, ));
+						a {
+							&:hover {
+								color: $primary_color;
+							}
+						}
+					}
+					.post_time {
+						color: #979a9f;
+						@include rem((font-size: 14px,padding: 0 0 20px 0, ));
+					}
+					.excerpt {
+						width: 100%;
+						text-align: justify;
+						color: #979a9f;
+						@include rem(( border-width: 1px,font-size: 15px,padding-right: 20px, ));
+					}
+				}
+			}
+		}
+		.wp-pagenavi {
+			float: right;
+			width: 100%;
+			margin: 5.3125rem 0;
+			text-align: center;
+			direction: ltr;
+			@include rem(( border-width: 1px,font-size: 15px,padding-right: 20px, ));
+			a {
+				&:hover {
+					background: #fff;
+				}
+			}
+			a,
+			span.current {
+				border-radius: 50%;
+				text-align: center;
+				display: inline-block;
+				margin: 0 1.875rem;
+				color: $secondary_color;
+				@include rem(( font-size: 20px,line-height: 45px,width: 45px,height: 45px, ));
+			}
+			span.current {
+				background: $primary_color;
+				color: #fff;
+			}
+			a.nextpostslink,
+			a.previouspostslink {
+				float: right;
+				margin: 0;
+				width: auto;
+				height: auto;
+				border-radius: 0;
+				background: none;
+				color: #c8c8c8;
+			}
+			a.previouspostslink {
+				float: left;
+			}
+			a.nextpostslink i,
+			a.previouspostslink i {
+				float: right;
+				margin-left: 0.625rem;
+				-webkit-transition: none;
+				-o-transition: none;
+				transition: none;
+				@include rem(( font-size: 60px,));
+			}
+			a.previouspostslink i {
+				float: left;
+				margin-left: 0;
+				margin-right: 0.625rem;
+			}
+			a.nextpostslink:hover,
+			a.previouspostslink:hover {
+				color: $secondary_color;
+			}
+		}
+		// .page_navigation {
+		// 	float: left;
+		// 	width: 100%;
+		// 	a.next_post,
+		// 	a.prev_post {
+		// 		color: #979a9f;
+		// 		line-height: 3.5;
+		// 		@include rem((font-size: 15px, ));
+		// 		span {
+		// 			@include rem(( margin-left: 10px, ));
+		// 		}
+		// 		i {
+		// 			@include rem((font-size: 55px, ));
+		// 		}
+		// 		&:hover {
+		// 			color: $secondary_color;
+		// 		}
+		// 	}
+		// 	a.prev_post {
+		// 		float: left;
+		// 		i {
+		// 			float: left;
+		// 		}
+		// 	}
+		// 	a.next_post {
+		// 		float: right;
+		// 		i {
+		// 			float: right;
+		// 		}
+		// 	}
+		// 	a.page_number {
+		// 		display: inline-block;
+		// 		width: 40px;
+		// 		height: 40px;
+		// 		border-radius: 50%;
+		// 		text-align: center;
+		// 		color: $secondary_color;
+		// 		@include rem((line-height: 40px, margin: 0 20px,font-size: 15px, ));
+		// 		&:hover {
+		// 			background: #fff;
+		// 		}
+		// 	}
+		// 	a.page_number.active {
+		// 		background: $primary_color;
+		// 	}
+		// }
+	}
+	.shop_filters {
+		width: 100%;
+		float: left;
+		@include rem((padding:30px 15px,));
+		.filter_item {
+			float: left;
+			width: 25%;
+			box-sizing: border-box;
+			@include rem((padding-right: 20px ,));
+			.dropdown {
+				height: 40px;
+				border: none;
+				border-radius: 0;
+				color: #d4d4d4;
+				display: block;
+				button {
+					height: 40px;
+					background: #fff;
+					border: #e6e6e6 solid;
+					@include rem((border-width: 1px, border-radius: 0 ,));
+				}
+				button.dropdown-content {
+					width: 65%;
+					float: left;
+				}
+				button.dropdown-toggle {
+					width: 40px;
+					border: #e6e6e6 solid;
+					float: left;
+					@include rem((border-width: 1px, border-radius: 0 4px 4px 0 ,));
+				}
+			}
+		}
+		#post_grid {
+			&:before {
+				content: "\f009";
+				float: left;
+				font: normal normal normal 20px/1 FontAwesome;
+				width: 40px;
+				height: 40px;
+				background: #d4d4d4;
+				color: #fff;
+				line-height: 40px;
+				text-align: center;
+				@include rem((border-radius: 4px 0 0 4px,));
+			}
+		}
+		#post_sort {
+			&:before {
+				content: "\f062";
+				float: left;
+				font: normal normal normal 20px/1 FontAwesome;
+				width: 40px;
+				height: 40px;
+				background: #d4d4d4;
+				color: #fff;
+				line-height: 40px;
+				text-align: center;
+				@include rem((border-radius: 4px,margin-right: 5px,));
+			}
+		}
+	}
+	.shop_product {
+		width: 100%;
+		border: #e6e6e6 solid;
+		background: #fff;
+		@include rem(( height: 475px, border-width: 1px,margin-bottom: 20px, ));
+		position: relative;
+	}
+	.shop_product .thumb {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 75%;
+		background: #ecf0f1;
+		overflow: hidden;
+	}
+	.shop_product .thumb:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.7);
+		z-index: 2;
+		content: '';
+		opacity: 0;
+		transition: opacity 300ms;
+	}
+	.shop_product:hover .thumb:before {
+		opacity: 1;
+	}
+	.shop_product .info {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 25%;
+		background: #fff;
+		text-align: center;
+		transition: background 300ms;
+		@include rem(( padding: 0 10px, ));
+		h3 {
+			@include rem(( font-size: 20px, ));
+			a {
+				color: $secondary_color;
+			}
+		}
+		.price {
+			@include rem(( font-size: 16px, ));
+			color: #979a9f;
+		}
+	}
+	.shop_product:hover .info {
+		background: $secondary_color;
+		.price,
+		a {
+			color: #fff;
+		}
+	}
+	.shop_product .thumb .add_to_cart {
+		position: absolute;
+		@include rem(( padding: 0 15px, height: 40px, line-height: 40px, border-radius: 3px, ));
+		color: $secondary_color;
+		top: 50%;
+		background: #fff;
+		z-index: 999;
+		left: 0;
+		transform: translate(-100%, -50%);
+		min-width: 30%;
+		text-align: center;
+		font-size: 14px;
+	}
+	.shop_product:hover .thumb .add_to_cart {
+		transform: translate(50%, -50%);
+	}
+	.shop_product .thumb .permalink {
+		position: absolute;
+		@include rem(( padding: 0 15px, height: 40px, line-height: 40px, border-radius: 3px, ));
+		color: $secondary_color;
+		background: #fff;
+		z-index: 999;
+		top: 50%;
+		right: 0;
+		transform: translate(100%, -50%);
+		min-width: 30%;
+		text-align: center;
+		font-size: 14px;
+	}
+	.shop_product:hover .thumb .permalink {
+		transform: translate(-50%, -50%);
+	}
+	.shop_product .thumb .add_to_cart:hover,
+	.shop_product .thumb .permalink:hover {
+		background: $primary_color;
+	}
+	.product_page {
+		float: left;
+		width: 100%;
+		padding: 0;
+		border: solid #e4e4e4;
+		background: #fff;
+		list-style: none;
+		@include rem(( border-width: 1px, padding-top: 0 ));
+		margin-bottom: 0;
+		.product_image {
+			float: left;
+			width: 45%;
+			box-sizing: border-box;
+			@include rem(( padding: 0 20px 20px 0,));
+			img {
+				width: 100%;
+				height: auto;
+				float: left;
+			}
+		}
+		.product_detail {
+			float: right;
+			width: 55%;
+			box-sizing: border-box;
+			@include rem(( padding: 20px, ));
+			h1.product_name {
+				margin: 0;
+				@include rem((font-size: 25px, padding: 20px 0, ));
+			}
+			.product_price {
+				h3 {
+					color: $primary_color;
+					margin: 0;
+					display: inline-block;
+					@include rem((font-size: 25px, padding: 0,margin-right: 5px, ));
+				}
+				.product_stars {
+					float: right;
+					color: $primary_color;
+					@include rem((font-size: 20px,));
+				}
+			}
+			p.product_short_desc {
+				text-align: justify;
+				@include rem((font-size: 15px,margin-top: 20px, ));
+			}
+			.product_buy {
+				border: solid #e4e4e4;
+				@include rem((border-width: 1px 0 1px 0,padding: 20px 0,));
+				button {
+					border: solid $secondary_color;
+					background: #fff;
+					@include rem((margin-right: 10px,border-radius: 4px,padding: 10px 20px, border-width: 1px,));
+					&:hover {
+						background: $primary_color;
+						border: solid $primary_color;
+						@include rem((border-width: 1px,));
+						color: #fff;
+					}
+					a {
+						color: $secondary_color;
+						display: block;
+					}
+				}
+			}
+			.product_meta {
+				color: #979a9f;
+				@include rem(( margin: 20px 0, ));
+				span {
+					@include rem((font-size: 15px, ));
+				}
+			}
+			.product_tags {
+				float: left;
+				width: 100%;
+				span {
+					@include rem((font-size: 15px, ));
+					color: #979a9f;
+					float: left;
+					display: block;
+					width: 100%;
+				}
+				a {
+					float: left;
+					color: $secondary_color;
+					border: solid #e4e4e4;
+					@include rem((border-width: 1px, padding: 5px 10px,margin: 5px,font-size: 15px,));
+					&:hover {
+						background-color: $secondary_color;
+						color: #fff;
+						border: solid #e4e4e4;
+						@include rem((border-width: 1px, padding: 5px 10px,));
+					}
+				}
+			}
+			.product_social {
+				float: left;
+				width: 100%;
+				ul {
+					list-style: none;
+					float: left;
+					margin: 0;
+					padding: 0;
+					li {
+						float: left;
+						@include rem((margin: 20px, font-size: 15px,));
+						&:first-child {
+							margin-left: 0;
+						}
+						a {
+							color: $secondary_color;
+						}
+					}
+				}
+			}
+		}
+		.product_intro {
+			float: left;
+			width: 100%;
+			.product_tab {
+				width: 90%;
+				margin: 0 auto;
+				ul {
+					border-bottom: 0;
+					padding: 0;
+					li {
+						float: left;
+						border-bottom: solid #fff;
+						@include rem(( border-bottom-width: 2px,));
+						a {
+							background: #f6f6f6;
+							color: $secondary_color;
+							font-weight: 500;
+							border: none;
+							@include rem(( margin-right: 2px, padding: 10px 30px,font-size: 15px,));
+						}
+					}
+					li.active {
+						border-bottom: solid #f6f6f6;
+						@include rem(( border-bottom-width: 2px,));
+					}
+				}
+				.tab-content {
+					background: #f6f6f6;
+					@include rem(( padding: 20px,margin: 0 auto 20px auto,));
+					p {
+						text-align: justify;
+						@include rem((font-size: 15px, ));
+					}
+				}
+			}
+		}
+		.product_more {
+			float: left;
+			width: 100%;
+			h2 {
+				color: $primary_color;
+				@include rem(( padding:10px 15px,font-size: 20px, ));
+			}
+			ul {
+				list-style: none;
+				float: left;
+				width: 100%;
+				li {
+					float: left;
+					width: 100%;
+					@include rem(( padding:5px 15px,font-size: 15px, ));
+					&:before {
+						content: "\f00c";
+						font: normal normal normal 16px/1 FontAwesome;
+						float: left;
+						@include rem(( margin-right: 10px, line-height: 20px, ));
+					}
 				}
 			}
 		}
 	}
-}
-@media (max-width: 768px) {
-	.product_page {
-		.product_image  {
-			width: 100%;
+	@media (max-width: 768px) {
+		.small_post {
+			&.half_width {
+				ul {
+					li {
+						width: 100%;
+						&:nth-last-child(2) {
+							border-bottom: solid #e4e4e4;
+							@include rem(( border-bottom-width: 1px,));
+						}
+					}
+				}
+			}
 		}
-		.product_detail {
-			width: 100%;
+		.product_page {
+			.product_image {
+				width: 100%;
+				padding: 0;
+			}
+			.product_detail {
+				width: 100%;
+			}
 		}
-	}
-	footer.footer {
-		&.style_1 .main_area {
-			.box_1 {
-				text-align: center;
-				img {
-					display: block;
-					margin: 0 auto;
+		footer.footer {
+			&.style_1 .main_area {
+				.box_1 {
+					text-align: center;
+					img {
+						display: block;
+						margin: 0 auto;
+					}
+					ul {
+						display: inline-block;
+						float: none;
+						width: auto;
+					}
+				}
+			}
+			&.style_3 .top_bar {
+				.social_menu {
+					&:after {
+						display: none;
+					}
+				}
+			}
+			&.style_5 .top_bar {
+				.newsletter {
+					span {
+						display: none;
+					}
+					form {
+						width: 100%;
+					}
+				}
+			}
+			&.style_1 .bottom_bar,
+			&.style_5 .bottom_bar {
+				.social_menu {
+					text-align: center;
+					float: none;
+				}
+				p {
+					float: none;
 				}
 				ul {
 					display: inline-block;
 					float: none;
 					width: auto;
 				}
-			}
-		}
-		&.style_3 .top_bar {
-			.social_menu {
-				&:after {
-					display: none;
-				}
-			}
-		}
-		&.style_5 .top_bar {
-			.newsletter {
-				span {
-					display: none;
-				}
-				form {
-					width: 100%;
-				}
-			}
-		}
-		&.style_1 .bottom_bar,
-		&.style_5 .bottom_bar {
-			.social_menu {
-				text-align: center;
-				float: none;
-			}
-			ul {
-				display: inline-block;
-				float: none;
-				width: auto;
 			}
 		}
 	}
