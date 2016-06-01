@@ -2719,6 +2719,8 @@ footer.footer {
     float: none;
     width: auto; } }
 @media (max-width: 992px) {
+  header.header .top_bar {
+    border-top: none; }
   header.header.style_1 .top_bar {
     background: #ff322e;
     color: #fff; }
@@ -2746,7 +2748,8 @@ footer.footer {
          -moz-box-sizing: border-box;
               box-sizing: border-box;
       width: 10%;
-      margin: 0; }
+      margin: 0;
+      color: #fff; }
   .top_bar .user_area,
   .top_bar .shopping_cart {
     display: none; } }
