@@ -710,7 +710,6 @@ section.latest_news {
 		font-size: 14px;
 		&:hover {
 			color: #fff;
-
 		}
 	}
 	& li:hover .product .thumb .add_to_cart {
@@ -729,7 +728,6 @@ section.latest_news {
 		font-size: 14px;
 		&:hover {
 			color: #fff;
-
 		}
 	}
 	& li:hover .product .thumb .permalink {
@@ -1215,7 +1213,7 @@ footer.footer {
 	&.style_4 .main_area,
 	&.style_5 .main_area {
 		padding: 40px 0;
-		background-color: #222533;
+		background-color: #555;
 		color: #a3a3a3;
 	}
 	&.style_3 .top_bar {
@@ -1244,14 +1242,14 @@ footer.footer {
 		}
 		.newsletter input {
 			width: 80%;
-			border-bottom: solid #242934;
+			border-bottom: solid #555;
 			float: left;
 			background-color: $secondary_color;
 			@include rem(( padding: 15px,margin: 20px 0 , border-width: 1px, ));
 		}
 		.newsletter button {
 			width: 20%;
-			background-color: #242934;
+			background-color: #555;
 			border-radius: 0;
 			color: #fff;
 			@include rem(( padding: 5px,margin: 20px 0 ,font-size: 1.2rem, ));
@@ -1393,7 +1391,7 @@ footer.footer {
 				width: 1px;
 				height: 50%;
 				position: absolute;
-				background: $secondary_color;
+				background: #fff;
 				content: ' ';
 				right: 0;
 				top: 0;
@@ -1402,9 +1400,9 @@ footer.footer {
 			ul {
 				li {
 					a {
-						color: $secondary_color;
+						color: #fff;
 						&:hover {
-							background-color: #fff;
+							background-color: $secondary_color;
 						}
 					}
 				}
@@ -1413,6 +1411,7 @@ footer.footer {
 		.email_contact {
 			text-align: center;
 			p {
+				color: #fff;
 				@include rem(( margin-top: 30px, font-size: 15px,));
 			}
 		}
@@ -1484,6 +1483,7 @@ footer.footer {
 			width: 80%;
 			border: solid #A3A3A3;
 			float: left;
+			border-right: 0;
 			background-color: transparent;
 			@include rem(( padding: 15px,margin: 20px 0 , border-width: 1px, ));
 		}
@@ -1512,7 +1512,7 @@ footer.footer {
 			}
 			.tags_items a:hover {
 				background-color: $primary_color;
-				color: $secondary_color;
+				color: #fff;
 				border: solid $primary_color;
 				@include rem((border-width: 1px, padding: 5px 10px,));
 			}
@@ -1862,7 +1862,7 @@ footer.footer {
 			position: relative;
 			float: left;
 			width: 100%;
-			background: #fff7e0;
+			background: #FFEBEE;
 			@include rem(( padding: 0, ));
 			&:before {
 				content: "\f112";
@@ -1943,7 +1943,12 @@ footer.footer {
 				width: 100%;
 				border: solid #e4e4e4;
 				background: #fafafa;
+				transition: all 0.4s;
 				@include rem(( border-width: 1px,height: 45px, padding: 10px,));
+				&:focus {
+					border: solid $primary_color;
+					@include rem(( border-width: 1px,));
+				}
 			}
 		}
 		.comment-form-comment {
@@ -1953,9 +1958,16 @@ footer.footer {
 			@include rem(( padding: 10px,));
 			textarea {
 				width: 100%;
+				outline: none;
 				border: solid #e4e4e4;
 				background: #fafafa;
+				transition: all 0.4s;
+
 				@include rem(( border-width: 1px,height: 100px, padding: 10px,));
+				&:focus {
+					border: solid $primary_color;
+					@include rem(( border-width: 1px,));
+				}
 			}
 		}
 		.form-submit {
@@ -1964,8 +1976,9 @@ footer.footer {
 			input {
 				font-weight: bold;
 				background: $primary_color;
-				color: $secondary_color;
-				@include rem(( padding: 5px 30px,border-radius: 4px,));
+				border: none;
+				color: #fff;
+				@include rem(( padding: 15px 30px,border-radius: 4px,    font-size: 14px,));
 			}
 		}
 	}
@@ -2413,86 +2426,93 @@ footer.footer {
 	}
 }
 @media (max-width: 768px) {
-  .comment_form {
-    form {
-      .comment-form-author,
-      .comment-form-email {
-        width: 100%;
-      }
-    }
-  }
-  .small_post {
-    &.half_width {
-      ul {
-        li {
-          width: 100%;
-          &:nth-last-child(2) {
-            border-bottom: solid #e4e4e4;
-            @include rem(( border-bottom-width: 1px,));
-          }
-        }
-      }
-    }
-  }
-  .product_page {
-    .product_image {
-      width: 100%;
-      padding: 0;
-    }
-    .product_detail {
-      width: 100%;
-    }
-  }
-  footer.footer {
-    &.style_1 .main_area {
-      .box_1 {
-        text-align: center;
-        img {
-          display: block;
-          margin: 0 auto;
-        }
-        ul {
-          display: inline-block;
-          float: none;
-          width: auto;
-        }
-      }
-    }
-    &.style_3 .top_bar {
-      .social_menu {
-        &:after {
-          display: none;
-        }
-      }
-    }
-    &.style_5 .top_bar {
-      .newsletter {
-        span {
-          display: none;
-        }
-        form {
-          width: 100%;
-        }
-      }
-    }
-    &.style_1 .bottom_bar,
-    &.style_5 .bottom_bar {
-      .social_menu {
-        text-align: center;
-        float: none;
-      }
-      p {
-        float: none;
-      }
-      ul {
-        display: inline-block;
-        float: none;
-        width: auto;
-      }
-    }
-  }
+	.comment_form {
+		form {
+			.comment-form-author,
+			.comment-form-email {
+				width: 100%;
+			}
+		}
+	}
+	.small_post {
+		&.half_width {
+			ul {
+				li {
+					width: 100%;
+					&:nth-last-child(2) {
+						border-bottom: solid #e4e4e4;
+						@include rem(( border-bottom-width: 1px,));
+					}
+				}
+			}
+		}
+	}
+	.product_page {
+		.product_image {
+			width: 100%;
+			padding: 0;
+		}
+		.product_detail {
+			width: 100%;
+		}
+	}
+	footer.footer {
+		&.style_1 .main_area {
+			.box_1 {
+				text-align: center;
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+				ul {
+					display: inline-block;
+					float: none;
+					width: auto;
+				}
+			}
+		}
+		&.style_3 .top_bar {
+			.social_menu {
+				&:after {
+					display: none;
+				}
+			}
+		}
+		&.style_5 .top_bar {
+			.newsletter {
+				span {
+					display: none;
+				}
+				form {
+					width: 100%;
+				}
+			}
+		}
+		&.style_1 .bottom_bar,
+		&.style_5 .bottom_bar {
+			.social_menu {
+				text-align: center;
+				float: none;
+			}
+			p {
+				float: none;
+			}
+			ul {
+				display: inline-block;
+				float: none;
+				width: auto;
+			}
+		}
+	}
 }
 @media (max-width: 992px) {
+	.header {
+		.main_menu {
+			ul {
+				display: none;
+			}
+		}
+	}
 	header.header {
 		.top_bar {
 			border-top: none;
@@ -2503,7 +2523,6 @@ footer.footer {
 		}
 	}
 	.top_bar {
-
 		form {
 			width: 100%;
 			border: none;
@@ -2521,12 +2540,147 @@ footer.footer {
 				width: 10%;
 				margin: 0;
 				color: #fff;
-
 			}
 		}
-		.user_area,
-		.shopping_cart {
+		.shopping_cart,
+		.user_area {
 			display: none;
 		}
 	}
+}
+@media (min-width: 992px) {
+	.toggle_menu {
+		display: none;
+	}
+}
+.sb-left {
+	background: $secondary_color;
+	.sidebar_menu {
+		ul {
+			float: left;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			li {
+				float: left;
+				width: 100%;
+				position: relative;
+				@include rem(( padding: 20px,font-size: 16px,));
+				&:before {
+					content: "";
+					width: 4px;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: $primary_color;
+					transition: all 0.4s;
+				}
+				a {
+					color: #fff;
+					display: block;
+				}
+				ul {
+					float: left;
+					list-style: none;
+					padding: 0;
+					position: absolute;
+					left: 0;
+					opacity: 0;
+					height: auto;
+					@include rem(( top: 50px,));
+
+					li {
+						width: 100%;
+						@include rem(( padding: 15px,font-size: 14px,));
+					}
+				}
+			}
+			li:hover:before {
+				width: 100%;
+			}
+		}
+	}
+}
+.toggle_menu {
+	// display: block;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 60px;
+	height: 60px;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+.toggle_menu:focus {
+	outline: none;
+}
+.toggle_menu span {
+	display: block;
+	position: absolute;
+	top: 29px;
+	left: 18px;
+	right: 18px;
+	height: 5px;
+	background: white;
+}
+.toggle_menu span::after,
+.toggle_menu span::before {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background-color: #fff;
+	content: "";
+}
+.toggle_menu span::before {
+	top: -10px;
+}
+.toggle_menu span::after {
+	bottom: -10px;
+}
+.toggle_menu_active {
+	background-color: $secondary_color;
+}
+.toggle_menu_active span {
+	transition: background 0s 0.3s;
+}
+.toggle_menu_active span::after,
+.toggle_menu_active span::before {
+	transition-duration: 0.3s, 0.3s;
+	transition-delay: 0.3s, 0s;
+}
+.toggle_menu_active span::before {
+	transition-property: top, transform;
+}
+.toggle_menu_active span::after {
+	transition-property: bottom, transform;
+}
+/* active state, i.e. menu open */
+.toggle_menu_active.is-active {
+	background-color: $secondary_color;
+}
+.toggle_menu_active.is-active span {
+	background: none;
+}
+.toggle_menu_active.is-active span::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+.toggle_menu_active.is-active span::after {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
+.toggle_menu_active.is-active span::after,
+.toggle_menu_active.is-active span::before {
+	transition-delay: 0s, 0.3s;
 }
