@@ -7,9 +7,12 @@
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/slidebars.min.css">
 	<link rel="stylesheet" href="assets/css/terme.css">
 </head>
 <body>
+	<div id="sb-site">
+
 	<?php include 'templates/header/1.php'; ?>
 	<main class="main">
 		<div class="container">
@@ -130,10 +133,37 @@
 		</div><!-- container -->
 	</main>
 <?php include 'templates/footer/5.php'; ?>
+	</div><!-- sb-site -->
+	<div class="sb-slidebar sb-left">
+		<div class="sidebar_menu">
+			<ul>
+				<li><a href="#">Homapage</a></li>
+				<li><a href="#">Archives</a></li>
+				<li><a href="#">Category</a>
+					<ul>
+						<li><a href="#">section1</a></li>
+						<li><a href="#">section1</a></li>
+						<li><a href="#">section1</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Newsletters</a></li>
+				<li><a href="#">shop</a></li>
+			</ul>
+
+		</div>
+	</div><!-- sb-left -->
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/typed.js"></script>
 	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/js/slidebars.min.js"></script>
 	<script type="text/javascript" src="assets/js/terme.js"></script>
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				$.slidebars();
+			});
+		}) (jQuery);
+	</script>
 </body>
 </html>

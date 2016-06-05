@@ -36,6 +36,8 @@
 		</div><!-- container -->
 	</div><!-- main_area -->
 	<div class="main_menu">
+		<a href="#" class="mobile_menu sb-toggle-left"><span class="mobile_menu"></span></a>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">

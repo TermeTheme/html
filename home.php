@@ -347,7 +347,7 @@
 				</div><!-- row -->
 			</div><!-- container -->
 		</main>
-	<?php include 'templates/footer/5.php'; ?>
+	<?php include 'templates/footer/2.php'; ?>
 	</div><!-- sb-site -->
 
 	<div class="sb-slidebar sb-left">
@@ -382,26 +382,6 @@
 			});
 		}) (jQuery);
 	</script>
-	<script>
-	  (function() {
 
-	    "use strict";
-
-	    var toggles = document.querySelectorAll(".toggle_menu");
-
-	    for (var i = toggles.length - 1; i >= 0; i--) {
-	      var toggle = toggles[i];
-	      toggleHandler(toggle);
-	    };
-
-	    function toggleHandler(toggle) {
-	      toggle.addEventListener( "click", function(e) {
-	        e.preventDefault();
-	        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-	      });
-	    }
-
-	  })();
-	</script>
 </body>
 </html>

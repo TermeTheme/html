@@ -42,9 +42,7 @@
 		</div><!-- container -->
 	</div><!-- main_area -->
 	<div class="main_menu">
-		<button class="toggle_menu toggle_menu_active sb-toggle-left">
-  		<span>toggle menu</span>
-		</button>
+		<a href="#" class="mobile_menu sb-toggle-left"><span class="mobile_menu"></span></a>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
