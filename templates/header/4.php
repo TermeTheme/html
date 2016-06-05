@@ -2,13 +2,13 @@
 	<div class="top_bar">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-md-5 hidden-sm  hidden-xs">
 					<div class="today">
 						<i class="fa fa-calendar"></i>
 						جمعه ۲۵ دی ۱۳۹۴ - ۲۲:۳۴
 					</div>
 				</div><!-- col-xs-6 -->
-				<div class="col-xs-6">
+				<div class="col-md-7 col-sm-12 col-xs-12">
 					<div class="user_area">
 						<a href="#">وارد شوید</a>
 						<span>|</span>
@@ -21,12 +21,12 @@
 	<div class="main_area">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-sm-6 col-xs-12">
 					<div class="logo">
 						<a href="#"><img src="assets/img/logo.jpg" alt=""></a>
 					</div><!-- logo -->
 				</div><!-- col-xs-6 -->
-				<div class="col-xs-6">
+				<div class="col-sm-6 hidden-xs">
 					<form action="#">
 						<input type="text" placeholder="جستجو">
 						<button><i class="fa fa-search"></i></button>
