@@ -14,7 +14,7 @@
 	<main class="main">
 		<div class="container">
 			<div class="row">
-        <div class="col-xa-12">
+        <div class="col-md-12 hidden-sm hidden-xs">
           <div class="shop_filters">
             <div class="filter_item" id="post_grid">
               <div class="btn-group dropdown ">
@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-				<div class="col-xs-4">
+				<div class="col-md-4 col-sm-6 col-xs-12">
           <div class="shop_product">
             <div class="thumb">
               <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">
@@ -81,21 +81,7 @@
             </div><!-- info -->
           </div><!-- shop_product -->
 				</div><!--col-xs-4-->
-				<div class="col-xs-4">
-          <div class="shop_product">
-            <div class="thumb">
-              <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">
-
-              <a href="#" class="add_to_cart">Add to cart</a>
-              <a href="#" class="permalink">Description</a>
-            </div>
-            <div class="info">
-              <h3><a href="#">Product name</a></h3>
-              <div class="price">2,500$</div>
-            </div><!-- info -->
-          </div><!-- shop_product -->
-				</div><!--col-xs-4-->
-				<div class="col-xs-4">
+				<div class="col-md-4 col-sm-6 col-xs-12">
           <div class="shop_product">
             <div class="thumb">
               <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">
@@ -109,7 +95,7 @@
             </div><!-- info -->
           </div><!-- shop_product -->
 				</div><!--col-xs-4-->
-				<div class="col-xs-4">
+				<div class="col-md-4 col-sm-6 col-xs-12">
           <div class="shop_product">
             <div class="thumb">
               <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">
@@ -123,7 +109,21 @@
             </div><!-- info -->
           </div><!-- shop_product -->
 				</div><!--col-xs-4-->
-				<div class="col-xs-4">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="shop_product">
+            <div class="thumb">
+              <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">
+
+              <a href="#" class="add_to_cart">Add to cart</a>
+              <a href="#" class="permalink">Description</a>
+            </div>
+            <div class="info">
+              <h3><a href="#">Product name</a></h3>
+              <div class="price">2,500$</div>
+            </div><!-- info -->
+          </div><!-- shop_product -->
+				</div><!--col-xs-4-->
+				<div class="col-md-4 col-sm-6 col-xs-12">
           <div class="shop_product">
             <div class="thumb">
               <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">

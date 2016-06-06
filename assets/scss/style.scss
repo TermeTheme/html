@@ -1679,6 +1679,7 @@ footer.footer {
 		.article_social {
 			text-align: center;
 			ul {
+				padding: 0;
 				list-style: none;
 				display: inline-block;
 				li {
@@ -2456,6 +2457,7 @@ footer.footer {
 			width: 100%;
 		}
 	}
+
 	footer.footer {
 		&.style_1 .main_area {
 			.box_1 {
@@ -2544,7 +2546,7 @@ footer.footer {
 		}
 		.shopping_cart,
 		.user_area {
-			// display: none;
+			display: none;
 		}
 	}
 	.main_menu a.mobile_menu {
@@ -2568,6 +2570,27 @@ footer.footer {
 			}
 		}
 	}
+	.article_content {
+		.terme_post  {
+			.article_social {
+				ul {
+					li {
+						@include rem(( padding: 5px 15px,));
+
+					}
+				}
+			}
+		}
+		.article_author {
+			.name {
+				width: auto;
+				@include rem(( padding: 20px 15px 0 15px,));
+
+			}
+		}
+	}
+
+
 }
 .sb-left {
 	background: $secondary_color;

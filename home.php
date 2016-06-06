@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div id="sb-site">
-		<?php include 'templates/header/4.php'; ?>
+		<?php include 'templates/header/1.php'; ?>
 		<main class="main">
 			<section class="top">
 				<div class="container">
@@ -347,7 +347,7 @@
 				</div><!-- row -->
 			</div><!-- container -->
 		</main>
-	<?php include 'templates/footer/2.php'; ?>
+	<?php include 'templates/footer/1.php'; ?>
 	</div><!-- sb-site -->
 
 	<div class="sb-slidebar sb-left">
