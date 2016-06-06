@@ -280,7 +280,7 @@ header.style_4 .main_area form {
 	width: 90%;
 	float: right;
 	border: solid #eaeaea;
-	@include rem(( border-width: 1px, height: 44px, margin: 28px 0 0 5%, ));
+	@include rem(( border-width: 1px, height: 44px, margin: 38px 0 0 5%, ));
 	input {
 		float: left;
 		@include rem(( width: calc( 100% - 48px), height: 42px, padding: 0 10px, line-height: 42px ));
@@ -743,6 +743,9 @@ section.latest_news {
 	float: right;
 	width: 100%;
 	@include rem(padding-top, 30px);
+	> section {
+		margin-bottom: 20px;
+	}
 	.social_widget {
 		float: right;
 		width: 100%;
@@ -756,44 +759,49 @@ section.latest_news {
 			width: 100%;
 			background: #fff;
 			@include rem(( border-width: 1px, border-top-width: 2px, ));
+			li a {
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
 			li.facebook {
 				span.icon {
-					background-color: #3b5998;
+					background-color: $facebook_color;
 				}
 				border: 1px solid #e4e4e4;
 				&:hover {
-					background-color: #3b5998;
+					background-color: $facebook_color;
 					color: #fff;
 					transition: all 0.4s ease-in-out;
 				}
 			}
 			li.twitter {
 				span.icon {
-					background-color: #2daddc;
+					background-color: $twitter_color;
 				}
 				border: 1px solid #e4e4e4;
 				&:hover {
-					background-color: #2daddc;
+					background-color: $twitter_color;
 					color: #fff;
 				}
 			}
 			li.rss {
 				span.icon {
-					background-color: #fe9a00;
+					background-color: $rss_color;
 				}
 				border: 1px solid #e4e4e4;
 				&:hover {
-					background-color: #fe9a00;
+					background-color: $rss_color;
 					color: #fff;
 				}
 			}
 			li.google {
 				span.icon {
-					background-color: #d14836;
+					background-color: $google_color;
 				}
 				border: 1px solid #e4e4e4;
 				&:hover {
-					background-color: #d14836;
+					background-color: $google_color;
 					color: #fff;
 				}
 			}
@@ -877,17 +885,17 @@ section.latest_news {
 			float: left;
 			width: 100%;
 			@include rem(( padding: 10px 15px, ));
-			h3 {
-				float: left;
-				margin: 0;
-				font-size: 18px;
-			}
-			h3 a {
+			a {
+				display: block;
 				color: $secondary_color;
-			}
-			span {
-				float: right;
-				font-size: 16px;
+				@include rem((font-size: 18px, ));
+				&:hover {
+					color: $primary_color;
+				}
+				span {
+					float: right;
+					font-size: 16px;
+				}
 			}
 		}
 		ul li:hover h3 a {
@@ -987,12 +995,68 @@ section.latest_news {
 		float: left;
 		width: 100%;
 		margin-top: 20px;
-		a {
-			display: block;
+		figure {
+			background: $secondary_color;
+			position: relative;
 			float: left;
-			@include rem(( margin: 10px 0, ));
+			overflow: hidden;
+			margin: 10px 0;
+			height: auto;
+			text-align: center;
+			cursor: pointer;
 			img {
+				opacity: 0.95;
+				transition: opacity 0.35s, transform 0.35s;
+				transform: scale3d(1.05,1.05,1);
+				position: relative;
+				display: block;
+				min-height: 100%;
 				max-width: 100%;
+			}
+		}
+		figure:hover img {
+			opacity: 0.8;
+			transform: scale3d(1,1,1);
+		}
+		figure:hover figcaption:before {
+			transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+		}
+		figure:hover figcaption a {
+			transform: translate( -10px, -10px);
+		}
+		figcaption {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 1.25em;
+			backface-visibility: hidden;
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(255,255,255,0.5);
+				content: '';
+				transition: transform 0.5s;
+				transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+			}
+			a {
+				background-color: $primary_color;
+				text-align: center;
+				color: #fff;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				transform: translate( -10px, 100%);
+				@include rem((padding: 5px 10px, border-radius: 4px,font-size: 12px,));
+				&:hover {
+					background: $secondary_color;
+				}
 			}
 		}
 	}
@@ -1028,15 +1092,12 @@ section.latest_news {
 		ul li:last-child {
 			border-bottom: none;
 		}
-		ul li h3 {
-			margin: 0;
+		ul li a {
 			line-height: 1.35;
 			@include rem(( font-size: 18px, margin-bottom: 10px, ));
-		}
-		ul li h3 a {
 			color: $secondary_color;
 		}
-		ul li h3 a:hover {
+		ul li a:hover {
 			color: $primary_color;
 		}
 		ul li .time {
@@ -1070,6 +1131,9 @@ section.latest_news {
 			float: left;
 			width: 100%;
 			@include rem(( padding: 15px 15px 0 15px, ));
+			a {
+				display: block;
+			}
 		}
 		ul li:last-child {
 			@include rem(( padding-bottom: 15px, ));
@@ -1083,6 +1147,9 @@ section.latest_news {
 			text-align: center;
 			box-shadow: 1px 1px 2px #e6e6e6;
 			cursor: default;
+			&:hover {
+				cursor: pointer;
+			}
 		}
 		.view .mask {
 			width: 100%;
@@ -1103,8 +1170,10 @@ section.latest_news {
 			position: relative;
 			font-size: 17px;
 			position: absolute;
-			top: 50%;
+			top: 0;
 			left: 20px;
+			margin: 0;
+			transform: translate(0,-100%);
 		}
 		.view .info {
 			font-size: 17px;
@@ -1139,7 +1208,6 @@ section.latest_news {
 			transition: all 0.4s ease-in-out;
 		}
 		.view_overlay h2 {
-			transform: translateY(100px);
 			opacity: 0;
 			transition: all 0.2s ease-in-out;
 		}
@@ -1155,11 +1223,16 @@ section.latest_news {
 		.view_overlay:hover .mask {
 			opacity: 1;
 		}
+		.view_overlay:hover .info,
 		.view_overlay:hover a.info,
-		.view_overlay:hover h2,
-		.view_overlay:hover info {
+		.view_overlay:hover h2 {
 			opacity: 1;
 			transform: translateY(0px);
+		}
+		.view_overlay:hover h2 {
+			bottom: 0;
+			transform: translateY(120px);
+			// transform: translate(0,-200%);
 		}
 		.view_overlay:hover .info {
 			transition-delay: 0.1s;
@@ -1177,7 +1250,7 @@ section.latest_news {
 			margin-top: 0;
 			@include rem(margin-bottom, 15px);
 		}
-		.tags_content {
+		.tagcloud {
 			float: right;
 			width: 100%;
 			list-style: none;
@@ -1187,13 +1260,13 @@ section.latest_news {
 			@include rem(( border-width: 1px, padding: 15px ));
 			margin-bottom: 0;
 		}
-		.tags_content a {
+		.tagcloud a {
 			float: left;
 			color: $secondary_color;
 			border: solid #e4e4e4;
 			@include rem((border-width: 1px, padding: 5px 10px,margin: 5px,font-size: 15px,));
 		}
-		.tags_content a:hover {
+		.tagcloud a:hover {
 			background-color: $secondary_color;
 			color: #fff;
 			border: solid $secondary_color;
@@ -1246,14 +1319,14 @@ footer.footer {
 			border-bottom: solid #555;
 			float: left;
 			background-color: $secondary_color;
-			@include rem(( padding: 15px,margin: 20px 0 , border-width: 1px, ));
+			@include rem(( padding: 15px,margin: 20px 0 , border-width: 1px, height: 45px,));
 		}
 		.newsletter button {
 			width: 20%;
 			background-color: #555;
 			border-radius: 0;
 			color: #fff;
-			@include rem(( padding: 5px,margin: 20px 0 ,font-size: 1.2rem, ));
+			@include rem(( padding: 5px,margin: 20px 0 ,font-size: 14px,height: 45px, ));
 		}
 	}
 	&.style_1 .bottom_bar,
@@ -1424,6 +1497,15 @@ footer.footer {
 			ul {
 				li {
 					margin-left: 0;
+					&.facebook a:hover {
+						background-color: $facebook_color;
+					}
+					&.twitter a:hover {
+						background-color: $twitter_color;
+					}
+					&.rss a:hover {
+						background-color: $rss_color;
+					}
 					a {
 						color: #fff;
 						@include socialmenu;
@@ -1468,7 +1550,7 @@ footer.footer {
 			color: #a3a3a3;
 		}
 		ul li h3 a:hover {
-			color: $primary_color;
+			color: #fff;
 		}
 		ul li .time {
 			color: #a3a3a3;
@@ -1497,7 +1579,7 @@ footer.footer {
 		}
 		.popular_tags {
 			float: left;
-			.tags_items {
+			.tagcloud {
 				float: left;
 				width: 100%;
 				list-style: none;
@@ -1505,13 +1587,13 @@ footer.footer {
 				@include rem(( padding: 15px 0, ));
 				margin-bottom: 0;
 			}
-			.tags_items a {
+			.tagcloud a {
 				float: left;
 				color: #a3a3a3;
 				border: solid #a3a3a3;
 				@include rem((border-width: 1px, padding: 5px 10px,margin: 5px,font-size: 15px,));
 			}
-			.tags_items a:hover {
+			.tagcloud a:hover {
 				background-color: $primary_color;
 				color: #fff;
 				border: solid $primary_color;
@@ -1585,6 +1667,9 @@ footer.footer {
 			span {
 				float: left;
 				@include rem(( margin-right: 40px, ));
+				a {
+					color: #c0c0c0;
+				}
 			}
 		}
 	}
@@ -1864,7 +1949,7 @@ footer.footer {
 			position: relative;
 			float: left;
 			width: 100%;
-			background: #FFEBEE;
+			background: #f7f8fa;
 			@include rem(( padding: 0, ));
 			&:before {
 				content: "\f112";
@@ -2068,6 +2153,7 @@ footer.footer {
 			border-radius: 0;
 			background: none;
 			color: #c8c8c8;
+			@include rem(( line-height: 60px,));
 		}
 		a.previouspostslink {
 			float: left;
@@ -2248,6 +2334,7 @@ footer.footer {
 .shop_product .thumb .add_to_cart:hover,
 .shop_product .thumb .permalink:hover {
 	background: $primary_color;
+	color: #fff;
 }
 .product_page {
 	float: left;
@@ -2291,26 +2378,57 @@ footer.footer {
 				@include rem((font-size: 20px,));
 			}
 		}
-		p.product_short_desc {
-			text-align: justify;
-			@include rem((font-size: 15px,margin-top: 20px, ));
+		.product_short_desc {
+			p {
+				text-align: justify;
+				@include rem((font-size: 15px,margin-top: 20px, ));
+			}
 		}
-		.product_buy {
+		.product_button {
+			float: left;
+			width: 100%;
 			border: solid #e4e4e4;
-			@include rem((border-width: 1px 0 1px 0,padding: 20px 0,));
-			button {
-				border: solid $secondary_color;
-				background: #fff;
-				@include rem((margin-right: 10px,border-radius: 4px,padding: 10px 20px, border-width: 1px,));
-				&:hover {
-					background: $primary_color;
-					border: solid $primary_color;
-					@include rem((border-width: 1px,));
-					color: #fff;
-				}
+			@include rem((border-width: 1px 0 1px 0,padding: 30px 0,));
+			.product_buy {
+				width: 50%;
+				box-sizing: border-box;
+				float: left;
 				a {
+					border: solid $secondary_color;
+					background: #fff;
+					float: left;
+					font-weight: bold;
+					@include rem((margin-right: 10px,border-radius: 4px,padding: 10px 20px, border-width: 1px,font-size: 14px,));
 					color: $secondary_color;
-					display: block;
+					&:hover {
+						background: $primary_color;
+						border: solid $primary_color;
+						@include rem((border-width: 1px,));
+						color: #fff;
+					}
+				}
+			}
+			.quantity_container {
+				width: 50%;
+				box-sizing: border-box;
+				float: left;
+				.quantity {
+					float: right;
+					input {
+						border: solid #979a9f;
+						display: inline-block;
+						text-align: center;
+						font-weight: bold;
+						@include rem((width: 70px,margin: 0 10px,height: 35px,border-width: 1px,border-radius: 4px, font-size: 14px,));
+					}
+				}
+				.number_button {
+					border: solid #979a9f;
+					text-align: center;
+					float: right;
+					color: #979a9f;
+					cursor: pointer;
+					@include rem((width: 35px, height: 35px,line-height: 25px,border-width: 1px,padding: 5px,border-radius: 4px,));
 				}
 			}
 		}
@@ -2319,6 +2437,9 @@ footer.footer {
 			@include rem(( margin: 20px 0, ));
 			span {
 				@include rem((font-size: 15px, ));
+				a {
+					color: #979a9f;
+				}
 			}
 		}
 		.product_tags {
@@ -2337,9 +2458,9 @@ footer.footer {
 				border: solid #e4e4e4;
 				@include rem((border-width: 1px, padding: 5px 10px,margin: 5px,font-size: 15px,));
 				&:hover {
-					background-color: $secondary_color;
+					background-color: $primary_color;
 					color: #fff;
-					border: solid #e4e4e4;
+					border: solid $primary_color;
 					@include rem((border-width: 1px, padding: 5px 10px,));
 				}
 			}
@@ -2457,7 +2578,6 @@ footer.footer {
 			width: 100%;
 		}
 	}
-
 	footer.footer {
 		&.style_1 .main_area {
 			.box_1 {
@@ -2571,12 +2691,11 @@ footer.footer {
 		}
 	}
 	.article_content {
-		.terme_post  {
+		.terme_post {
 			.article_social {
 				ul {
 					li {
 						@include rem(( padding: 5px 15px,));
-
 					}
 				}
 			}
@@ -2585,12 +2704,9 @@ footer.footer {
 			.name {
 				width: auto;
 				@include rem(( padding: 20px 15px 0 15px,));
-
 			}
 		}
 	}
-
-
 }
 .sb-left {
 	background: $secondary_color;

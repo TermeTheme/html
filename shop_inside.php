@@ -35,20 +35,32 @@
 
 
 							</div>
-              <p class="product_short_desc">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat.
+
+              <div class="product_short_desc">
+              <p>
+              	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat ut laoreet dolore magna aliquam erat volutpat.
               </p>
-              <div class="product_buy">
-                <button type="button" name="button" class="add_to_cart"><a href="#">Add to Cart</a></button>
-                <button type="button" name="button" class="like"><a href="#">Like</a></button>
               </div>
+							<div class="product_button">
+								<div class="product_buy">
+									<a href="#" class="add_to_cart"><i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp; Add to Cart</a>
+									<a href="#"  class="like"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp; Like</a>
+								</div>
+								<div class="quantity_container">
+									 <span class="inc number_button"><i class="fa fa-plus"></i></span>
+									 <div class="quantity"><input type="number" step="1" min="1" max="47" name="quantity" value="1" title="تعداد" class="input-text qty text" size="4"></div>
+									 <span class="dec number_button"><i class="fa fa-minus"></i></span>
+								</div>
+
+							</div>
+
+							<div class="clearfix"></div>
             <div class="product_meta">
-              <span><i class="fa fa-pencil-square" aria-hidden="true"></i>&nbsp; Category: Sport </span>
+              <span><i class="fa fa-pencil-square" aria-hidden="true"></i>&nbsp; Category: <a href="#">Sport</a> </span>
 
             </div>
             <div class="product_tags">
               <span><i class="fa fa-tag" aria-hidden="true"></i>&nbsp; Tags: </span>
-
               <a href="#">Sports</a>
               <a href="#">best offer</a>
               <a href="#">terme</a>
@@ -64,21 +76,16 @@
 								<li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
 							</ul>
-
 						</div>
-
             </div>
 						<div class="product_intro">
 							<div class="product_tab">
-
-
 							<ul class="nav nav-tabs" role="tablist">
 								<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Wordpress Template</a></li>
 								<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Wordpress Tutorial</a></li>
 								<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Wordpress Plugin</a></li>
 								<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Worpress Trick</a></li>
 							</ul>
-
 							<!-- Tab panes -->
 							<div class="tab-content">
 							  <div role="tabpanel" class="tab-pane fade in active" id="home">
@@ -126,7 +133,7 @@
 
 					</div><!-- product_page -->
 					<?php include 'comments.php' ?>
-					
+
 					</div><!-- col-xs-12 -->
 
 				</div>
@@ -142,5 +149,26 @@
 	<script type="text/javascript" src="assets/js/typed.js"></script>
 	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="assets/js/terme.js"></script>
+	<script>
+	jQuery(document).on('click', '.number_button', function(event) {
+
+      var jQuerybutton = jQuery(this);
+      var oldValue = jQuerybutton.parent().find("input").val();
+
+      if (jQuerybutton.html() == '<i class="fa fa-plus"></i>') {
+        var newVal = parseFloat(oldValue) + 1;
+      } else {
+       // Don't allow decrementing below zero
+        if (oldValue > 1) {
+            var newVal = parseFloat(oldValue) - 1;
+        } else {
+            newVal = 1;
+          }
+    }
+      jQuerybutton.parent().find("input").val(newVal);
+
+  });
+
+	</script>
 </body>
 </html>

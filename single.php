@@ -24,12 +24,12 @@
 								<span><a href="#">Home</a>
 <i class="fa fa-angle-right" aria-hidden="true"></i>
 								</span>
-								<span><a href="#">Sport Category</a></span>
+								<a href="#">Sport Category</a>
 							</div>
 							<h1 class="article_title">Google Ranked As The World's Most Valuable Brands</h1>
 							<div class="article_meta">
 								<span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp Friday, 27 April 2016 </span>
-								<span class="category"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp Sport </span>
+								<span class="category"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp <a href="#">Sport</a> </span>
 								<span class="view"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp 1.253</span>
 								<span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp 25</span>
 							</div><!-- article_meta -->

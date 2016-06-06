@@ -3,25 +3,33 @@
   <section class="social_widget">
     <ul>
       <li class="facebook">
+        <a href="#">
         <span class="icon"><i class="fa fa-facebook"></i></span>
         <span class="name">Facebook</span>
         <span class="number">53.321</span>
+        </a>
       </li>
 
       <li class="twitter">
+        <a href="#">
         <span class="icon"><i class="fa fa-twitter"></i></span>
         <span class="name">twitter</span>
         <span class="number">22.321</span>
+        </a>
       </li>
       <li class="rss">
+        <a href="#">
         <span class="icon"><i class="fa fa-rss"></i></span>
         <span class="name">RSS</span>
         <span class="number">22.321</span>
+        </a>
       </li>
       <li class="google">
+        <a href="#">
         <span class="icon"><i class="fa fa-google"></i></span>
         <span class="name">Google+</span>
         <span class="number">22.321</span>
+        </a>
       </li>
 
     </ul>
@@ -30,16 +38,22 @@
     <h4>Category</h4>
     <ul>
       <li>
-        <h3><a href="">Politic</a></h3>
-        <span>502</span>
+        <a href="">Politic
+          <span>502</span>
+        </a>
+
       </li>
       <li>
-        <h3><a href="">Sport</a></h3>
-        <span>1.258</span>
+      <a href="">Sport
+<span>1.258</span>
+      </a>
+
       </li>
       <li>
-        <h3><a href="">Technology</a></h3>
-        <span>125</span>
+      <a href="">Technology
+<span>125</span>
+      </a>
+
       </li>
     </ul>
   </section><!-- category -->
@@ -110,27 +124,37 @@
 
   </section ><!-- news -->
   <section class="ads">
-    <a href="#"><img src="assets/img/ads1.jpg" alt="" /></a>
-    <a href="#"><img src="assets/img/ads2.jpg" alt="" /></a>
+    <figure>
+      <img src="assets/img/ads1.jpg" alt="" />
+      <figcaption>
+        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> More</a>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="assets/img/ads2.jpg" alt="" />
+      <figcaption>
+        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> More</a>
+      </figcaption>
+    </figure>
   </section><!-- ads -->
   <section class="last_articles">
     <h4>Top Articles</h4>
     <a href="#" class="more">More</a>
     <ul>
       <li>
-        <h3><a href="">Google Ranked As The World's Most Valuable Brands</a></h3>
+      <a href="">Google Ranked As The World's Most Valuable Brands</a>
         <div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016 - 10:26</div>
       </li>
       <li>
-        <h3><a href="">Google Ranked As The World's Most Valuable Brands</a></h3>
+      <a href="">Google Ranked As The World's Most Valuable Brands</a>
         <div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016 - 10:26</div>
       </li>
       <li>
-        <h3><a href="">Google Ranked As The World's Most Valuable Brands</a></h3>
+        <a href="">Google Ranked As The World's Most Valuable Brands</a>
         <div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016 - 10:26</div>
       </li>
       <li>
-        <h3><a href="">Google Ranked As The World's Most Valuable Brands</a></h3>
+      <a href="">Google Ranked As The World's Most Valuable Brands</a>
         <div class="time"><i class="fa fa-clock-o"></i> Friday, 27 April 2016 - 10:26</div>
       </li>
                     </ul>
@@ -140,6 +164,7 @@
     <a href="#" class="more">More</a>
     <ul>
       <li>
+        <a href="#">
         <div class="view view_overlay">
           <img src="assets/img/video1.jpg" />
 
@@ -153,11 +178,12 @@
 
              </div>
         </div>
+        </a>
       </li>
       <li>
+        <a href="#">
         <div class="view view_overlay">
           <img src="assets/img/video2.jpg" />
-
              <div class="mask">
                <h2>Title</h2>
                <div class="info">
@@ -168,6 +194,7 @@
 
              </div>
         </div>
+        </a>
       </li>
 
                     </ul>
@@ -175,7 +202,7 @@
   </section><!-- video -->
   <section class="tags">
     <h4>Tags</h4>
-    <div class="tags_content">
+    <div class="tagcloud">
       <a href="#">Sports</a>
       <a href="#">best offer</a>
       <a href="#">terme</a>

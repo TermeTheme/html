@@ -7,7 +7,7 @@
                     <span>Join to Terme Newsletter</span>
                     <form class="" action="index.html" method="post">
                       <input type="text" name="name" value="" placeholder="Enter your email ;)">
-                      <button class="btn" type="submit"><i class="fa fa-check" aria-hidden="true"></i></button>
+                      <button class="btn" type="submit">Subscribe</button>
 
                     </form>
                 </div>
@@ -56,7 +56,7 @@
                 <div class="box_3">
                   <div class="popular_tags">
                       <h2>Popular Tags</h2>
-                      <div class="tags_items">
+                      <div class="tagcloud">
                         <a href="#">Sports</a>
                         <a href="#">best offer</a>
                         <a href="#">terme</a>
@@ -94,14 +94,14 @@
     </p>
     <div class="social_menu">
       <ul>
-        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+        <li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="tumblr"><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+        <li class="vimeo"><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+        <li class="linkedin"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li class="dribbble"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+        <li class="instagram"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li class="rss"><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
       </ul>
     </div><!-- social_menu -->
   </div>
