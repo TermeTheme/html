@@ -179,6 +179,22 @@
             </figcaption>
         </figure>
       </li>
+      <li>
+        <figure>
+          <img src="assets/img/video2.jpg" />
+            <figcaption>
+              <span class="play"><i class="fa fa-play" aria-hidden="true"></i></span>
+              <a href="#">
+                <h2>Title</h2>
+                  <div class="info">
+                  <span><i class="fa fa-eye" aria-hidden="true"></i> 2.745</span>
+                   <span><i class="fa fa-commenting" aria-hidden="true"></i> 1.586</span>
+                   <span><i class="fa fa-heart" aria-hidden="true"></i> 45</span>
+                  </div>
+              </a>
+            </figcaption>
+        </figure>
+      </li>
     </ul>
 
   </section><!-- video -->
