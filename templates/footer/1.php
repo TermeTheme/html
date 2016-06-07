@@ -56,7 +56,7 @@
                   </div>
                   <div class="popular_tags">
                       <h2>Popular Tags</h2>
-                      <div class="tags_items">
+                      <div class="tagcloud">
                         <a href="#">Sports</a>
                         <a href="#">best offer</a>
                         <a href="#">terme</a>
