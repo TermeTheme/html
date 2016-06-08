@@ -7,7 +7,7 @@
                     <span>Join to Terme Newsletter</span>
                     <form class="" action="index.html" method="post">
                       <input type="text" name="name" value="" placeholder="Enter your email ;)">
-                      <button class="btn" type="submit">Subscribe</button>
+                      <button class="btn" type="submit" data-termehover="">Subscribe</button>
 
                     </form>
                 </div>
@@ -57,8 +57,8 @@
                   <div class="popular_tags">
                       <h2>Popular Tags</h2>
                       <div class="tagcloud">
-                        <a href="#">Sports</a>
-                        <a href="#">best offer</a>
+                        <a href="#" data-termehover="">Sports</a>
+                        <a href="#" data-termehover="">best offer</a>
                         <a href="#">terme</a>
                         <a href="#">game</a>
                         <a href="#">Sports</a>

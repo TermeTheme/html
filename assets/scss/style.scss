@@ -764,46 +764,60 @@ section.latest_news {
 				height: 100%;
 				width: 100%;
 			}
-			li.facebook {
+			li.facebook a {
+				&:hover {
+					color: #fff;
+					border-color: $facebook_color;
+					&:before {
+						background-color: $facebook_color;
+					}
+				}
 				span.icon {
 					background-color: $facebook_color;
 				}
 				border: 1px solid #e4e4e4;
-				&:hover {
-					background-color: $facebook_color;
-					color: #fff;
-					transition: all 0.4s ease-in-out;
-				}
 			}
-			li.twitter {
+			li.twitter a {
+				&:hover {
+					color: #fff;
+					border-color: $twitter_color;
+					&:before {
+						background-color: $twitter_color;
+					}
+				}
 				span.icon {
 					background-color: $twitter_color;
 				}
 				border: 1px solid #e4e4e4;
-				&:hover {
-					background-color: $twitter_color;
-					color: #fff;
-				}
+
 			}
-			li.rss {
+			li.rss a {
+				&:hover {
+					color: #fff;
+					border-color: $rss_color;
+					&:before {
+						background-color: $rss_color;
+					}
+				}
 				span.icon {
 					background-color: $rss_color;
 				}
 				border: 1px solid #e4e4e4;
-				&:hover {
-					background-color: $rss_color;
-					color: #fff;
-				}
+
 			}
-			li.google {
+			li.google a {
+				&:hover {
+					color: #fff;
+					border-color: $google_color;
+					&:before {
+						background-color: $google_color;
+					}
+				}
 				span.icon {
 					background-color: $google_color;
 				}
 				border: 1px solid #e4e4e4;
-				&:hover {
-					background-color: $google_color;
-					color: #fff;
-				}
+
 			}
 			li {
 				float: left;
@@ -1374,6 +1388,13 @@ footer.footer {
 			border-radius: 0;
 			color: #fff;
 			@include rem(( padding: 5px,margin: 20px 0 ,font-size: 14px,height: 45px, ));
+			&:hover {
+				color: #fff;
+				border-color: $primary_color;
+				&:before {
+					background-color: $primary_color;
+				}
+			}
 		}
 	}
 	&.style_1 .bottom_bar,
@@ -1549,6 +1570,24 @@ footer.footer {
 					}
 					&.twitter a:hover {
 						background-color: $twitter_color;
+					}
+					&.tumblr a:hover {
+						background-color: $tumblr_color;
+					}
+					&.rss a:hover {
+						background-color: $rss_color;
+					}
+					&.vimeo a:hover {
+						background-color: $vimeo_color;
+					}
+					&.linkedin a:hover {
+						background-color: $linkedin_color;
+					}
+					&.dribbble a:hover {
+						background-color: $dribbble_color;
+					}
+					&.instagram a:hover {
+						background-color: $instagram_color;
 					}
 					&.rss a:hover {
 						background-color: $rss_color;
@@ -2408,6 +2447,105 @@ footer.footer {
 	background: $primary_color;
 	color: #fff;
 }
+.shop_product_4 {
+	width: 100%;
+	border: #e6e6e6 solid;
+	background: #fff;
+	@include rem(( height: 475px, border-width: 1px,margin-bottom: 20px, ));
+	position: relative;
+}
+.shop_product_4 .thumb {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+	background: #ecf0f1;
+	overflow: hidden;
+}
+.shop_product_4 .thumb:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 2;
+	content: '';
+	opacity: 0;
+	transition: opacity 300ms;
+}
+.shop_product_4:hover .thumb:before {
+	opacity: 1;
+}
+.shop_product_4 .info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 25%;
+	background: #fff;
+	text-align: center;
+	transition: background 300ms;
+	@include rem(( padding: 0 10px, ));
+	h3 {
+		@include rem(( font-size: 20px, ));
+		a {
+			color: $secondary_color;
+		}
+	}
+	.price {
+		@include rem(( font-size: 16px, ));
+		color: #979a9f;
+	}
+}
+.shop_product_4:hover .info {
+	background: $secondary_color;
+	.price,
+	a {
+		color: #fff;
+	}
+}
+.shop_product_4 .thumb .add_to_cart {
+	position: absolute;
+	@include rem(( padding: 0 15px, height: 40px, line-height: 40px, border-radius: 3px, ));
+	color: $secondary_color;
+	top: 0;
+	left: 50%;
+	background: #fff;
+	z-index: 999;
+	transform: translate(-50%, -100%);
+	min-width: 30%;
+	text-align: center;
+	font-size: 14px;
+}
+.shop_product_4:hover .thumb .add_to_cart {
+	top: 50%;
+	transform: translate(-50%, -150%);
+}
+.shop_product_4 .thumb .permalink {
+	position: absolute;
+	@include rem(( padding: 0 15px, height: 40px, line-height: 40px, border-radius: 3px, ));
+	color: $secondary_color;
+	background: #fff;
+	z-index: 999;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 100%);
+	min-width: 30%;
+	text-align: center;
+	font-size: 14px;
+
+}
+.shop_product_4:hover .thumb .permalink {
+	bottom: 50%;
+	transform: translate(-50%, 150%);
+}
+.shop_product_4 .thumb .add_to_cart:hover,
+.shop_product_4 .thumb .permalink:hover {
+	background: $primary_color;
+	color: #fff;
+}
 .product_page {
 	float: left;
 	width: 100%;
@@ -2473,10 +2611,11 @@ footer.footer {
 					@include rem((margin-right: 10px,border-radius: 4px,padding: 10px 20px, border-width: 1px,font-size: 14px,));
 					color: $secondary_color;
 					&:hover {
-						background: $primary_color;
-						border: solid $primary_color;
-						@include rem((border-width: 1px,));
 						color: #fff;
+						border-color: $primary_color;
+						&:before {
+							background-color: $primary_color;
+						}
 					}
 				}
 			}
@@ -2530,10 +2669,11 @@ footer.footer {
 				border: solid #e4e4e4;
 				@include rem((border-width: 1px, padding: 5px 10px,margin: 5px,font-size: 15px,));
 				&:hover {
-					background-color: $primary_color;
 					color: #fff;
-					border: solid $primary_color;
-					@include rem((border-width: 1px, padding: 5px 10px,));
+					border-color: $primary_color;
+					&:before {
+						background-color: $primary_color;
+					}
 				}
 			}
 		}
@@ -2548,6 +2688,21 @@ footer.footer {
 				li {
 					float: left;
 					@include rem((margin: 20px, font-size: 15px,));
+					&.facebook:hover a {
+						color: $facebook_color;
+					}
+					&.twitter:hover a {
+						color: $twitter_color;
+					}
+					&.tumblr:hover a {
+						color: $tumblr_color;
+					}
+					&.pinterest:hover a {
+						color: $pinterest_color;
+					}
+					&.wordpress:hover a {
+						color: $wordpress_color;
+					}
 					&:first-child {
 						margin-left: 0;
 					}

@@ -347,7 +347,7 @@
 				</div><!-- row -->
 			</div><!-- container -->
 		</main>
-	<?php include 'templates/footer/1.php'; ?>
+	<?php include 'templates/footer/5.php'; ?>
 	</div><!-- sb-site -->
 
 	<div class="sb-slidebar sb-left">

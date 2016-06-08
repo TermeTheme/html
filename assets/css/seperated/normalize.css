@@ -23,13 +23,18 @@ button {
   outline: none;
   padding: 0; }
 
+a[data-termehover] {
+  position: relative;
+  overflow: hidden;
+  z-index: 10; }
+
 a[data-termehover]:before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   -webkit-transform: translate(-100%, 100%);
       -ms-transform: translate(-100%, 100%);
           transform: translate(-100%, 100%);
@@ -40,6 +45,32 @@ a[data-termehover]:before {
   z-index: -10; }
 
 a[data-termehover]:hover:before {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0); }
+
+button[data-termehover] {
+  position: relative;
+  overflow: hidden;
+  z-index: 10; }
+
+button[data-termehover]:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  -webkit-transform: translate(-100%, 100%);
+      -ms-transform: translate(-100%, 100%);
+          transform: translate(-100%, 100%);
+  -webkit-border-radius: 0 100% 0 0;
+          border-radius: 0 100% 0 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  z-index: -10; }
+
+button[data-termehover]:hover:before {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0); }

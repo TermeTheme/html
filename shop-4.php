@@ -67,7 +67,7 @@
           </div>
         </div>
 				<div class="col-xs-3">
-          <div class="shop_product">
+          <div class="shop_product_4">
             <div class="thumb">
               <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">
               <a href="#" class="add_to_cart">Add to cart</a>
@@ -77,10 +77,10 @@
               <h3><a href="#">Product name</a></h3>
               <div class="price">2,500$</div>
             </div><!-- info -->
-          </div><!-- shop_product -->
+          </div><!-- shop_product_4 -->
 				</div><!--col-xs-3-->
 				<div class="col-xs-3">
-          <div class="shop_product">
+          <div class="shop_product_4">
             <div class="thumb">
               <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">
 
@@ -91,10 +91,10 @@
               <h3><a href="#">Product name</a></h3>
               <div class="price">2,500$</div>
             </div><!-- info -->
-          </div><!-- shop_product -->
+          </div><!-- shop_product_4 -->
 				</div><!--col-xs-3-->
 				<div class="col-xs-3">
-          <div class="shop_product">
+          <div class="shop_product_4">
             <div class="thumb">
               <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">
 
@@ -105,10 +105,10 @@
               <h3><a href="#">Product name</a></h3>
               <div class="price">2,500$</div>
             </div><!-- info -->
-          </div><!-- shop_product -->
+          </div><!-- shop_product_4 -->
 				</div><!--col-xs-3-->
 				<div class="col-xs-3">
-          <div class="shop_product">
+          <div class="shop_product_4">
             <div class="thumb">
               <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">
 
@@ -119,10 +119,10 @@
               <h3><a href="#">Product name</a></h3>
               <div class="price">2,500$</div>
             </div><!-- info -->
-          </div><!-- shop_product -->
+          </div><!-- shop_product_4 -->
 				</div><!--col-xs-3-->
 				<div class="col-xs-3">
-          <div class="shop_product">
+          <div class="shop_product_4">
             <div class="thumb">
               <img src="assets/img/product_shop.jpg" height="350" width="350" alt="">
 
@@ -133,7 +133,7 @@
               <h3><a href="#">Product name</a></h3>
               <div class="price">2,500$</div>
             </div><!-- info -->
-          </div><!-- shop_product -->
+          </div><!-- shop_product_4 -->
 				</div><!--col-xs-3-->
 					</div><!-- row -->
 		</div><!-- container -->

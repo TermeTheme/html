@@ -3,7 +3,7 @@
   <section class="social_widget">
     <ul>
       <li class="facebook">
-        <a href="#">
+        <a href="#" data-termehover="">
         <span class="icon"><i class="fa fa-facebook"></i></span>
         <span class="name">Facebook</span>
         <span class="number">53.321</span>
@@ -11,21 +11,21 @@
       </li>
 
       <li class="twitter">
-        <a href="#">
+        <a href="#" data-termehover="">
         <span class="icon"><i class="fa fa-twitter"></i></span>
         <span class="name">twitter</span>
         <span class="number">22.321</span>
         </a>
       </li>
       <li class="rss">
-        <a href="#">
+        <a href="#" data-termehover="">
         <span class="icon"><i class="fa fa-rss"></i></span>
         <span class="name">RSS</span>
         <span class="number">22.321</span>
         </a>
       </li>
       <li class="google">
-        <a href="#">
+        <a href="#" data-termehover="">
         <span class="icon"><i class="fa fa-google"></i></span>
         <span class="name">Google+</span>
         <span class="number">22.321</span>

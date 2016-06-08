@@ -43,8 +43,8 @@
               </div>
 							<div class="product_button">
 								<div class="product_buy">
-									<a href="#" class="add_to_cart"><i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp; Add to Cart</a>
-									<a href="#"  class="like"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp; Like</a>
+									<a href="#" class="add_to_cart" data-termehover=""><i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp; Add to Cart</a>
+									<a href="#"  class="like" data-termehover=""><i class="fa fa-heart" aria-hidden="true"></i>&nbsp; Like</a>
 								</div>
 								<div class="quantity_container">
 									 <span class="inc number_button"><i class="fa fa-plus"></i></span>
@@ -61,7 +61,7 @@
             </div>
             <div class="product_tags">
               <span><i class="fa fa-tag" aria-hidden="true"></i>&nbsp; Tags: </span>
-              <a href="#">Sports</a>
+              <a href="#" data-termehover="">Sports</a>
               <a href="#">best offer</a>
               <a href="#">terme</a>
               <a href="#">game</a>
@@ -70,11 +70,11 @@
             </div>
 						<div class="product_social">
 							<ul>
-								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+								<li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li class="tumblr"><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+								<li class="pinterest"><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+								<li class="wordpress"><a href="#"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
             </div>
