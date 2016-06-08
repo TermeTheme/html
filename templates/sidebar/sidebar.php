@@ -201,7 +201,7 @@
   <section class="tags">
     <h4>Tags</h4>
     <div class="tagcloud">
-      <a href="#">Sports</a>
+      <a href="#" data-termehover="">Sports</a>
       <a href="#">best offer</a>
       <a href="#">terme</a>
       <a href="#">game</a>
@@ -213,6 +213,8 @@
       <a href="#">goverments</a>
       <a href="#">hamyarwp</a>
       <a href="#">imojtaba</a>
+      <a href="#">inima</a>
+      <a href="#">iali</a>
     </div>
 
 

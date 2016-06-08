@@ -57,7 +57,7 @@
                   <div class="popular_tags">
                       <h2>Popular Tags</h2>
                       <div class="tagcloud">
-                        <a href="#">Sports</a>
+                        <a href="#" data-termehover="">Sports</a>
                         <a href="#">best offer</a>
                         <a href="#">terme</a>
                         <a href="#">game</a>
